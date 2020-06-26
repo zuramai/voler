@@ -1,0 +1,47 @@
+.card {
+    border:1px solid #eee;
+    box-shadow: 1px 2px 10px #efefef;
+    border-radius: 10px;
+    &.card-statistic {
+        box-shadow: 1px 2px 5px  rgba(#2FAAF4, .5);
+        background: linear-gradient(to bottom, #25a6f1, #54b9ff);
+        border: none;
+        .card-title {
+            text-transform: uppercase;
+            color: #fff;
+            letter-spacing: .8px;
+            font-weight: 400;
+            font-size: 1.3rem;
+            margin-bottom: 0;
+            margin-top: 5px;
+        }
+        .card-right {
+            p {
+                font-size: 1.5rem;
+                color: #fff;
+                margin-bottom: 0;
+            }
+            span.green {
+                color: rgb(111, 255, 111)
+            }
+            span.red {
+                color: rgb(255, 121, 121)
+            }
+        }
+        .chart-wrapper {
+            height: 100px;
+        }
+    }
+    .card-header {
+        padding: 1rem;
+        background-color: #fff;
+        border: none;
+        &:first-child {
+            border-radius: 10px;
+        }
+    }
+    .card-heading {
+        color: #555;
+        font-size: 1.5rem;
+    }
+}

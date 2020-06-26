@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voler - Admin Dashboard</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <div id="app">
+        <div id="sidebar">
+            <div class="sidebar-wrapper">
+    <div class="sidebar-header">
+        <!-- <img src="assets/images/logo.png" alt="" srcset=""> -->
+        VOLER
+    </div>
+    <div class="sidebar-menu">
+        <ul class="menu">
+            <li class='sidebar-item active'>
+                <a href="#" class='sidebar-link'>
+                    <i data-feather="home" width="20"></i> 
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class='sidebar-item has-sub'>
+                <a href="#" class='sidebar-link'>
+                    <i data-feather="triangle" width="20"></i> 
+                    <span>Components</span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="http://">Article</a>
+                    </li>
+                    <li>
+                        <a href="http://">Avatar</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+        </div>
+        <div id="main">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                                <img alt="image" src="assets/images/avatar/avatar-1.png" class="rounded-circle mr-1">
+                                <div class="d-sm-none d-lg-inline-block">Juned Pratama</div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="dropdown-title">Logged in 5 min ago</div>
+                                <a href="features-profile.html" class="dropdown-item has-icon">
+                                    <i class="far fa-user"></i> Profile
+                                </a>
+                                <a href="features-activities.html" class="dropdown-item has-icon">
+                                    <i class="fas fa-bolt"></i> Activities
+                                </a>
+                                <a href="features-settings.html" class="dropdown-item has-icon">
+                                    <i class="fas fa-cog"></i> Settings
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item has-icon text-danger">
+                                    <i class="fas fa-sign-out-alt"></i> Logout
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </div>
+    </div>
+    <script src="assets/js/feather-icons/feather.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+
+$theme-colors: (
+  'primary': #2c86f5,
+  'secondary': #ced6e0,
+  'success': #10ac84,
+  'danger': #e03f3f,
+  'warning': #ff9f43,
+  'info': #0abde3,
+  'dark': #222f3e,
+  'light': #edf2f7,
+  'link': #2178d1
+);
+
+@each $key, $value in $theme-colors {
+    .color-#{$key} {
+        color: $value;
+    }
+}

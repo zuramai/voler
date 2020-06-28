@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voler - Admin Dashboard</title>
+    <title>{{ title }} - {{ web_title }}</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     {% block styles %}{% endblock %}
     <link rel="stylesheet" href="assets/css/app.css">
@@ -11,7 +11,7 @@
 <body>
     <div id="app">
         <div id="sidebar">
-            {% include "layouts/sidebar.njk" %}
+            {% include "layouts/sidebar.html" %}
         </div>
         <div id="main">
             <nav class="navbar navbar-expand-lg navbar-light">

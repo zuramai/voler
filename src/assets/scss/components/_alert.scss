@@ -1,0 +1,22 @@
+
+.alert {
+    font-size: $alert-font-size;
+    border:none;
+    .alert-heading {
+        font-size: 1.1rem;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    button.close {
+        padding: .75rem;
+        line-height: .75;
+    }
+}
+@each $key, $value in $alert-colors {
+    .alert-#{$key} {
+        background-color: map-get($value, 'background-color');
+        color: map-get($value, 'text-color');
+        box-shadow: 1px 2px 9px rgba(map-get($value, 'background-color'), .3);
+    }
+}

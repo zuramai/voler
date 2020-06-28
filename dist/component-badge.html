@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badge - Voler Admin Dashboard</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    
+<link rel="stylesheet" href="assets/vendors/chartjs/Chart.min.css">
+
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <div id="app">
+        <div id="sidebar">
+            <div class="sidebar-wrapper">
+    <div class="sidebar-header">
+        <!-- <img src="assets/images/logo.png" alt="" srcset=""> -->
+        VOLER
+    </div>
+    <div class="sidebar-menu">
+        <ul class="menu">
+            <li class='sidebar-item active'>
+                <a href="index.html" class='sidebar-link'>
+                    <i data-feather="home" width="20"></i> 
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class='sidebar-item has-sub'>
+                <a href="#" class='sidebar-link'>
+                    <i data-feather="triangle" width="20"></i> 
+                    <span>Components</span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="component-alert.html">Alert</a>
+                    </li>
+                    <li>
+                        <a href="component-badge.html">Badge</a>
+                    </li>
+                    <li>
+                        <a href="component-breadcrumb.html">Breadcrumb</a>
+                    </li>
+                    <li>
+                        <a href="component-buttons.html">Buttons</a>
+                    </li>
+                    <li>
+                        <a href="component-card.html">Card</a>
+                    </li>
+                    <li>
+                        <a href="component-carousel.html">Carousel</a>
+                    </li>
+                    <li>
+                        <a href="component-dropdowns.html">Dropdowns</a>
+                    </li>
+                    <li>
+                        <a href="component-list-group.html">List Group</a>
+                    </li>
+                    <li>
+                        <a href="component-modal.html">Modal</a>
+                    </li>
+                    <li>
+                        <a href="component-navs.html">Navs</a>
+                    </li>
+                    <li>
+                        <a href="component-pagination.html">Pagination</a>
+                    </li>
+                    <li>
+                        <a href="component-progress.html">Progress</a>
+                    </li>
+                    <li>
+                        <a href="component-spinners.html">Spinners</a>
+                    </li>
+                    <li>
+                        <a href="component-tooltips.html">Tooltips</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+        </div>
+        <div id="main">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                                <img alt="image" src="assets/images/avatar/avatar-1.png" class="rounded-circle mr-1">
+                                <div class="d-sm-none d-lg-inline-block">Juned Pratama</div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="dropdown-title">Logged in 5 min ago</div>
+                                <a href="features-profile.html" class="dropdown-item has-icon">
+                                    <i class="far fa-user"></i> Profile
+                                </a>
+                                <a href="features-activities.html" class="dropdown-item has-icon">
+                                    <i class="fas fa-bolt"></i> Activities
+                                </a>
+                                <a href="features-settings.html" class="dropdown-item has-icon">
+                                    <i class="fas fa-cog"></i> Settings
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item has-icon text-danger">
+                                    <i class="fas fa-sign-out-alt"></i> Logout
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+<div class="main-content container-fluid">
+    <div class="page-title">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3>Badge</h3>
+                <p class="text-subtitle text-muted">A pretty helpful component for give message to user</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <nav aria-label="breadcrumb" class=' text-right'>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Badge</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+    <section class="section">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Heading</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1>Heading 1 <span class="badge bg-secondary">New</span></h1>
+                        <h2>Heading 2 <span class="badge bg-secondary">New</span></h2>
+                        <h3>Heading 3 <span class="badge bg-secondary">New</span></h3>
+                        <h4>Heading 4 <span class="badge bg-secondary">New</span></h4>
+                        <h5>Heading 5 <span class="badge bg-secondary">New</span></h5>
+                        <h6>Heading 6 <span class="badge bg-secondary">New</span></h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Variation</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="badges">
+                            <span class="badge bg-primary">Primary</span>
+                            <span class="badge bg-secondary">Secondary</span>
+                            <span class="badge bg-success">Success</span>
+                            <span class="badge bg-danger">Danger</span>
+                            <span class="badge bg-warning">Warning</span>
+                            <span class="badge bg-info">Info</span>
+                            <span class="badge bg-light">Light</span>
+                            <span class="badge bg-dark">Dark</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Button</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="buttons">
+                            <div class="section-title mt-0">Simple</div>
+                            <button type="button" class="btn btn-primary">
+                                Notifications <span class="badge bg-transparent">4</span>
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                                Notifications <span class="badge bg-transparent">4</span>
+                            </button>
+                            <button type="button" class="btn btn-warning">
+                                Notifications <span class="badge bg-transparent">4</span>
+                            </button>
+                            <button type="button" class="btn btn-success">
+                                Notifications <span class="badge bg-transparent">4</span>
+                            </button>
+                            <button type="button" class="btn btn-dark">
+                                Notifications <span class="badge bg-transparent">4</span>
+                            </button>
+                            <div class="section-title">Icons</div>
+                            <button type="button" class="btn btn-primary btn-icon icon-left">
+                                <i class="fas fa-plane"></i> Notifications <span class="badge bg-transparent">4</span>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-icon icon-left">
+                                <i class="fas fa-plane"></i> Notifications <span class="badge bg-transparent">4</span>
+                            </button>
+                            <button type="button" class="btn btn-warning btn-icon icon-left">
+                                <i class="fas fa-plane"></i> Notifications <span class="badge bg-transparent">4</span>
+                            </button>
+                            <button type="button" class="btn btn-success btn-icon icon-left">
+                                <i class="fas fa-plane"></i> Notifications <span class="badge bg-transparent">4</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Link</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="badges">
+                            <a href="#" class="badge bg-primary">Primary</a>
+                            <a href="#" class="badge bg-secondary">Secondary</a>
+                            <a href="#" class="badge bg-success">Success</a>
+                            <a href="#" class="badge bg-danger">Danger</a>
+                            <a href="#" class="badge bg-warning">Warning</a>
+                            <a href="#" class="badge bg-info">Info</a>
+                            <a href="#" class="badge bg-light">Light</a>
+                            <a href="#" class="badge bg-dark">Dark</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</div>
+
+        </div>
+    </div>
+    <script src="assets/js/feather-icons/feather.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+<script src="assets/vendors/chartjs/Chart.min.js"></script>
+<script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

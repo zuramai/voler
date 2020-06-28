@@ -1,6 +1,93 @@
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;
 
-500&display=swap);.color-primary {
+500&display=swap);/**
+ * Voler
+ *
+ * Voler is a clean & modern HTML5 admin template based on Bootstrap 5
+ * Voler will make it easier for you to create your own admin interface.
+ *
+ * @package	Voler
+ * @version	0.1
+ * @author 	Ahmad Saugi
+ * @url 	https://voler.id
+ * 
+ */
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Variable
+ * 2. Layout
+ *    2.1 Sidebar
+ *    2.2 Header
+ *    2.3 Content
+ *    2.4 Misc
+ * 3. Bootstrap Override
+ * 	  3.1 Card
+ * 	  3.2 Form
+ * 	  3.3 List
+ * 	  3.4 Alert
+ * 	  3.5 Progress
+ * 	  3.6 Table
+ * 	  3.7 Tooltip
+ * 	  3.8 Modal
+ * 	  3.9 Nav
+ * 	  3.10 Pagination
+ * 	  3.11 Badge
+ * 	  3.12 Button
+ * 	  3.13 Media
+ * 	  3.14 Breadcrumb
+ * 	  3.15 Accordion
+ * 	  3.16 Popover
+ * 	  3.17 Grid
+ * 	  3.18 Navbar
+ * 	  3.19 Dropdown
+ * 	  3.20 Tab
+ * 	  3.21 Progressbar
+ * 	  3.22 Jumbotron
+ * 	  3.23 Carousel
+ * 4. Theme Style
+ * 	  4.1 Misc
+ * 	  4.2 Section
+ * 	  4.3 Page
+ * 	  4.4 Layout
+ * 	  4.5 Animation
+ * 5. Utilities
+ * 6. Responsive
+ */
+
+/**
+ * VARIABLE - TABLE OF CONTENTS
+ * 
+ * 1. Theme Colors
+ * 2. Bootstrap Override
+ * 	  2.4 Alert
+ * 	  2.11 Badge
+ * 	  2.12 Button
+ * 	  2.14 Breadcrumb
+ * 	  2.1 Card
+ * 	  2.2 Form
+ * 	  2.3 List
+ * 	  2.5 Progress
+ * 	  2.6 Table
+ * 	  2.7 Tooltip
+ * 	  2.8 Modal
+ * 	  2.9 Nav
+ * 	  2.10 Pagination
+ * 	  2.13 Media
+ * 	  2.15 Accordion
+ * 	  2.16 Popover
+ * 	  2.17 Grid
+ * 	  2.18 Navbar
+ * 	  2.19 Dropdown
+ * 	  2.20 Tab
+ * 	  2.21 Progressbar
+ * 	  2.22 Jumbotron
+ * 	  2.23 Carousel
+ * 5. Utilities
+ * 6. Responsive
+ */
+.color-primary {
   color: #2c86f5;
 }
 
@@ -40,6 +127,10 @@
   font-family: "Raleway";
 }
 
+#app {
+  position: relative;
+}
+
 #main {
   margin-left: 260px;
   background-color: #F7FAFF;
@@ -65,6 +156,97 @@ a {
 
 button {
   outline: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #main {
+    margin-left: 0;
+  }
+}
+
+.alert {
+  font-size: 0.85rem;
+  border: none;
+}
+
+.alert .alert-heading {
+  font-size: 1.1rem;
+}
+
+.alert p {
+  margin-bottom: 0;
+}
+
+.alert button.close {
+  padding: 0.75rem;
+  line-height: 0.75;
+}
+
+.alert-primary {
+  background-color: #029eff;
+  color: #fff;
+  box-shadow: 1px 2px 9px rgba(2, 158, 255, 0.3);
+}
+
+.alert-secondary {
+  background-color: #ebeef3;
+  color: #383d41;
+  box-shadow: 1px 2px 9px rgba(235, 238, 243, 0.3);
+}
+
+.alert-success {
+  background-color: #4cb665;
+  color: #fff;
+  box-shadow: 1px 2px 9px rgba(76, 182, 101, 0.3);
+}
+
+.alert-warning {
+  background-color: #fdd347;
+  color: #352901;
+  box-shadow: 1px 2px 9px rgba(253, 211, 71, 0.3);
+}
+
+.alert-danger {
+  background-color: #f55260;
+  color: #fff;
+  box-shadow: 1px 2px 9px rgba(245, 82, 96, 0.3);
+}
+
+.alert-dark {
+  background-color: #454546;
+  color: #fff;
+  box-shadow: 1px 2px 9px rgba(69, 69, 70, 0.3);
+}
+
+.alert-light {
+  background-color: #fefefe;
+  color: #818182;
+  box-shadow: 1px 2px 9px rgba(254, 254, 254, 0.3);
+}
+
+.alert-info {
+  background-color: #56b6f7;
+  color: #fff;
+  box-shadow: 1px 2px 9px rgba(86, 182, 247, 0.3);
+}
+
+.btn .badge {
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.btn .badge.bg-transparent {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+  color: #fff;
+}
+
+.buttons .btn {
+  margin: 0 10px 10px 0;
+}
+
+.breadcrumb {
+  justify-content: flex-end;
+  margin-top: 1rem;
 }
 
 .sidebar-wrapper {
@@ -161,10 +343,17 @@ button {
   margin-left: 0.3rem;
 }
 
+@media screen and (max-width: 767px) {
+  .sidebar-wrapper {
+    left: -270px;
+  }
+}
+
 .card {
   border: 1px solid #eee;
   box-shadow: 1px 2px 10px #efefef;
   border-radius: 10px;
+  margin-bottom: 0.7rem;
 }
 
 .card.card-statistic {
@@ -209,6 +398,10 @@ button {
 
 .card .card-header:first-child {
   border-radius: 10px;
+}
+
+.card .card-header h4 {
+  font-size: 1rem;
 }
 
 .card .card-heading {

@@ -3,7 +3,9 @@ require('laravel-mix-nunjucks')
 
 mix.njk('src/', 'dist/', {
    watch: true,
-   // data: {},
+   data: {
+      web_title: "Voler Admin Dashboard"
+   },
    // marked: null,
    // envOptions: null,
    // manageEnv: (nunjucks) => {},

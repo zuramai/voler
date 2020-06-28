@@ -1,4 +1,34 @@
-
+/**
+ * VARIABLE - TABLE OF CONTENTS
+ * 
+ * 1. Theme Colors
+ * 2. Bootstrap Override
+ * 	  2.4 Alert
+ * 	  2.11 Badge
+ * 	  2.12 Button
+ * 	  2.14 Breadcrumb
+ * 	  2.1 Card
+ * 	  2.2 Form
+ * 	  2.3 List
+ * 	  2.5 Progress
+ * 	  2.6 Table
+ * 	  2.7 Tooltip
+ * 	  2.8 Modal
+ * 	  2.9 Nav
+ * 	  2.10 Pagination
+ * 	  2.13 Media
+ * 	  2.15 Accordion
+ * 	  2.16 Popover
+ * 	  2.17 Grid
+ * 	  2.18 Navbar
+ * 	  2.19 Dropdown
+ * 	  2.20 Tab
+ * 	  2.21 Progressbar
+ * 	  2.22 Jumbotron
+ * 	  2.23 Carousel
+ * 5. Utilities
+ * 6. Responsive
+ */
 $theme-colors: (
   'primary': #2c86f5,
   'secondary': #ced6e0,
@@ -10,6 +40,68 @@ $theme-colors: (
   'light': #edf2f7,
   'link': #2178d1
 );
+
+$spacer: 1rem;
+$border-radius:               .25rem !default;
+
+$alert-padding-y:                   0.75rem;
+$alert-padding-x:                   0.75rem;
+$alert-border-width:                none;
+$alert-font-size:                   .85rem;
+$alert-font-size-heading:           1.1rem;
+$alert-colors: (
+    primary: (
+        text-color: #fff,
+        background-color: #029eff
+    ),
+    secondary: (
+        text-color: #383d41,
+        background-color: #ebeef3
+    ),
+    success: (
+        text-color: #fff,
+        background-color: #4cb665
+    ),
+    warning: (
+        text-color: #352901,
+        background-color: #fdd347,
+    ),
+    danger: (
+        text-color: #fff,
+        background-color: #f55260,
+    ),
+    dark: (
+        text-color: #fff,
+        background-color: #454546,
+    ),
+    light: (
+        text-color: #818182,
+        background-color: #fefefe,
+    ),
+    info: (
+        text-color: #fff,
+        background-color: #56b6f7,
+    ),
+);
+
+$badge-font-size:                   .75rem;
+$badge-font-weight:                 500;
+$badge-color:                       #fff;
+$badge-padding-y:                   .4rem;
+$badge-padding-x:                   .55rem;
+$badge-border-radius:               1rem;
+
+$breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E");
+$breadcrumb-font-size:              null;
+$breadcrumb-padding-y:              0;
+$breadcrumb-padding-x:              $spacer;
+$breadcrumb-item-padding-x:         .5rem;
+$breadcrumb-margin-bottom:          0;
+$breadcrumb-margin-top:             1rem;
+$breadcrumb-bg:                     transparent;
+$breadcrumb-divider-color:          #ddd;
+$breadcrumb-active-color:           #555;
+
 
 @each $key, $value in $theme-colors {
     .color-#{$key} {

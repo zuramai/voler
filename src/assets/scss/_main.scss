@@ -3,6 +3,9 @@
 * {
     font-family: 'Raleway';
 }
+#app {
+    position: relative;
+}
 #main {
     margin-left: 260px;
     background-color: #F7FAFF;
@@ -24,4 +27,10 @@ a {
 }
 button {
     outline: 0;
+}
+
+@media screen and (max-width: 767px) {
+    #main {
+        margin-left: 0;   
+    }
 }

@@ -90,3 +90,8 @@
         }
     }
 }
+@media screen and (max-width: 767px) {
+    .sidebar-wrapper {
+        left: -270px;   
+    }
+}

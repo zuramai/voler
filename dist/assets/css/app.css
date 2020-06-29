@@ -88,27 +88,27 @@
  * 6. Responsive
  */
 .color-primary {
-  color: #2c86f5;
+  color: #5A8DEE;
 }
 
 .color-secondary {
-  color: #ced6e0;
+  color: #475F7B;
 }
 
 .color-success {
-  color: #10ac84;
+  color: #39DA8A;
 }
 
 .color-danger {
-  color: #e03f3f;
+  color: #FF5B5C;
 }
 
 .color-warning {
-  color: #ff9f43;
+  color: #FDB75A;
 }
 
 .color-info {
-  color: #0abde3;
+  color: #00CFDD;
 }
 
 .color-dark {
@@ -116,7 +116,7 @@
 }
 
 .color-light {
-  color: #edf2f7;
+  color: #A3AFBD;
 }
 
 .color-link {
@@ -135,6 +135,7 @@
   margin-left: 260px;
   background-color: #F7FAFF;
   min-height: 100vh;
+  transition: margin-left 0.6s ease-out;
 }
 
 #main .main-content {
@@ -240,6 +241,39 @@ button {
   color: #fff;
 }
 
+.btn[class*=btn-]:not([class*=btn-outline-]) {
+  color: #fff;
+}
+
+.btn.icon {
+  padding: 0.4rem 0.6rem;
+}
+
+.btn.icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.btn.icon.icon-left svg {
+  margin-right: 3px;
+}
+
+.btn.icon.icon-right svg {
+  margin-left: 3px;
+}
+
+.btn.round {
+  border-radius: 1.5rem;
+}
+
+.btn-group:not(.dropdown) .btn:not([class*=btn-]) {
+  border: 1px solid #DFE3E7;
+}
+
+.btn-group > .btn {
+  border-radius: 0.267rem;
+}
+
 .buttons .btn {
   margin: 0 10px 10px 0;
 }
@@ -249,15 +283,24 @@ button {
   margin-top: 1rem;
 }
 
+#sidebar.active .sidebar-wrapper {
+  left: 0;
+}
+
+#sidebar:not(.active) ~ #main {
+  margin-left: 0;
+}
+
 .sidebar-wrapper {
   width: 260px;
   height: 100vh;
   position: fixed;
-  left: 0;
   top: 0;
   bottom: 0;
   border-right: 1px solid #eee;
   box-shadow: 0 0 10px #ececec;
+  left: -260px;
+  transition: left 0.6s ease-out;
 }
 
 .sidebar-wrapper .sidebar-header {
@@ -275,10 +318,18 @@ button {
   margin-top: 2rem;
 }
 
+.sidebar-wrapper .menu .sidebar-title {
+  padding: 1.5rem 1.8rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+}
+
 .sidebar-wrapper .menu .sidebar-link {
   display: block;
   padding: 0.7rem 1.5rem;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   display: flex;
   align-items: center;
   transition: all 0.5s;
@@ -327,13 +378,20 @@ button {
 
 .sidebar-wrapper .menu .submenu {
   list-style: none;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+}
+
+.sidebar-wrapper .menu .submenu.active {
+  max-height: 500px;
 }
 
 .sidebar-wrapper .menu .submenu li a {
   padding: 0.7rem 3rem;
   display: block;
   color: #676767;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.5px;
   transition: all 0.2s;
@@ -350,10 +408,8 @@ button {
 }
 
 .card {
-  border: 1px solid #eee;
-  box-shadow: 1px 2px 10px #efefef;
-  border-radius: 10px;
-  margin-bottom: 0.7rem;
+  box-shadow: -8px 12px 18px 0 rgba(25, 42, 70, 0.13);
+  margin-bottom: 2.2rem;
 }
 
 .card.card-statistic {
@@ -391,8 +447,6 @@ button {
 }
 
 .card .card-header {
-  padding: 1rem;
-  background-color: #fff;
   border: none;
 }
 
@@ -401,7 +455,19 @@ button {
 }
 
 .card .card-header h4 {
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+.card .card-header ~ .card-body {
+  padding-top: 0;
+}
+
+.card .card-title {
+  font-size: 1.2rem;
+}
+
+.card .card-body {
+  padding: 1.4rem 1.7rem;
 }
 
 .card .card-heading {
@@ -568,5 +634,16 @@ button {
 
 .h-10 {
   height: 2.25rem;
+}
+
+#auth {
+  background: linear-gradient(to bottom, #25a6f1, #54b9ff);
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+#auth .card {
+  box-shadow: 0 5px 15px rgba(36, 104, 146, 0.6);
+  border: none;
 }
 

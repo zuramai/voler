@@ -1,0 +1,30 @@
+{% extends 'layouts/master-auth.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h1>VOLER</h1>
+                    <h3>Sign In</h3>
+                    <p>Please sign in to continue to Voler.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i data-feather="user"></i></span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i data-feather="lock"></i></span>
+                            <input type="password" class="form-control" placeholder="Password" aria-label="Password"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <button class="btn btn-primary float-right">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

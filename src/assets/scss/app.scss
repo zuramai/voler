@@ -53,6 +53,7 @@
  * 5. Utilities
  * 6. Responsive
  */
+ 
 @import "./variables";
 @import "./main";
 @import "./components/alert";
@@ -63,3 +64,4 @@
 @import "./components/card";
 @import "./components/navbar";
 @import "./utilities";
+@import "./pages/auth"

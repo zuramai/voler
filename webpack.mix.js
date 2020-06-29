@@ -1,14 +1,22 @@
 const mix = require('laravel-mix');
+const sidebarItems = require('./sidebar-items.json');
+
 require('laravel-mix-nunjucks')
 
 mix.njk('src/', 'dist/', {
    watch: true,
    data: {
-      web_title: "Voler Admin Dashboard"
+      web_title: "Voler Admin Dashboard",
+      sidebarItems
    },
    // marked: null,
    // envOptions: null,
-   // manageEnv: (nunjucks) => {},
+   manageEnv: (nunjucks) => {
+      nunjucks.addFilter('containString', function(str, containStr) {
+         if(str == undefined) return false;
+         return str.indexOf(containStr) >= 0
+      })
+   },
 })
 mix
    .js("src/assets/js/app.js", "dist/assets/js")

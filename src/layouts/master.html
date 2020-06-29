@@ -6,17 +6,18 @@
     <title>{{ title }} - {{ web_title }}</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     {% block styles %}{% endblock %}
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
     <div id="app">
-        <div id="sidebar">
+        <div id="sidebar" class='active'>
             {% include "layouts/sidebar.html" %}
         </div>
         <div id="main">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -51,6 +52,7 @@
         </div>
     </div>
     <script src="assets/js/feather-icons/feather.min.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="assets/js/app.js"></script>
     {% block js %}{% endblock %}
     <script src="assets/js/main.js"></script>

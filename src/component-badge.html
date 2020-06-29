@@ -1,6 +1,8 @@
+{% set title = 'Badge' %}
+{% set filename = 'component-badge.html' %}
+
 {% extends 'layouts/master.html' %}
 
-{% set title = 'Badge' %}
 {% block content %}
 <div class="main-content container-fluid">
     <div class="page-title">
@@ -113,11 +115,4 @@
             </div>
     </section>
 </div>
-{% endblock %}
-{% block styles %}
-<link rel="stylesheet" href="assets/vendors/chartjs/Chart.min.css">
-{% endblock %}
-{% block js %}
-<script src="assets/vendors/chartjs/Chart.min.js"></script>
-<script src="assets/js/pages/dashboard.js"></script>
 {% endblock %}

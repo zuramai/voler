@@ -30,19 +30,38 @@
  * 6. Responsive
  */
 $theme-colors: (
-  'primary': #2c86f5,
-  'secondary': #ced6e0,
-  'success': #10ac84,
-  'danger': #e03f3f,
-  'warning': #ff9f43,
-  'info': #0abde3,
+  'primary': #5A8DEE,
+  'secondary': #475F7B,
+  'success': #39DA8A,
+  'danger': #FF5B5C,
+  'warning': #FDB75A,
+  'info': #00CFDD,
   'dark': #222f3e,
-  'light': #edf2f7,
+  'light': #A3AFBD,
   'link': #2178d1
 );
 
+$body-color:                #727E8C;
+
 $spacer: 1rem;
-$border-radius:               .25rem !default;
+$border-radius:               .25rem;
+
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.25;
+
+$line-height-base:            1.5;
+$line-height-sm:              1.25;
+$line-height-lg:              2;
+
+
+$headings-margin-bottom:      $spacer / 2;
+$headings-font-family:        null !default;
+$headings-font-style:         null !default;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              #475F7B !default;
+
 
 $alert-padding-y:                   0.75rem;
 $alert-padding-x:                   0.75rem;
@@ -102,6 +121,45 @@ $breadcrumb-bg:                     transparent;
 $breadcrumb-divider-color:          #ddd;
 $breadcrumb-active-color:           #555;
 
+$input-btn-padding-y:         .467rem;
+$input-btn-padding-x:         1.5rem;
+$input-btn-font-family:       null;
+$input-btn-font-size:         $font-size-base * .95;
+$input-btn-line-height:       $line-height-base;
+
+
+$input-btn-focus-width:         .2rem;
+$input-btn-focus-color-opacity: .25;
+// $input-btn-focus-color:         rgba($component-active-bg, $input-btn-focus-color-opacity);
+// $input-btn-focus-box-shadow:    0 0 0 $input-btn-focus-width $input-btn-focus-color;
+
+$input-btn-padding-y-sm:      .467rem;
+$input-btn-padding-x-sm:      1.2rem;
+$input-btn-font-size-sm:      .8rem;
+
+$input-btn-padding-y-lg:      .6rem;
+$input-btn-padding-x-lg:      1.8rem;
+$input-btn-font-size-lg:      $font-size-lg;
+
+$btn-border-radius:             .267rem;
+$btn-border-radius-sm:          .267rem;
+$btn-border-radius-lg:          .267rem;
+$btn-color:                    #fff;
+
+
+
+$card-border-width:                 0;
+$card-border-radius:                .267rem;
+$card-border-color:                 #DFE3E7;
+$card-box-shadow:                   -8px 12px 18px 0 rgba(25,42,70,.13);
+$card-cap-padding-y:                1.4rem;
+$card-cap-padding-x:                1.7rem;
+$card-cap-bg:                       #fff;
+
+$card-title-font-size:              1.2rem;
+
+
+// $input-btn-border-width:      $border-width;
 
 @each $key, $value in $theme-colors {
     .color-#{$key} {

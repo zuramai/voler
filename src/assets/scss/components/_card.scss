@@ -1,8 +1,6 @@
 .card {
-    border:1px solid #eee;
-    box-shadow: 1px 2px 10px #efefef;
-    border-radius: 10px;
-    margin-bottom: .7rem;
+    box-shadow: $card-box-shadow;
+    margin-bottom: 2.2rem;
     &.card-statistic {
         box-shadow: 1px 2px 5px  rgba(#2FAAF4, .5);
         background: linear-gradient(to bottom, #25a6f1, #54b9ff);
@@ -34,15 +32,22 @@
         }
     }
     .card-header {
-        padding: 1rem;
-        background-color: #fff;
         border: none;
         &:first-child {
             border-radius: 10px;
         }
         h4 {
-            font-size: 1rem;
+            font-size: $card-title-font-size;
         }
+        & ~ .card-body {
+            padding-top: 0;
+        }
+    }
+    .card-title {
+        font-size: 1.2rem;
+    }
+    .card-body {
+        padding: $card-cap-padding-y $card-cap-padding-x;
     }
     .card-heading {
         color: #555;

@@ -10,6 +10,7 @@
     margin-left: 260px;
     background-color: #F7FAFF;
     min-height: 100vh;
+    transition: margin-left .6s ease-out;
     .main-content {
         padding: 2rem 1.5rem;
 

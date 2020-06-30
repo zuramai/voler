@@ -56,11 +56,11 @@ $line-height-lg:              2;
 
 
 $headings-margin-bottom:      $spacer / 2;
-$headings-font-family:        null !default;
-$headings-font-style:         null !default;
-$headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
-$headings-color:              #475F7B !default;
+$headings-font-family:        null;
+$headings-font-style:         null;
+$headings-font-weight:        500;
+$headings-line-height:        1.2;
+$headings-color:              #475F7B;
 
 
 $alert-padding-y:                   0.75rem;
@@ -159,7 +159,56 @@ $card-cap-bg:                       #fff;
 $card-title-font-size:              1.2rem;
 
 
-// $input-btn-border-width:      $border-width;
+$input-padding-y:                       $input-btn-padding-y;
+$input-padding-x:                       .6rem;
+$input-font-family:                     $input-btn-font-family;
+$input-font-size:                       $input-btn-font-size;
+$input-font-weight:                     400;
+$input-line-height:                     $input-btn-line-height;
+
+$input-padding-y-sm:                    $input-btn-padding-y-sm;
+$input-padding-x-sm:                    $input-padding-x + .2rem;
+$input-font-size-sm:                    $input-btn-font-size-sm;
+
+$input-padding-y-lg:                    $input-btn-padding-y-lg;
+$input-padding-x-lg:                    $input-padding-x;
+$input-font-size-lg:                    $input-btn-font-size-lg;
+
+$input-bg:                              white;
+$input-disabled-bg:                     #F2F4F4;
+$input-disabled-border-color:           null;
+
+$input-color:                           rgb(85, 82, 82);
+$input-border-color:                    #DFE3E7;
+$input-border-width:                    1px;
+$input-box-shadow:                      0;
+
+$input-border-radius:                   $border-radius;
+$input-border-radius-sm:                $border-radius;
+$input-border-radius-lg:                $border-radius;
+
+$input-focus-bg:                        $input-bg;
+$input-focus-border-color:              map-get($theme-colors,'primary');
+$input-focus-color:                     $input-color;
+$input-focus-box-shadow:                0 3px 8px 0 rgba(0,0,0,.1);
+
+$input-placeholder-color:               rgb(196, 192, 201);
+$input-plaintext-color:                 rgb(162, 162, 173);
+
+$input-height-border:                   $input-border-width * 2;
+
+
+$input-group-addon-color:               #475F7B !default;
+$input-group-addon-bg:                  #F0F4F7 !default;
+$input-group-addon-border-color:        #DFE3E7 !default;
+
+$form-check-input-border:                 1px solid rgba(0, 0, 0, .25);
+$form-check-input-border-radius:          .25em;
+$form-check-radio-border-radius:          50%;
+$form-check-input-focus-border:           $input-focus-border-color;
+
+$form-check-label-color:                  rgb(0, 0, 0);
+$form-check-label-cursor:                 null;
 
 @each $key, $value in $theme-colors {
     .color-#{$key} {

@@ -281,10 +281,6 @@ button {
   margin-left: 3px;
 }
 
-.btn.round {
-  border-radius: 1.5rem;
-}
-
 .btn.btn-outline-white {
   color: #fff;
   border-color: #fff;
@@ -310,6 +306,62 @@ button {
 .breadcrumb {
   justify-content: flex-end;
   margin-top: 1rem;
+}
+
+.form-group {
+  margin-bottom: 0.7rem;
+}
+
+.form-group label {
+  font-size: 0.755rem;
+  text-transform: uppercase;
+  color: rgba(35, 28, 99, 0.7);
+  font-weight: 500;
+}
+
+.form-group small {
+  font-size: 0.7rem;
+}
+
+.form-group[class*=has-icon-].has-icon-left .form-control {
+  padding-left: 2.5rem;
+}
+
+.form-group[class*=has-icon-].has-icon-left .form-control-icon {
+  left: 0;
+}
+
+.form-group[class*=has-icon-].has-icon-right .form-control {
+  padding-right: 2.5rem;
+}
+
+.form-group[class*=has-icon-].has-icon-right .form-control-icon {
+  right: 0;
+}
+
+.form-group[class*=has-icon-] .form-control:focus ~ .form-control-icon i,
+.form-group[class*=has-icon-] .form-control:focus ~ .form-control-icon svg {
+  color: #5A8DEE;
+}
+
+.form-group[class*=has-icon-] .form-control-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 0.6rem;
+}
+
+.form-group[class*=has-icon-] .form-control-icon i,
+.form-group[class*=has-icon-] .form-control-icon svg {
+  width: 1.2rem;
+}
+
+.form-check .form-check-input[class*=bg-] {
+  border: 0;
+}
+
+.form-check .form-check-input:focus {
+  box-shadow: none;
 }
 
 #sidebar.active .sidebar-wrapper {
@@ -562,6 +614,74 @@ button {
   font-weight: 600;
 }
 
+.w-0 {
+  width: 0;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-10 {
+  width: 2.25rem;
+}
+
+.h-0 {
+  height: 0;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-10 {
+  height: 2.25rem;
+}
+
+.round {
+  border-radius: 1.5rem;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.square {
+  border-radius: 0;
+}
+
 .text-red {
   color: #ff6384;
 }
@@ -632,66 +752,6 @@ button {
 
 .bg-gray-700 {
   background-color: #4a5568 !important;
-}
-
-.rounded-full {
-  border-radius: 50%;
-}
-
-.w-0 {
-  width: 0;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-10 {
-  width: 2.25rem;
-}
-
-.h-0 {
-  height: 0;
-}
-
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-2 {
-  height: 0.5rem;
-}
-
-.h-3 {
-  height: 0.75rem;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-10 {
-  height: 2.25rem;
 }
 
 #auth {

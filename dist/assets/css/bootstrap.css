@@ -2292,14 +2292,14 @@ progress {
   display: block;
   width: 100%;
   min-height: calc(1.5em + 0.934rem + 2px);
-  padding: 0.467rem 1.5rem;
+  padding: 0.467rem 0.6rem;
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
+  color: #555252;
+  background-color: white;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #DFE3E7;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2314,36 +2314,36 @@ progress {
 }
 
 .form-control:focus {
-  color: #495057;
-  background-color: #fff;
-  border-color: #8bbafe;
+  color: #555252;
+  background-color: white;
+  border-color: #5A8DEE;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: #c4c0c9;
   opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-  color: #6c757d;
+  color: #c4c0c9;
   opacity: 1;
 }
 
 .form-control::-ms-input-placeholder {
-  color: #6c757d;
+  color: #c4c0c9;
   opacity: 1;
 }
 
 .form-control::placeholder {
-  color: #6c757d;
+  color: #c4c0c9;
   opacity: 1;
 }
 
 .form-control:disabled,
 .form-control[readonly] {
-  background-color: #e9ecef;
+  background-color: #F2F4F4;
   opacity: 1;
 }
 
@@ -2353,7 +2353,7 @@ progress {
   padding: 0.467rem 0;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #727E8C;
+  color: #a2a2ad;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -2367,16 +2367,16 @@ progress {
 
 .form-control-sm {
   min-height: calc(1.5em + 0.934rem + 2px);
-  padding: 0.467rem 1.2rem;
+  padding: 0.467rem 0.8rem;
   font-size: 0.8rem;
-  border-radius: 0.2rem;
+  border-radius: 0.25rem;
 }
 
 .form-control-lg {
   min-height: calc(1.5em + 1.2rem + 2px);
-  padding: 0.6rem 1.8rem;
+  padding: 0.6rem 0.6rem;
   font-size: 1.25rem;
-  border-radius: 0.3rem;
+  border-radius: 0.25rem;
 }
 
 .form-control-color {
@@ -2396,18 +2396,18 @@ progress {
   display: block;
   width: 100%;
   height: calc(1.5em + 0.934rem + 2px);
-  padding: 0.467rem 2.5rem 0.467rem 1.5rem;
+  padding: 0.467rem 1.6rem 0.467rem 0.6rem;
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: #555252;
   vertical-align: middle;
-  background-color: #fff;
+  background-color: white;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right 1.5rem center;
+  background-position: right 0.6rem center;
   background-size: 16px 12px;
-  border: 1px solid #ced4da;
+  border: 1px solid #DFE3E7;
   border-radius: 0.25rem;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -2415,20 +2415,20 @@ progress {
 }
 
 .form-select:focus {
-  border-color: #8bbafe;
+  border-color: #5A8DEE;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
 }
 
 .form-select:focus::-ms-value {
-  color: #495057;
-  background-color: #fff;
+  color: #555252;
+  background-color: white;
 }
 
 .form-select[multiple],
 .form-select[size]:not([size="1"]) {
   height: auto;
-  padding-right: 1.5rem;
+  padding-right: 0.6rem;
   background-image: none;
 }
 
@@ -2439,14 +2439,14 @@ progress {
 
 .form-select:-moz-focusring {
   color: transparent;
-  text-shadow: 0 0 0 #495057;
+  text-shadow: 0 0 0 #555252;
 }
 
 .form-select-sm {
   height: calc(1.5em + 0.934rem + 2px);
   padding-top: 0.467rem;
   padding-bottom: 0.467rem;
-  padding-left: 1.2rem;
+  padding-left: 0.8rem;
   font-size: 0.8rem;
 }
 
@@ -2454,7 +2454,7 @@ progress {
   height: calc(1.5em + 1.2rem + 2px);
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
-  padding-left: 1.8rem;
+  padding-left: 0.6rem;
   font-size: 1.25rem;
 }
 
@@ -2508,7 +2508,7 @@ progress {
 }
 
 .form-check-input:focus {
-  border-color: #8bbafe;
+  border-color: #5A8DEE;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
 }
@@ -2544,6 +2544,10 @@ progress {
   opacity: 0.5;
 }
 
+.form-check-label {
+  color: black;
+}
+
 .form-switch {
   padding-left: 2.5em;
 }
@@ -2557,7 +2561,7 @@ progress {
 }
 
 .form-switch .form-check-input:focus {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%238bbafe'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%235A8DEE'/%3e%3c/svg%3e");
 }
 
 .form-switch .form-check-input:checked {
@@ -2591,13 +2595,13 @@ progress {
 }
 
 .form-file-input:focus-within ~ .form-file-label {
-  border-color: #8bbafe;
-  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  border-color: #5A8DEE;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 .form-file-input[disabled] ~ .form-file-label .form-file-text,
 .form-file-input:disabled ~ .form-file-label .form-file-text {
-  background-color: #e9ecef;
+  background-color: #F2F4F4;
 }
 
 .form-file-label {
@@ -2608,21 +2612,21 @@ progress {
   z-index: 1;
   display: flex;
   height: var(--bs-form-file-height);
-  border-color: #ced4da;
+  border-color: #DFE3E7;
   border-radius: 0.25rem;
 }
 
 .form-file-text {
   display: block;
   flex-grow: 1;
-  padding: 0.467rem 1.5rem;
+  padding: 0.467rem 0.6rem;
   overflow: hidden;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: #555252;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background-color: #fff;
+  background-color: white;
   border-color: inherit;
   border-style: solid;
   border-width: 1px;
@@ -2633,11 +2637,11 @@ progress {
 .form-file-button {
   display: block;
   flex-shrink: 0;
-  padding: 0.467rem 1.5rem;
+  padding: 0.467rem 0.6rem;
   margin-left: -1px;
   line-height: 1.5;
-  color: #495057;
-  background-color: #e9ecef;
+  color: #555252;
+  background-color: #F0F4F7;
   border-color: inherit;
   border-style: solid;
   border-width: 1px;
@@ -2652,7 +2656,7 @@ progress {
 
 .form-file-sm .form-file-text,
 .form-file-sm .form-file-button {
-  padding: 0.467rem 1.2rem;
+  padding: 0.467rem 0.8rem;
 }
 
 .form-file-lg {
@@ -2662,7 +2666,7 @@ progress {
 
 .form-file-lg .form-file-text,
 .form-file-lg .form-file-button {
-  padding: 0.6rem 1.8rem;
+  padding: 0.6rem 0.6rem;
 }
 
 .form-range {
@@ -2680,15 +2684,15 @@ progress {
 }
 
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 3px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 3px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 .form-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 3px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 .form-range::-moz-focus-outer {
@@ -2873,15 +2877,15 @@ progress {
 .input-group-text {
   display: flex;
   align-items: center;
-  padding: 0.467rem 1.5rem;
+  padding: 0.467rem 0.6rem;
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: #475F7B;
   text-align: center;
   white-space: nowrap;
-  background-color: #e9ecef;
-  border: 1px solid #ced4da;
+  background-color: #F0F4F7;
+  border: 1px solid #DFE3E7;
   border-radius: 0.25rem;
 }
 
@@ -2897,9 +2901,9 @@ progress {
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
-  padding: 0.6rem 1.8rem;
+  padding: 0.6rem 0.6rem;
   font-size: 1.25rem;
-  border-radius: 0.3rem;
+  border-radius: 0.25rem;
 }
 
 .input-group-sm > .form-control {
@@ -2914,14 +2918,14 @@ progress {
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn {
-  padding: 0.467rem 1.2rem;
+  padding: 0.467rem 0.8rem;
   font-size: 0.8rem;
-  border-radius: 0.2rem;
+  border-radius: 0.25rem;
 }
 
 .input-group-lg > .form-select,
 .input-group-sm > .form-select {
-  padding-right: 2.5rem;
+  padding-right: 1.6rem;
 }
 
 .input-group > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
@@ -2990,9 +2994,9 @@ textarea.form-control.is-valid {
 .was-validated .form-select:valid,
 .form-select.is-valid {
   border-color: #28a745;
-  padding-right: calc(0.75em + 3.2005rem);
+  padding-right: calc(0.75em + 2.3005rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
-  background-position: right 1.5rem center, center right 2.5rem;
+  background-position: right 0.6rem center, center right 1.6rem;
   background-size: 16px 12px, calc(0.75em + 0.467rem) calc(0.75em + 0.467rem);
 }
 
@@ -3091,9 +3095,9 @@ textarea.form-control.is-invalid {
 .was-validated .form-select:invalid,
 .form-select.is-invalid {
   border-color: #dc3545;
-  padding-right: calc(0.75em + 3.2005rem);
+  padding-right: calc(0.75em + 2.3005rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
-  background-position: right 1.5rem center, center right 2.5rem;
+  background-position: right 0.6rem center, center right 1.6rem;
   background-size: 16px 12px, calc(0.75em + 0.467rem) calc(0.75em + 0.467rem);
 }
 

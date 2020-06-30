@@ -1,0 +1,59 @@
+.form-group {
+    margin-bottom: .7rem;
+    label {
+        font-size: .755rem;
+        text-transform: uppercase;
+        color: rgb(35, 28, 99, .7);
+        font-weight: 500;
+    }
+    small {
+        font-size: .7rem;
+    }
+
+    &[class*="has-icon-"] {
+        &.has-icon-left {
+            .form-control {
+                padding-left: 2.5rem;
+            }
+            .form-control-icon {
+                left: 0;
+            }
+        }
+        &.has-icon-right {
+            .form-control {
+                padding-right: 2.5rem;
+            }
+            .form-control-icon {
+                right: 0;
+            }
+        }
+        .form-control {            
+            &:focus ~ .form-control-icon {
+                i, svg {
+                    color: #5A8DEE
+                }
+            }
+        }
+        .form-control-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 .6rem;
+            i, svg {
+                width: 1.2rem
+            }
+        }
+
+    }
+}
+
+.form-check {
+    .form-check-input {
+        &[class*="bg-"] {
+            border: 0;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}

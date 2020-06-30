@@ -13,12 +13,15 @@ for(var i = 0; i < sidebarItems.length; i++) {
 }
 
 // Navbar Toggler
-let sidebarToggler = document.querySelector(".sidebar-toggler");
-sidebarToggler.addEventListener('click', () => {
-    let sidebar = document.getElementById('sidebar');
-    if(sidebar.classList.contains('active')) sidebar.classList.remove('active');
-    else sidebar.classList.add('active');
-});
+let sidebarToggler = document.querySelectorAll(".sidebar-toggler");
+for (var i = 0; i < sidebarToggler.length; i++) {
+    let toggler = sidebarToggler[i];
+    toggler.addEventListener('click', () => {
+        let sidebar = document.getElementById('sidebar');
+        if(sidebar.classList.contains('active')) sidebar.classList.remove('active');
+        else sidebar.classList.add('active');
+    });
+}
 
 // Perfect Scrollbar INit
 if(typeof PerfectScrollbar == 'function') {

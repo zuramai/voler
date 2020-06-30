@@ -9,8 +9,12 @@ mix.njk('src/', 'dist/', {
       web_title: "Voler Admin Dashboard",
       sidebarItems
    },
+   block: 'content',
    // marked: null,
-   // envOptions: null,
+   envOptions: {
+      watch: true,
+      noCache: true
+   },
    manageEnv: (nunjucks) => {
       nunjucks.addFilter('containString', function(str, containStr) {
          if(str == undefined) return false;

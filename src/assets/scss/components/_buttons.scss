@@ -23,6 +23,14 @@
     &.round {
         border-radius: 1.5rem;
     }
+    &.btn-outline-white {
+        color: #fff;
+        border-color: #fff;
+        &:hover {
+            color: #333;
+            background-color: #fff;
+        }
+    }
 }
 .btn-group {
     &:not(.dropdown) .btn:not([class*="btn-"]) {
@@ -38,12 +46,5 @@
 .buttons {
     .btn {
         margin: 0 10px 10px 0;
-    }
-}
-
-@each $key, $value in $theme-colors {
-    .btn {
-        &.btn-#{$key} {
-        }
     }
 }

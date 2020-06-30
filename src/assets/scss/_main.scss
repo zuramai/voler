@@ -22,6 +22,23 @@
         }
     }
 }
+.breadcrumb-header {
+    .breadcrumb {
+        justify-content: flex-end;
+    }
+}
+section {
+    .section-title {
+        &:after {
+            width: 70px;
+            height: 2px;
+            content: '';
+            margin: .6rem 0 1rem;
+            background-color: map-get($theme-colors, 'primary');
+            display:block;
+        }
+    }
+}
 a {
     text-decoration: none;
     outline: 0;
@@ -33,5 +50,12 @@ button {
 @media screen and (max-width: 767px) {
     #main {
         margin-left: 0;   
+    }
+    .breadcrumb-header {
+        .breadcrumb {
+            justify-content: flex-start;
+            padding: 0;
+            font-size: .8rem;
+        }
     }
 }

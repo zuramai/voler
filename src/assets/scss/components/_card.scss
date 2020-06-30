@@ -43,6 +43,9 @@
             padding-top: 0;
         }
     }
+    .card-content {
+        position: relative;
+    }
     .card-title {
         font-size: 1.2rem;
     }
@@ -53,4 +56,17 @@
         color: #555;
         font-size: 1.5rem;
     }
+    .card-img-overlay {
+        background-color: rgba(0,0,0,.6);
+
+        p {
+            color: #eee;
+        }
+
+        .card-title {
+            color: #fff;
+        }
+    }
+    
+
 }

@@ -110,11 +110,16 @@ for (var i = 0; i < sidebarItems.length; i++) {
 } // Navbar Toggler
 
 
-var sidebarToggler = document.querySelector(".sidebar-toggler");
-sidebarToggler.addEventListener('click', function () {
-  var sidebar = document.getElementById('sidebar');
-  if (sidebar.classList.contains('active')) sidebar.classList.remove('active');else sidebar.classList.add('active');
-}); // Perfect Scrollbar INit
+var sidebarToggler = document.querySelectorAll(".sidebar-toggler");
+
+for (var i = 0; i < sidebarToggler.length; i++) {
+  var toggler = sidebarToggler[i];
+  toggler.addEventListener('click', function () {
+    var sidebar = document.getElementById('sidebar');
+    if (sidebar.classList.contains('active')) sidebar.classList.remove('active');else sidebar.classList.add('active');
+  });
+} // Perfect Scrollbar INit
+
 
 if (typeof PerfectScrollbar == 'function') {
   var container = document.querySelector(".sidebar-wrapper");

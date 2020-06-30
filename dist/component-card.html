@@ -11,8 +11,8 @@
 </head>
 <body>
     <div id="app">
-        <div id="sidebar">
-            <div class="sidebar-wrapper">
+        <div id="sidebar" class='active'>
+            <div class="sidebar-wrapper active">
     <div class="sidebar-header">
         <!-- <img src="assets/images/logo.png" alt="" srcset=""> -->
         VOLER
@@ -120,7 +120,7 @@
                         </li>
                         
                         <li>
-                            <a href="component-badge.html">Divider</a>
+                            <a href="component-extra-divider.html">Divider</a>
                         </li>
                         
                     </ul>
@@ -346,12 +346,13 @@
          
         </ul>
     </div>
+    <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
 </div>
         </div>
         <div id="main">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -391,10 +392,10 @@
                 <p class="text-subtitle text-muted">A pretty helpful component for give message to user</p>
             </div>
             <div class="col-12 col-md-6">
-                <nav aria-label="breadcrumb" class=' text-right'>
+                <nav aria-label="breadcrumb" class='breadcrumb-header text-right'>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Buttons</li>
+                        <li class="breadcrumb-item active" aria-current="page">Card</li>
                     </ol>
                 </nav>
             </div>
@@ -414,18 +415,85 @@
                                 sugar plum sugar plum jelly-o jujubes bonbon dessert carrot cake.
                             </p>
                         </div>
-                        <img class="img-fluid" src="../../../app-assets/images/slider/11.png" alt="Card image cap">
+                        <img class="img-fluid" src="assets/images/samples/road-over-dutch-dike-PLN5XJR.jpg" alt="Card image cap">
                     </div>
                     <div class="card-footer d-flex justify-content-between">
                         <span>Card Footer</span>
                         <button class="btn btn-light-primary">Read More</button>
                     </div>
                 </div>
+                <div class="card collapse-icon accordion-icon-rotate">
+                    <div class="card-header">
+                        <h1 class="card-title pl-1">Accordion</h1>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="accordion" id="cardAccordion">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="false" aria-controls="collapseOne" role="button">
+                                        <span class="collapsed collapse-title">Accordion Item 1</span>
+                                    </div>
+                                    <div id="collapseOne" class="collapse pt-1" aria-labelledby="headingOne"
+                                        data-parent="#cardAccordion">
+                                        <div class="card-body">
+                                            Cheesecake muffin cupcake dragée lemon drops tiramisu cake gummies chocolate
+                                            cake. Marshmallow tart
+                                            croissant. Tart dessert tiramisu marzipan lollipop lemon drops.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card collapse-header">
+                                    <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo" role="button">
+                                        <span class="collapsed collapse-title">Accordion Item 2</span>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse pt-1" aria-labelledby="headingTwo"
+                                        data-parent="#cardAccordion">
+                                        <div class="card-body">
+                                            Pastry pudding cookie toffee bonbon jujubes jujubes powder topping. Jelly beans
+                                            gummi bears sweet
+                                            roll bonbon muffin liquorice. Wafer lollipop sesame snaps.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card open">
+                                    <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="true" aria-controls="collapseThree" role="button">
+                                        <span class="collapsed collapse-title">Accordion Item 3</span>
+                                    </div>
+                                    <div id="collapseThree" class="collapse show pt-1" aria-labelledby="headingThree"
+                                        data-parent="#cardAccordion">
+                                        <div class="card-body">
+                                            Sweet pie candy jelly. Sesame snaps biscuit sugar plum. Sweet roll topping
+                                            fruitcake. Caramels
+                                            liquorice biscuit ice cream fruitcake cotton candy tart.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour" role="button">
+                                        <span class="collapsed  collapse-title">Accordion Item 4</span>
+                                    </div>
+                                    <div id="collapseFour" class="collapse pt-1" aria-labelledby="headingFour"
+                                        data-parent="#cardAccordion">
+                                        <div class="card-body">
+                                            Sweet pie candy jelly. Sesame snaps biscuit sugar plum. Sweet roll topping
+                                            fruitcake. Caramels
+                                            liquorice biscuit ice cream fruitcake cotton candy tart.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-xl-4 col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-content">
-                        <img src="../../../app-assets/images/slider/10.png" class="card-img-top img-fluid"
+                        <img src="assets/images/samples/inspirational-aerial-landscape-autumn-forest-and-FU2LKHA.jpg" class="card-img-top img-fluid"
                             alt="singleminded">
                         <div class="card-body">
                             <h5 class="card-title">Be Single Minded</h5>
@@ -440,6 +508,26 @@
                         <li class="list-group-item">Dapibus ac facilisis in</li>
                         <li class="list-group-item">Vestibulum at eros</li>
                     </ul>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <h4 class="card-title mb-0">Video Card</h4>
+                        </div>
+                        <div class="embed-responsive embed-responsive-item embed-responsive-16by9">
+                            <iframe src="https://www.youtube.com/embed/1La4QzGeaaQ" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Candy cupcake sugar plum oat cake wafer marzipan jujubes.
+                                Jelly-o sesame snaps cheesecake topping. Cupcake fruitcake macaroon donut pastry gummies
+                                tiramisu
+                                chocolate bar muffin.
+                            </p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 col-sm-12">
@@ -457,15 +545,15 @@
                             </ol>
                             <div class="carousel-inner rounded-0" role="listbox">
                                 <div class="carousel-item active">
-                                    <img src="../../../app-assets/images/slider/01.jpg" class="d-block w-100"
+                                    <img src="assets/images/samples/white-pelicans-pelecanus-onocrotalus-P4TFZ6E.jpg" class="d-block w-100"
                                         alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../../../app-assets/images/slider/02.jpg" class="d-block w-100"
+                                    <img src="assets/images/samples/lovatnet-lake-beautiful-nature-norway-PUTLQJ4.jpg" class="d-block w-100"
                                         alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../../../app-assets/images/slider/03.jpg" class="d-block w-100"
+                                    <img src="assets/images/samples/moody-autumn-day-in-the-dolomites-forest-and-MBFNHV2.jpg" class="d-block w-100"
                                         alt="Third slide">
                                 </div>
                             </div>
@@ -495,103 +583,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <div class="card collapse-icon accordion-icon-rotate">
-                    <div class="card-header">
-                        <h1 class="card-title pl-1">Accordion</h1>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-body">
-                            <div class="accordion" id="cardAccordion">
-                                <div class="card">
-                                    <div class="card-header" id="headingOne" data-toggle="collapse"
-                                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
-                                        role="button">
-                                        <span class="collapsed collapse-title">Accordion Item 1</span>
-                                    </div>
-                                    <div id="collapseOne" class="collapse pt-1" aria-labelledby="headingOne"
-                                        data-parent="#cardAccordion">
-                                        <div class="card-body">
-                                            Cheesecake muffin cupcake dragée lemon drops tiramisu cake gummies chocolate
-                                            cake. Marshmallow tart
-                                            croissant. Tart dessert tiramisu marzipan lollipop lemon drops.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card collapse-header">
-                                    <div class="card-header" id="headingTwo" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
-                                        role="button">
-                                        <span class="collapsed collapse-title">Accordion Item 2</span>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse pt-1" aria-labelledby="headingTwo"
-                                        data-parent="#cardAccordion">
-                                        <div class="card-body">
-                                            Pastry pudding cookie toffee bonbon jujubes jujubes powder topping. Jelly beans
-                                            gummi bears sweet
-                                            roll bonbon muffin liquorice. Wafer lollipop sesame snaps.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card open">
-                                    <div class="card-header" id="headingThree" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"
-                                        role="button">
-                                        <span class="collapsed collapse-title">Accordion Item 3</span>
-                                    </div>
-                                    <div id="collapseThree" class="collapse show pt-1" aria-labelledby="headingThree"
-                                        data-parent="#cardAccordion">
-                                        <div class="card-body">
-                                            Sweet pie candy jelly. Sesame snaps biscuit sugar plum. Sweet roll topping
-                                            fruitcake. Caramels
-                                            liquorice biscuit ice cream fruitcake cotton candy tart.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingFour" data-toggle="collapse"
-                                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
-                                        role="button">
-                                        <span class="collapsed  collapse-title">Accordion Item 4</span>
-                                    </div>
-                                    <div id="collapseFour" class="collapse pt-1" aria-labelledby="headingFour"
-                                        data-parent="#cardAccordion">
-                                        <div class="card-body">
-                                            Sweet pie candy jelly. Sesame snaps biscuit sugar plum. Sweet roll topping
-                                            fruitcake. Caramels
-                                            liquorice biscuit ice cream fruitcake cotton candy tart.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-body">
-                            <h4 class="card-title mb-0">Video Card</h4>
-                        </div>
-                        <div class="embed-responsive embed-responsive-item embed-responsive-16by9">
-                            <iframe src="https://www.youtube.com/embed/1La4QzGeaaQ" allowfullscreen></iframe>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                Candy cupcake sugar plum oat cake wafer marzipan jujubes.
-                                Jelly-o sesame snaps cheesecake topping. Cupcake fruitcake macaroon donut pastry gummies
-                                tiramisu
-                                chocolate bar muffin.
-                            </p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-content">
                         <div class="card-body">
@@ -605,18 +596,15 @@
                                 <div class="form-body">
                                     <div class="form-group">
                                         <label for="feedback1" class="sr-only">Name</label>
-                                        <input type="text" id="feedback1" class="form-control" placeholder="Name"
-                                            name="name">
+                                        <input type="text" id="feedback1" class="form-control" placeholder="Name" name="name">
                                     </div>
                                     <div class="form-group">
                                         <label for="feedback4" class="sr-only">Last Game</label>
-                                        <input type="text" id="feedback4" class="form-control" placeholder="Last Name"
-                                            name="LastName">
+                                        <input type="text" id="feedback4" class="form-control" placeholder="Last Name" name="LastName">
                                     </div>
                                     <div class="form-group">
                                         <label for="feedback2" class="sr-only">Email</label>
-                                        <input type="email" id="feedback2" class="form-control" placeholder="Email"
-                                            name="email">
+                                        <input type="email" id="feedback2" class="form-control" placeholder="Email" name="email">
                                     </div>
                                     <div class="form-group">
                                         <select name="reason" class="form-control">
@@ -626,8 +614,7 @@
                                         </select>
                                     </div>
                                     <div class="form-group form-label-group">
-                                        <textarea class="form-control" id="label-textarea" rows="3"
-                                            placeholder="Suggestion"></textarea>
+                                        <textarea class="form-control" id="label-textarea" rows="3" placeholder="Suggestion"></textarea>
                                         <label for="label-textarea"></label>
                                     </div>
                                 </div>
@@ -643,7 +630,7 @@
             <div class="col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-content">
-                        <img class="card-img-top img-fluid" src="../../../app-assets/images/slider/05.jpg"
+                        <img class="card-img-top img-fluid" src="assets/images/samples/aerial-panoramic-image-of-sansonvale-lake-X6TCENW.jpg"
                             alt="Card image cap" />
                         <div class="card-body">
                             <h4 class="card-title">Top Image Cap</h4>
@@ -676,7 +663,7 @@
                             </p>
                             <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
-                        <img class="card-img-bottom img-fluid" src="../../../app-assets/images/slider/06.jpg"
+                        <img class="card-img-bottom img-fluid" src="assets/images/samples/inspirational-aerial-landscape-autumn-forest-and-FU2LKHA.jpg"
                             alt="Card image cap">
                     </div>
                 </div>
@@ -691,8 +678,8 @@
             <div class="col-xl-3 col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-content">
-                        <img class="card-img img-fluid" src="../../../app-assets/images/slider/08.jpg" alt="Card image">
-                        <div class="card-img-overlay overlay-success d-flex justify-content-between flex-column">
+                        <img class="card-img img-fluid" src="assets/images/samples/programmers-coding-computer-app-7CFXNL5.jpg" alt="Card image">
+                        <div class="card-img-overlay overlay-dark d-flex justify-content-between flex-column">
                             <div class="overlay-content">
                                 <p class="card-text text-ellipsis">
                                     Sugar plum tiramisu sweet. Cake jelly marshmallow cotton candy chupa
@@ -701,7 +688,7 @@
                             </div>
                             <div class="overlay-status">
                                 <p class="mb-25"><small>Last updated 3 mins ago</small></p>
-                                <a href="#" class="btn btn-success">Check More </a>
+                                <a href="#" class="btn btn-outline-white btn-sm">Check More </a>
                             </div>
                         </div>
                     </div>
@@ -710,7 +697,7 @@
             <div class="col-xl-3 col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-content">
-                        <img class="card-img img-fluid" src="../../../app-assets/images/slider/07.jpg" alt="Card image">
+                        <img class="card-img img-fluid" src="assets/images/samples/modern-teaching-concept-P7BTJU7.jpg" alt="Card image">
                         <div class="card-img-overlay overlay-dark bg-overlay d-flex justify-content-between flex-column">
                             <div class="overlay-content">
                                 <h4 class="card-title mb-50">Online Messages</h4>
@@ -721,7 +708,7 @@
                             </div>
                             <div class="overlay-status">
                                 <p class="mb-25"><small>Last updated 3 mins ago</small></p>
-                                <a href="#" class="white">Check More </a>
+                                <a href="#" class="btn btn-primary btn-sm">Check More </a>
                             </div>
                         </div>
                     </div>
@@ -730,7 +717,7 @@
             <div class="col-xl-3 col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-content">
-                        <img class="card-img img-fluid" src="../../../app-assets/images/slider/08.jpg" alt="Card image">
+                        <img class="card-img img-fluid" src="assets/images/samples/happy-children-building-robots-at-robotics-school-PW3NYKH.jpg" alt="Card image">
                         <div class="card-img-overlay overlay-dark d-flex justify-content-between flex-column">
                             <div class="overlay-content">
                                 <p class="card-text text-ellipsis">
@@ -738,9 +725,9 @@
                                     chups.
                                 </p>
                             </div>
-                            <div class="overlay-status">
+                            <div class="overlay-status text-right">
                                 <p class="mb-25"><small>Last updated 3 mins ago</small></p>
-                                <a href="#" class="btn btn-outline-info">Check More</a>
+                                <a href="#" class="btn btn-outline-white btn-sm">Check More</a>
                             </div>
                         </div>
                     </div>
@@ -749,8 +736,8 @@
             <div class="col-xl-3 col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-content">
-                        <img class="card-img img-fluid" src="../../../app-assets/images/slider/07.jpg" alt="Card image">
-                        <div class="card-img-overlay overlay-warning d-flex justify-content-between flex-column">
+                        <img class="card-img img-fluid" src="assets/images/samples/learning-new-codes-8VKXG4E.jpg" alt="Card image">
+                        <div class="card-img-overlay overlay-dark d-flex justify-content-between flex-column">
                             <div class="overlay-content">
                                 <h4 class="card-title mb-50">Image Overlay</h4>
                                 <p class="card-text text-ellipsis">
@@ -758,9 +745,9 @@
                                     chups.
                                 </p>
                             </div>
-                            <div class="overlay-status">
+                            <div class="overlay-status text-right">
                                 <p class="mb-25"><small>Last updated 3 mins ago</small></p>
-                                <a href="#" class="white">Check More </a>
+                                <a href="#" class="btn btn-outline-white btn-sm">Check More </a>
                             </div>
                         </div>
                     </div>
@@ -774,7 +761,7 @@
     <section id="bg-variants">
         <div class="row">
             <div class="col-12 mt-3 mb-1">
-                <h4 class="text-uppercase">Background variants</h4>
+                <h4 class="section-title text-uppercase">Background variants</h4>
             </div>
         </div>
         <div class="row">
@@ -783,7 +770,7 @@
                     <div class="card-content">
                         <div class="row no-gutters">
                             <div class="col-md-12 col-lg-4">
-                                <img src="../../../app-assets/images/banner/banner-35.jpg" alt="element 01"
+                                <img src="assets/images/samples/banner/banner-35.jpg" alt="element 01"
                                     class="h-100 w-100 rounded-left">
                             </div>
                             <div class="col-md-12 col-lg-8">
@@ -804,7 +791,7 @@
                     <div class="card-content">
                         <div class="row no-gutters">
                             <div class="col-lg-4 col-md-12 d-flex align-items-center justify-content-center p-1">
-                                <img src="../../../app-assets/images/elements/apple-lap.png" class="card-img img-fluid"
+                                <img src="assets/images/samples/elements/apple-lap.png" class="card-img img-fluid"
                                     alt="apple-lap.png">
                             </div>
                             <div class="col-lg-8 col-md-12">
@@ -832,7 +819,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-12">
-                                <img src="../../../app-assets/images/banner/banner-30.jpg" alt="element 01"
+                                <img src="assets/images/samples/banner/banner-30.jpg" alt="element 01"
                                     class="h-100 w-100 rounded-right">
                             </div>
                         </div>
@@ -843,7 +830,7 @@
                 <div class="card text-center bg-secondary bg-lighten-1">
                     <div class="card-content text-white">
                         <div class="card-body">
-                            <img src="../../../app-assets/images/elements/amazon-speaker.png" alt="element 05"
+                            <img src="assets/images/samples/elements/amazon-speaker.png" alt="element 05"
                                 class="mb-1 w-100" height="200">
                             <h4 class="card-title white">Storage Device</h4>
                             <p class="card-text">945 items</p>
@@ -855,7 +842,7 @@
                 <div class="card text-center">
                     <div class="card-content">
                         <div class="card-body">
-                            <img src="../../../app-assets/images/elements/beats-headphones.png" alt="element 02"
+                            <img src="assets/images/samples/elements/beats-headphones.png" alt="element 02"
                                 class="mb-1">
                             <h3 class="card-title">Ceramic Bottle</h3>
                             <p class="card-text">456 items</p>
@@ -867,7 +854,7 @@
                 <div class="card text-center bg-danger bg-lighten-2">
                     <div class="card-content d-flex">
                         <div class="card-body">
-                            <img src="../../../app-assets/images/elements/ipad-pro.png" alt="element 06" height="150"
+                            <img src="assets/images/samples/elements/ipad-pro.png" alt="element 06" height="150"
                                 class="mb-1">
                             <h4 class="card-title white">New Arrival</h4>
                             <p class="card-text white">Donut toffee candy brownie.</p>
@@ -884,7 +871,7 @@
     <section id="groups">
         <div class="row match-height">
             <div class="col-12 mt-3 mb-1">
-                <h4 class="text-uppercase">Groups</h4>
+                <h4 class="section-title text-uppercase">Groups</h4>
             </div>
         </div>
         <div class="row match-height">
@@ -892,7 +879,7 @@
                 <div class="card-group">
                     <div class="card">
                         <div class="card-content">
-                            <img class="card-img-top img-fluid" src="../../../app-assets/images/pages/content-img-3.jpg"
+                            <img class="card-img-top img-fluid" src="assets/images/samples/pages/content-img-3.jpg"
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title">Card title</h4>
@@ -905,7 +892,7 @@
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <img class="card-img-top img-fluid" src="../../../app-assets/images/pages/content-img-2.jpg"
+                            <img class="card-img-top img-fluid" src="assets/images/samples/pages/content-img-2.jpg"
                                 alt="Card image cap" />
                             <div class="card-body">
                                 <h4 class="card-title">Card title</h4>
@@ -919,7 +906,7 @@
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <img class="card-img-top img-fluid" src="../../../app-assets/images/pages/content-img-4.jpg"
+                            <img class="card-img-top img-fluid" src="assets/images/samples/pages/content-img-4.jpg"
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title">Card title</h4>
@@ -933,7 +920,7 @@
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <img class="card-img-top img-fluid" src="../../../app-assets/images/pages/content-img-1.jpg"
+                            <img class="card-img-top img-fluid" src="assets/images/samples/pages/content-img-1.jpg"
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title">Card title</h4>

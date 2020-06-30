@@ -150,6 +150,19 @@
   font-size: 0.9rem;
 }
 
+.breadcrumb-header .breadcrumb {
+  justify-content: flex-end;
+}
+
+section .section-title:after {
+  width: 70px;
+  height: 2px;
+  content: "";
+  margin: 0.6rem 0 1rem;
+  background-color: #5A8DEE;
+  display: block;
+}
+
 a {
   text-decoration: none;
   outline: 0;
@@ -162,6 +175,12 @@ button {
 @media screen and (max-width: 767px) {
   #main {
     margin-left: 0;
+  }
+
+  .breadcrumb-header .breadcrumb {
+    justify-content: flex-start;
+    padding: 0;
+    font-size: 0.8rem;
   }
 }
 
@@ -266,6 +285,16 @@ button {
   border-radius: 1.5rem;
 }
 
+.btn.btn-outline-white {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn.btn-outline-white:hover {
+  color: #333;
+  background-color: #fff;
+}
+
 .btn-group:not(.dropdown) .btn:not([class*=btn-]) {
   border: 1px solid #DFE3E7;
 }
@@ -296,6 +325,8 @@ button {
   height: 100vh;
   position: fixed;
   top: 0;
+  z-index: 10;
+  background-color: #fff;
   bottom: 0;
   border-right: 1px solid #eee;
   box-shadow: 0 0 10px #ececec;
@@ -311,6 +342,13 @@ button {
 
 .sidebar-wrapper .sidebar-header img {
   height: 30px;
+}
+
+.sidebar-wrapper .sidebar-toggler.x {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  display: none;
 }
 
 .sidebar-wrapper .menu {
@@ -405,6 +443,10 @@ button {
   .sidebar-wrapper {
     left: -270px;
   }
+
+  .sidebar-wrapper .sidebar-toggler.x {
+    display: block;
+  }
 }
 
 .card {
@@ -462,6 +504,10 @@ button {
   padding-top: 0;
 }
 
+.card .card-content {
+  position: relative;
+}
+
 .card .card-title {
   font-size: 1.2rem;
 }
@@ -473,6 +519,18 @@ button {
 .card .card-heading {
   color: #555;
   font-size: 1.5rem;
+}
+
+.card .card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card .card-img-overlay p {
+  color: #eee;
+}
+
+.card .card-img-overlay .card-title {
+  color: #fff;
 }
 
 .navbar {

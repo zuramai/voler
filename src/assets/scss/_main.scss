@@ -27,6 +27,9 @@
         justify-content: flex-end;
     }
 }
+.alert.alert-dismissible .close:focus, .custom-switch .custom-control-label:focus, .dropdown .dropdown-toggle:focus, .dropleft .dropdown-toggle:focus, .dropright .dropdown-toggle:focus, .dropup .dropdown-toggle:focus, .list-group button.list-group-item:focus, .modal .modal-content .modal-header .close:active, .modal .modal-content .modal-header .close:focus, .modal .modal-content .modal-header .close:hover, .navbar-components-wrapper .navbar .navbar-container.navbar-dark .navbar-toggler:focus, .navbar-components-wrapper .navbar .navbar-container.navbar-light .navbar-toggler:focus, .toast .toast-header .close:active, .toast .toast-header .close:focus, a:focus {
+    outline: 0;
+}
 section {
     .section-title {
         &:after {

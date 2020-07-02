@@ -397,6 +397,30 @@ $form-check-label-color:                  rgb(0, 0, 0);
 $form-check-label-cursor:                 null;
 
 
+// List group
+
+$list-group-color:                  null !default;
+$list-group-bg:                     $white !default;
+$list-group-border-color:           rgba($black, .125) !default;
+$list-group-border-radius:          .4rem !default;
+
+$list-group-item-padding-y:         $spacer / 2 !default;
+$list-group-item-padding-x:         $spacer !default;
+$list-group-item-bg-level:          -9 !default;
+$list-group-item-color-level:       6 !default;
+
+$list-group-hover-bg:               $gray-100 !default;
+$list-group-active-color:           $white !default;
+$list-group-active-bg:              map-get($theme-colors,'primary') !default;
+
+$list-group-disabled-color:         $gray-600 !default;
+$list-group-disabled-bg:            $list-group-bg !default;
+
+$list-group-action-color:           $gray-700 !default;
+$list-group-action-hover-color:     $list-group-action-color !default;
+
+$list-group-action-active-color:    $body-color !default;
+$list-group-action-active-bg:       $gray-200 !default;
 // Modals
 
 // Padding applied to the modal body
@@ -471,6 +495,50 @@ $progress-border-radius:            1rem !default;
 $progress-bar-color:                $white !default;
 $progress-bar-animation-timing:     1s linear infinite !default;
 $progress-bar-transition:           width .6s ease !default;
+
+
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+// scss-docs-start table-variables
+$table-cell-padding-y:        1.15rem !default;
+$table-cell-padding-x:         2rem !default;
+$table-cell-padding-y-sm:     .25rem !default;
+$table-cell-padding-x-sm:     .25rem !default;
+
+$table-cell-vertical-align:   top !default;
+
+$table-color:                 $body-color !default;
+$table-bg:                    transparent !default;
+
+$table-striped-color:         $table-color !default;
+$table-striped-bg-factor:     .05 !default;
+$table-striped-bg:            rgba($black, $table-striped-bg-factor) !default;
+
+$table-active-color:          $table-color !default;
+$table-active-bg-factor:      .1 !default;
+$table-active-bg:             rgba($black, $table-active-bg-factor) !default;
+
+$table-hover-color:           $table-color !default;
+$table-hover-bg-factor:       .075 !default;
+$table-hover-bg:              rgba($black, $table-hover-bg-factor) !default;
+
+$table-border-factor:         .1 !default;
+$table-border-width:          1px !default;
+$table-border-color:          $gray-200 !default;
+
+$table-striped-order:         odd !default;
+
+$table-group-seperator-color: currentColor !default;
+
+$table-caption-color:         $gray-400 !default;
+
+$table-bg-level:              -9 !default;
+
+// scss-docs-end table-variables
+
 
 @each $key, $value in $theme-colors {
     .color-#{$key} {

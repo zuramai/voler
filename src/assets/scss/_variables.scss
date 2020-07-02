@@ -46,7 +46,7 @@ $body-color:                #727E8C;
 $spacer: 1rem;
 $border-radius:               .25rem;
 
-$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-base:              .95rem; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875;
 $font-size-lg:                $font-size-base * 1.25;
 
@@ -62,6 +62,130 @@ $headings-font-weight:        500;
 $headings-line-height:        1.2;
 $headings-color:              #475F7B;
 
+
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// fusv-disable
+$blue-100: tint-color($blue, 8);
+$blue-200: tint-color($blue, 6);
+$blue-300: tint-color($blue, 4);
+$blue-400: tint-color($blue, 2);
+$blue-500: $blue;
+$blue-600: shade-color($blue, 2);
+$blue-700: shade-color($blue, 4);
+$blue-800: shade-color($blue, 6);
+$blue-900: shade-color($blue, 8);
+
+$indigo-100: tint-color($indigo, 8);
+$indigo-200: tint-color($indigo, 6);
+$indigo-300: tint-color($indigo, 4);
+$indigo-400: tint-color($indigo, 2);
+$indigo-500: $indigo;
+$indigo-600: shade-color($indigo, 2);
+$indigo-700: shade-color($indigo, 4);
+$indigo-800: shade-color($indigo, 6);
+$indigo-900: shade-color($indigo, 8);
+
+$purple-100: tint-color($purple, 8);
+$purple-200: tint-color($purple, 6);
+$purple-300: tint-color($purple, 4);
+$purple-400: tint-color($purple, 2);
+$purple-500: $purple;
+$purple-600: shade-color($purple, 2);
+$purple-700: shade-color($purple, 4);
+$purple-800: shade-color($purple, 6);
+$purple-900: shade-color($purple, 8);
+
+$pink-100: tint-color($pink, 8);
+$pink-200: tint-color($pink, 6);
+$pink-300: tint-color($pink, 4);
+$pink-400: tint-color($pink, 2);
+$pink-500: $pink;
+$pink-600: shade-color($pink, 2);
+$pink-700: shade-color($pink, 4);
+$pink-800: shade-color($pink, 6);
+$pink-900: shade-color($pink, 8);
+
+$red-100: tint-color($red, 8);
+$red-200: tint-color($red, 6);
+$red-300: tint-color($red, 4);
+$red-400: tint-color($red, 2);
+$red-500: $red;
+$red-600: shade-color($red, 2);
+$red-700: shade-color($red, 4);
+$red-800: shade-color($red, 6);
+$red-900: shade-color($red, 8);
+
+$orange-100: tint-color($orange, 8);
+$orange-200: tint-color($orange, 6);
+$orange-300: tint-color($orange, 4);
+$orange-400: tint-color($orange, 2);
+$orange-500: $orange;
+$orange-600: shade-color($orange, 2);
+$orange-700: shade-color($orange, 4);
+$orange-800: shade-color($orange, 6);
+$orange-900: shade-color($orange, 8);
+
+$yellow-100: tint-color($yellow, 8);
+$yellow-200: tint-color($yellow, 6);
+$yellow-300: tint-color($yellow, 4);
+$yellow-400: tint-color($yellow, 2);
+$yellow-500: $yellow;
+$yellow-600: shade-color($yellow, 2);
+$yellow-700: shade-color($yellow, 4);
+$yellow-800: shade-color($yellow, 6);
+$yellow-900: shade-color($yellow, 8);
+
+$green-100: tint-color($green, 8);
+$green-200: tint-color($green, 6);
+$green-300: tint-color($green, 4);
+$green-400: tint-color($green, 2);
+$green-500: $green;
+$green-600: shade-color($green, 2);
+$green-700: shade-color($green, 4);
+$green-800: shade-color($green, 6);
+$green-900: shade-color($green, 8);
+
+$teal-100: tint-color($teal, 8);
+$teal-200: tint-color($teal, 6);
+$teal-300: tint-color($teal, 4);
+$teal-400: tint-color($teal, 2);
+$teal-500: $teal;
+$teal-600: shade-color($teal, 2);
+$teal-700: shade-color($teal, 4);
+$teal-800: shade-color($teal, 6);
+$teal-900: shade-color($teal, 8);
+
+$cyan-100: tint-color($cyan, 8);
+$cyan-200: tint-color($cyan, 6);
+$cyan-300: tint-color($cyan, 4);
+$cyan-400: tint-color($cyan, 2);
+$cyan-500: $cyan;
+$cyan-600: shade-color($cyan, 2);
+$cyan-700: shade-color($cyan, 4);
+$cyan-800: shade-color($cyan, 6);
+$cyan-900: shade-color($cyan, 8);
 
 $alert-padding-y:                   0.75rem;
 $alert-padding-x:                   0.75rem;
@@ -120,6 +244,67 @@ $breadcrumb-margin-top:             1rem;
 $breadcrumb-bg:                     transparent;
 $breadcrumb-divider-color:          #ddd;
 $breadcrumb-active-color:           #555;
+
+
+// Carousel
+
+$carousel-control-color:             $white !default;
+$carousel-control-width:             15% !default;
+$carousel-control-opacity:           .5 !default;
+$carousel-control-hover-opacity:     .9 !default;
+$carousel-control-transition:        opacity .15s ease !default;
+
+$carousel-indicator-width:           30px !default;
+$carousel-indicator-height:          3px !default;
+$carousel-indicator-hit-area-height: 10px !default;
+$carousel-indicator-spacer:          3px !default;
+$carousel-indicator-opacity:         .5 !default;
+$carousel-indicator-active-bg:       $white !default;
+$carousel-indicator-active-opacity:  1 !default;
+$carousel-indicator-transition:      opacity .6s ease !default;
+
+$carousel-caption-width:             70% !default;
+$carousel-caption-color:             #fff;
+$carousel-caption-padding-y:         1.25rem !default;
+$carousel-caption-spacer:            1.25rem !default;
+
+$carousel-control-icon-width:        20px !default;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'><path d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/></svg>") !default;
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'><path d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/></svg>") !default;
+
+$carousel-transition-duration:       .6s !default;
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-min-width:                10rem !default;
+$dropdown-padding-y:                .5rem !default;
+$dropdown-spacer:                   .125rem !default;
+$dropdown-font-size:                $font-size-base !default;
+$dropdown-color:                    $body-color !default;
+$dropdown-bg:                       $white !default;
+$dropdown-border-color:             rgba($black, .15) !default;
+$dropdown-border-radius:            $border-radius !default;
+$dropdown-divider-bg:               $gray-200 !default;
+$dropdown-divider-margin-y:         $spacer / 2 !default;
+
+$dropdown-link-color:               $gray-900 !default;
+$dropdown-link-hover-color:         darken($gray-900, 5%) !default;
+$dropdown-link-hover-bg:            $gray-100 !default;
+
+
+$dropdown-link-disabled-color:      $gray-600 !default;
+
+$dropdown-item-padding-y:           $spacer / 4 !default;
+$dropdown-item-padding-x:           $spacer !default;
+
+$dropdown-header-color:             $gray-600 !default;
+$dropdown-header-padding:           $dropdown-padding-y $dropdown-item-padding-x !default;
+
+
 
 $input-btn-padding-y:         .467rem;
 $input-btn-padding-x:         1.5rem;
@@ -196,11 +381,12 @@ $input-placeholder-color:               rgb(196, 192, 201);
 $input-plaintext-color:                 rgb(162, 162, 173);
 
 $input-height-border:                   $input-border-width * 2;
+$input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
 
-$input-group-addon-color:               #475F7B !default;
-$input-group-addon-bg:                  #F0F4F7 !default;
-$input-group-addon-border-color:        #DFE3E7 !default;
+$input-group-addon-color:               #475F7B;
+$input-group-addon-bg:                  #F0F4F7;
+$input-group-addon-border-color:        #DFE3E7;
 
 $form-check-input-border:                 1px solid rgba(0, 0, 0, .25);
 $form-check-input-border-radius:          .25em;
@@ -209,6 +395,82 @@ $form-check-input-focus-border:           $input-focus-border-color;
 
 $form-check-label-color:                  rgb(0, 0, 0);
 $form-check-label-cursor:                 null;
+
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding:               1rem 2rem !default;
+
+// Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
+$modal-footer-margin-between:       .5rem !default;
+
+$modal-dialog-margin:               .5rem !default;
+$modal-dialog-margin-y-sm-up:       1.75rem !default;
+
+$modal-title-line-height:           $line-height-base !default;
+
+$modal-content-color:               null !default;
+$modal-content-bg:                  $white !default;
+$modal-content-border-color:        $gray-200 !default;
+$modal-content-border-width:        1px !default;
+$modal-content-border-radius:       .2rem !default;
+$modal-content-box-shadow-xs:       -8px 12px 18px 0 rgba(25,42,70,.13) !default;
+$modal-content-box-shadow-sm-up:    -8px 12px 18px 0 rgba(25,42,70,.13) !default;
+
+$modal-backdrop-bg:                 $black !default;
+$modal-backdrop-opacity:            .5 !default;
+$modal-header-padding-y:            $modal-inner-padding !default;
+$modal-header-padding-x:            $modal-inner-padding !default;
+$modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
+$modal-header-font-size:            1.1rem;
+
+$modal-sm:                          300px !default;
+$modal-md:                          540px !default;
+$modal-lg:                          800px !default;
+$modal-xl:                          1140px !default;
+
+$modal-fade-transform:              translate(0, -50px) !default;
+$modal-show-transform:              none !default;
+$modal-transition:                  transform .3s ease-out !default;
+$modal-scale-transform:             scale(1.02) !default;
+
+// Pagination
+
+$pagination-padding-y:              .375rem !default;
+$pagination-padding-x:              .75rem !default;
+$pagination-padding-y-sm:           .5rem !default;
+$pagination-padding-x-sm:           .5rem !default;
+$pagination-padding-y-lg:           .75rem !default;
+$pagination-padding-x-lg:           1.5rem !default;
+
+$pagination-color:                  $gray-600 !default;
+$pagination-bg:                     $white !default;
+$pagination-border-width:           1px !default;
+$pagination-border-radius:          $border-radius !default;
+$pagination-margin-left:            -$pagination-border-width !default;
+$pagination-border-color:           $gray-300 !default;
+
+$pagination-focus-outline:          0 !default;
+
+$pagination-hover-bg:               $gray-200 !default;
+$pagination-hover-border-color:     $gray-300 !default;
+
+
+$pagination-disabled-color:         $gray-600 !default;
+$pagination-disabled-bg:            $white !default;
+$pagination-disabled-border-color:  $gray-300 !default;
+
+
+// Progress bars
+
+$progress-height:                   .6rem !default;
+$progress-font-size:                .75rem !default;
+$progress-bg:                       $gray-200 !default;
+$progress-border-radius:            1rem !default;
+$progress-bar-color:                $white !default;
+$progress-bar-animation-timing:     1s linear infinite !default;
+$progress-bar-transition:           width .6s ease !default;
 
 @each $key, $value in $theme-colors {
     .color-#{$key} {

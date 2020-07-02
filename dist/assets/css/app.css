@@ -308,6 +308,19 @@ button {
   margin-top: 1rem;
 }
 
+.carousel-inner {
+  border-radius: 0.7rem;
+  box-shadow: 0 5px 10px #adb5bd;
+}
+
+.carousel-caption h5 {
+  color: #fff;
+}
+
+.dropdown-toggle:after {
+  color: #fff;
+}
+
 .form-group {
   margin-bottom: 0.7rem;
 }
@@ -321,6 +334,33 @@ button {
 
 .form-group small {
   font-size: 0.7rem;
+}
+
+.form-group.with-title {
+  position: relative;
+}
+
+.form-group.with-title label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  font-size: 0.6rem;
+  background-color: #e9ecef;
+  width: 100%;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group.with-title .form-control {
+  padding-top: 2rem;
+}
+
+.form-group.with-title .form-control:focus ~ label {
+  border-left: 1px solid #5A8DEE;
+  border-top: 1px solid #5A8DEE;
+  border-right: 1px solid #5A8DEE;
 }
 
 .form-group[class*=has-icon-].has-icon-left .form-control {
@@ -362,6 +402,57 @@ button {
 
 .form-check .form-check-input:focus {
   box-shadow: none;
+}
+
+.modal .modal-content {
+  box-shadow: -8px 12px 18px 0 rgba(25, 42, 70, 0.13);
+  border: none;
+}
+
+.modal .modal-full {
+  max-width: 94%;
+}
+
+.modal .white {
+  color: white;
+}
+
+.modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal .modal-header .modal-title {
+  font-size: 1.1rem;
+}
+
+.modal .modal-header .close {
+  padding: 7px 10px;
+  border-radius: 50%;
+}
+
+.modal .modal-header .close:hover {
+  background: #dee2e6;
+}
+
+.modal .modal-header i,
+.modal .modal-header svg {
+  font-size: 12px;
+  height: 12px;
+  width: 12px;
+}
+
+.modal .modal-footer {
+  padding: 1rem 2rem;
+}
+
+.modal.modal-borderless .modal-header {
+  border-bottom: 0;
+}
+
+.modal.modal-borderless .modal-footer {
+  border-top: 0;
 }
 
 #sidebar.active .sidebar-wrapper {
@@ -592,6 +683,199 @@ button {
 
 .navbar .nav-link-user img {
   width: 30px;
+}
+
+.pagination.pagination-primary .page-item.active .page-link {
+  background-color: #5A8DEE;
+  border-color: #5A8DEE;
+  box-shadow: 0 2px 5px rgba(90, 141, 238, 0.3);
+}
+
+.pagination.pagination-secondary .page-item.active .page-link {
+  background-color: #475F7B;
+  border-color: #475F7B;
+  box-shadow: 0 2px 5px rgba(71, 95, 123, 0.3);
+}
+
+.pagination.pagination-success .page-item.active .page-link {
+  background-color: #39DA8A;
+  border-color: #39DA8A;
+  box-shadow: 0 2px 5px rgba(57, 218, 138, 0.3);
+}
+
+.pagination.pagination-danger .page-item.active .page-link {
+  background-color: #FF5B5C;
+  border-color: #FF5B5C;
+  box-shadow: 0 2px 5px rgba(255, 91, 92, 0.3);
+}
+
+.pagination.pagination-warning .page-item.active .page-link {
+  background-color: #FDB75A;
+  border-color: #FDB75A;
+  box-shadow: 0 2px 5px rgba(253, 183, 90, 0.3);
+}
+
+.pagination.pagination-info .page-item.active .page-link {
+  background-color: #00CFDD;
+  border-color: #00CFDD;
+  box-shadow: 0 2px 5px rgba(0, 207, 221, 0.3);
+}
+
+.pagination.pagination-dark .page-item.active .page-link {
+  background-color: #222f3e;
+  border-color: #222f3e;
+  box-shadow: 0 2px 5px rgba(34, 47, 62, 0.3);
+}
+
+.pagination.pagination-light .page-item.active .page-link {
+  background-color: #A3AFBD;
+  border-color: #A3AFBD;
+  box-shadow: 0 2px 5px rgba(163, 175, 189, 0.3);
+}
+
+.pagination.pagination-link .page-item.active .page-link {
+  background-color: #2178d1;
+  border-color: #2178d1;
+  box-shadow: 0 2px 5px rgba(33, 120, 209, 0.3);
+}
+
+.page-item:not(.active) .page-link:hover {
+  color: #000;
+}
+
+.page-item i,
+.page-item svg {
+  font-size: 13px;
+  width: 13px;
+  height: 13px;
+}
+
+.page-item .page-link {
+  font-size: 0.875rem;
+}
+
+.page-item .page-link:focus {
+  box-shadow: none;
+}
+
+.page-item:first-child {
+  margin-right: 0.4rem;
+}
+
+.page-item:last-child {
+  margin-left: 0.4rem;
+}
+
+.progress.progress-primary {
+  overflow: visible;
+}
+
+.progress.progress-primary .progress-bar {
+  background-color: #5A8DEE;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 3px rgba(90, 141, 238, 0.8);
+}
+
+.progress.progress-secondary {
+  overflow: visible;
+}
+
+.progress.progress-secondary .progress-bar {
+  background-color: #475F7B;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 3px rgba(71, 95, 123, 0.8);
+}
+
+.progress.progress-success {
+  overflow: visible;
+}
+
+.progress.progress-success .progress-bar {
+  background-color: #39DA8A;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 3px rgba(57, 218, 138, 0.8);
+}
+
+.progress.progress-danger {
+  overflow: visible;
+}
+
+.progress.progress-danger .progress-bar {
+  background-color: #FF5B5C;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 3px rgba(255, 91, 92, 0.8);
+}
+
+.progress.progress-warning {
+  overflow: visible;
+}
+
+.progress.progress-warning .progress-bar {
+  background-color: #FDB75A;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 3px rgba(253, 183, 90, 0.8);
+}
+
+.progress.progress-info {
+  overflow: visible;
+}
+
+.progress.progress-info .progress-bar {
+  background-color: #00CFDD;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 3px rgba(0, 207, 221, 0.8);
+}
+
+.progress.progress-dark {
+  overflow: visible;
+}
+
+.progress.progress-dark .progress-bar {
+  background-color: #222f3e;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 3px rgba(34, 47, 62, 0.8);
+}
+
+.progress.progress-light {
+  overflow: visible;
+}
+
+.progress.progress-light .progress-bar {
+  background-color: #A3AFBD;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 3px rgba(163, 175, 189, 0.8);
+}
+
+.progress.progress-link {
+  overflow: visible;
+}
+
+.progress.progress-link .progress-bar {
+  background-color: #2178d1;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 3px rgba(33, 120, 209, 0.8);
+}
+
+.progress.progress-sm {
+  height: 0.4rem;
+}
+
+.progress.progress-lg {
+  height: 0.8rem;
+}
+
+.progress .progress-bar {
+  position: relative;
+  overflow: visible;
+}
+
+.progress .progress-bar.progress-label:before {
+  content: attr(aria-valuenow) "%";
+  position: absolute;
+  right: 0;
+  top: -1.3rem;
+  color: #495057;
+  font-size: 0.8rem;
 }
 
 .text-xxs {

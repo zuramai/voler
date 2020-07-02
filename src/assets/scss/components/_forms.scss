@@ -10,6 +10,30 @@
         font-size: .7rem;
     }
 
+    &.with-title {
+        position: relative;
+        label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 5px;
+            font-size: .6rem;
+            background-color: $gray-200;
+            width: 100%;
+            border-top-left-radius: $input-border-radius;
+            border-top-right-radius: $input-border-radius;
+            transition: $input-transition;
+        }
+        .form-control {
+            padding-top: 2rem;
+            &:focus ~ label {
+                border-left: 1px solid map-get($theme-colors, 'primary');
+                border-top: 1px solid map-get($theme-colors, 'primary');
+                border-right: 1px solid map-get($theme-colors, 'primary');
+            }
+        }
+    }
+
     &[class*="has-icon-"] {
         &.has-icon-left {
             .form-control {

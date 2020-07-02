@@ -268,6 +268,68 @@ button {
   box-shadow: 1px 2px 9px rgba(86, 182, 247, 0.3);
 }
 
+.avatar {
+  display: inline-flex;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.avatar .avatar-content {
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.avatar .avatar-content svg,
+.avatar .avatar-content i {
+  color: #fff;
+  font-size: 1rem;
+  height: 1rem;
+}
+
+.avatar img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.avatar .avatar-status {
+  width: 0.7rem;
+  height: 0.7rem;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  bottom: 0;
+  right: 0;
+}
+
+.avatar.avatar-sm .avatar-content,
+.avatar.avatar-sm img {
+  width: 24px;
+  height: 24px;
+  font-size: 0.8rem;
+}
+
+.avatar.avatar-lg .avatar-content,
+.avatar.avatar-lg img {
+  width: 48px;
+  height: 48px;
+  font-size: 1.2rem;
+}
+
+.avatar.avatar-xl .avatar-content,
+.avatar.avatar-xl img {
+  width: 60px;
+  height: 60px;
+  font-size: 1.4rem;
+}
+
 .btn .badge {
   border-radius: 50%;
   margin-left: 5px;
@@ -278,8 +340,10 @@ button {
   color: #fff;
 }
 
-.btn[class*=btn-]:not([class*=btn-outline-]) {
-  color: #fff;
+.btn i,
+.btn svg {
+  width: 16px;
+  height: 16px;
 }
 
 .btn.icon {
@@ -894,6 +958,31 @@ button {
   top: -1.3rem;
   color: #495057;
   font-size: 0.8rem;
+}
+
+.chat {
+  border-radius: 5px;
+}
+
+.chat.chat-left .chat-message {
+  background: #5A8DEE !important;
+  float: left !important;
+  color: #fff;
+}
+
+.chat .chat-message {
+  text-align: left !important;
+  float: right !important;
+  margin: 0.2rem 0 1.8rem 0.2rem !important;
+  color: #525361;
+  background-color: #FAFBFB !important;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3) !important;
+  padding: 0.75rem 1rem !important;
+  position: relative !important;
+  max-width: calc(100% - 5rem) !important;
+  clear: both !important;
+  word-break: break-word !important;
+  border-radius: 0.267rem !important;
 }
 
 .text-xxs {

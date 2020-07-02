@@ -57,6 +57,7 @@
 @import "./variables";
 @import "./main";
 @import "./components/alert";
+@import "./components/avatar";
 @import "./components/badge";
 @import "./components/buttons";
 @import "./components/breadcrumb";
@@ -69,5 +70,8 @@
 @import "./components/navbar";
 @import "./components/pagination";
 @import "./components/progress";
+
+@import "./widgets/chat";
+
 @import "./utilities";
 @import "./pages/auth"

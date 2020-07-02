@@ -1005,6 +1005,10 @@ button {
   font-weight: 600;
 }
 
+.pt-32 {
+  padding-top: 6rem;
+}
+
 .w-0 {
   width: 0;
 }
@@ -1154,5 +1158,15 @@ button {
 #auth .card {
   box-shadow: 0 5px 15px rgba(36, 104, 146, 0.6);
   border: none;
+}
+
+#error {
+  height: 100vh;
+  width: 100%;
+  background-color: #e9ecef;
+}
+
+#error .error-title {
+  font-size: 10rem;
 }
 

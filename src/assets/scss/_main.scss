@@ -49,11 +49,13 @@ a {
 button {
     outline: 0;
 }
-svg,i {
+svg.feather,i {
     font-size: 14px;
     height: 1rem
 }
-
+footer {
+    padding: 1rem 1.5rem;
+}
 @media screen and (max-width: 767px) {
     #main {
         margin-left: 0;   

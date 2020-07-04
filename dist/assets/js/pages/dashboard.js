@@ -471,7 +471,7 @@ var radialBarsOptions = {
         total: {
           show: true,
           label: "Earnings",
-          color: "#373d3f",
+          color: "#25A6F1",
           fontSize: "16px",
           formatter: function(w) {
             // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function

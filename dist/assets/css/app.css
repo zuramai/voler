@@ -190,10 +190,14 @@ button {
   outline: 0;
 }
 
-svg,
+svg.feather,
 i {
   font-size: 14px;
   height: 1rem;
+}
+
+footer {
+  padding: 1rem 1.5rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -858,6 +862,39 @@ i {
 
 .navbar .nav-link-user img {
   width: 30px;
+}
+
+.navbar.navbar-header li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar.navbar-header li.nav-icon {
+  margin-right: 0.4rem;
+}
+
+.navbar.navbar-header li.nav-icon .nav-link {
+  display: block;
+  padding: 0.4rem;
+  border-radius: 50%;
+}
+
+.navbar.navbar-header li.nav-icon .nav-link:hover {
+  background-color: #e9ecef;
+}
+
+.navbar.navbar-header .dropdown > a {
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.navbar.navbar-header .dropdown > a svg {
+  height: 24px;
+  width: 24px;
+}
+
+.navbar.navbar-header .dropdown > a:after {
+  display: none;
 }
 
 .pagination.pagination-primary .page-item.active .page-link {

@@ -26,7 +26,9 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "apexcharts": "^3.19.3",
     "chart.js": "^2.9.3",
+    "dayjs": "^1.8.29",
     "dragula": "^3.7.2",
     "feather-icons": "^4.28.0",
     "nunjucks": "^3.2.1",

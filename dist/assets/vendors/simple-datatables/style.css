@@ -2,9 +2,6 @@
 	border-top: 1px solid #d9d9d9;
 }
 
-.dataTable-wrapper.no-footer .dataTable-container {
-	border-bottom: 1px solid #d9d9d9;
-}
 
 .dataTable-top,
 .dataTable-bottom {
@@ -21,10 +18,6 @@
 	float: right;
 }
 
-.dataTable-selector {
-	padding: 6px;
-}
-
 .dataTable-input {
 	padding: 6px 12px;
 }
@@ -33,16 +26,6 @@
 	margin: 7px 0;
 }
 
-/* PAGER */
-.dataTable-pagination ul {
-	margin: 0;
-	padding-left: 0;
-}
-
-.dataTable-pagination li {
-	list-style: none;
-	float: left;
-}
 
 .dataTable-pagination a {
 	border: 1px solid transparent;
@@ -91,21 +74,6 @@
 	border-collapse: separate;
 }
 
-.dataTable-table > tbody > tr > td,
-.dataTable-table > tbody > tr > th,
-.dataTable-table > tfoot > tr > td,
-.dataTable-table > tfoot > tr > th,
-.dataTable-table > thead > tr > td,
-.dataTable-table > thead > tr > th {
-	vertical-align: top;
-	padding: 8px 10px;
-}
-
-.dataTable-table > thead > tr > th {
-	vertical-align: bottom;
-	text-align: left;
-	border-bottom: 1px solid #d9d9d9;
-}
 
 .dataTable-table > tfoot > tr > th {
 	vertical-align: bottom;
@@ -166,4 +134,14 @@
 	clear: both;
 	content: " ";
 	display: table;
+}
+
+.dataTable-dropdown {
+	display: inline-flex;
+	align-items: center;
+}
+
+.dataTable-dropdown label {
+	white-space: nowrap;
+	margin-left: 15px;
 }

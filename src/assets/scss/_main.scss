@@ -49,6 +49,10 @@ a {
 button {
     outline: 0;
 }
+svg,i {
+    font-size: 14px;
+    height: 1rem
+}
 
 @media screen and (max-width: 767px) {
     #main {

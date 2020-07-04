@@ -22,6 +22,35 @@
 
     </div>
     <section class="section">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Bar Chart</h4>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="bar"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Line Chart</h4>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="line"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </div>
+{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="assets/vendors/chartjs/Chart.min.css">
+{% endblock %}
+{% block js %}
+    <script src="assets/vendors/chartjs/Chart.min.js"></script>
+    <script src="assets/js/pages/ui-chartjs.js"></script>
 {% endblock %}

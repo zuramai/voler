@@ -20,11 +20,9 @@
             font-size: .6rem;
             background-color: $gray-200;
             width: 100%;
-            border-top-left-radius: $input-border-radius;
-            border-top-right-radius: $input-border-radius;
             transition: $input-transition;
         }
-        .form-control {
+        .form-control, dataTable-input {
             padding-top: 2rem;
             &:focus ~ label {
                 border-left: 1px solid map-get($theme-colors, 'primary');
@@ -79,5 +77,30 @@
         &:focus {
             box-shadow: none;
         }
+    }
+}
+
+.dataTable-input {
+    min-height: calc(1.5em + 0.934rem + 2px);
+    padding: 0.467rem 0.6rem;
+    font-size: 0.9025rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555252;
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid #DFE3E7;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:focus {
+        color: #555252;
+        background-color: white;
+        border-color: #5A8DEE;
+        outline: 0;
+        box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
     }
 }

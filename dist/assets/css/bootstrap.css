@@ -2065,7 +2065,7 @@ progress {
   margin-bottom: 1rem;
   color: #727E8C;
   vertical-align: top;
-  border-color: #e9ecef;
+  border-color: #DFE3E7;
 }
 
 .table > :not(caption) > * > * {
@@ -2084,7 +2084,7 @@ progress {
 }
 
 .table > :not(:last-child) > :last-child > * {
-  border-bottom-color: currentColor;
+  border-bottom-color: #DFE3E7;
 }
 
 .caption-top {

@@ -442,7 +442,49 @@ var myBar = new Chart(ctxBar, {
     }
   }
 });
-
+var radialBarsOptions = {
+  series: [44, 80, 67],
+  chart: {
+    height: 350,
+    type: "radialBar",
+  },
+  theme: {
+    mode: "light",
+    palette: "palette1",
+    monochrome: {
+      enabled: true,
+      color: "#3245D1",
+      shadeTo: "light",
+      shadeIntensity: 0.65,
+    },
+  },
+  plotOptions: {
+    radialBar: {
+      dataLabels: {
+        name: {
+          offsetY: -15,
+          fontSize: "22px",
+        },
+        value: {
+          fontSize: "2.5rem",
+        },
+        total: {
+          show: true,
+          label: "Earnings",
+          color: "#373d3f",
+          fontSize: "16px",
+          formatter: function(w) {
+            // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+            return "$4,124";
+          },
+        },
+      },
+    },
+  },
+  labels: ["Apples", "Oranges", "Bananas", "Berries"],
+};
+var radialBars = new ApexCharts(document.querySelector("#radialBars"), radialBarsOptions);
+radialBars.render();
 let ctx1 = document.getElementById("canvas1").getContext("2d");
 let ctx2 = document.getElementById("canvas2").getContext("2d");
 let ctx3 = document.getElementById("canvas3").getContext("2d");

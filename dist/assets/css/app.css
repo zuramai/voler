@@ -717,10 +717,6 @@ button {
   border: none;
 }
 
-.card .card-header:first-child {
-  border-radius: 10px;
-}
-
 .card .card-header h4 {
   font-size: 1.2rem;
 }
@@ -756,6 +752,72 @@ button {
 
 .card .card-img-overlay .card-title {
   color: #fff;
+}
+
+.pricing .card {
+  box-shadow: none;
+  margin-bottom: 0;
+  border-right: 1px solid #e9ecef;
+  box-shadow: 0 10px 10px #e9ecef;
+  margin-bottom: 0.5rem;
+}
+
+.pricing h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.pricing .card-header .card-title {
+  font-size: 2rem !important;
+  margin-bottom: 0;
+}
+
+.pricing .card-header p {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.pricing ul li i,
+.pricing ul li svg {
+  width: 1rem;
+  color: #39DA8A;
+  font-size: 1rem;
+  margin-right: 7px;
+}
+
+.pricing .card-highlighted {
+  background-color: #5A8DEE;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pricing .card-highlighted .card-header,
+.pricing .card-highlighted .card-body {
+  background-color: #5A8DEE;
+  color: #fff;
+}
+
+.pricing .card-highlighted ul li {
+  color: #fff;
+}
+
+.pricing .card-highlighted ul li i,
+.pricing .card-highlighted ul li svg {
+  color: tint-color(#28a745, 2);
+}
+
+.pricing .card-highlighted .card-footer {
+  background-color: #5A8DEE;
+}
+
+.pricing .card-highlighted .card-title {
+  color: #fff;
+  font-size: 1.8rem;
 }
 
 .navbar {
@@ -846,6 +908,11 @@ button {
 
 .page-item:last-child {
   margin-left: 0.4rem;
+}
+
+.table td,
+.table thead th {
+  vertical-align: middle;
 }
 
 .progress.progress-primary {
@@ -985,6 +1052,31 @@ button {
   border-radius: 0.267rem !important;
 }
 
+.widget-todo-list-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.widget-todo-list-wrapper .widget-todo-item {
+  padding: 0.8rem 2rem 0.8rem 0.8rem;
+  list-style: none;
+}
+
+.widget-todo-list-wrapper .widget-todo-item:hover {
+  background-color: #f8f9fa;
+}
+
+.widget-todo-list-wrapper .widget-todo-item .checkbox {
+  margin-left: 1rem;
+}
+
+.widget-todo-list-wrapper .widget-todo-item i,
+.widget-todo-list-wrapper .widget-todo-item svg {
+  font-size: 12px;
+  cursor: move;
+  height: 1rem;
+}
+
 .text-xxs {
   font-size: 0.65rem;
 }
@@ -1007,6 +1099,10 @@ button {
 
 .pt-32 {
   padding-top: 6rem;
+}
+
+.ml-50 {
+  margin-left: 0.5rem;
 }
 
 .w-0 {

@@ -33,9 +33,7 @@
     }
     .card-header {
         border: none;
-        &:first-child {
-            border-radius: 10px;
-        }
+        
         h4 {
             font-size: $card-title-font-size;
         }
@@ -69,4 +67,63 @@
     }
     
 
+}
+.pricing {
+    .card {
+        box-shadow: none;
+        margin-bottom: 0;
+        border-right: 1px  solid $gray-200;
+        box-shadow: 0 10px 10px $gray-200;
+        margin-bottom: .5rem;
+    }
+    h1 {
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+    .card-header {
+        .card-title {
+            font-size: 2rem !important;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: .8rem;
+        }
+    }
+    ul {
+        li {
+            list-style: none;
+            margin-bottom: .5rem;
+            i, svg {
+                width: 1rem;
+                color: map-get($theme-colors, 'success');
+                font-size: 1rem;
+                margin-right: 7px;
+            }
+        }
+    }
+    .card-highlighted {
+        background-color: map-get($theme-colors, 'primary');
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .card-header, .card-body {
+            background-color: map-get($theme-colors, 'primary');
+            color: #fff;
+        }
+        ul {
+            li {
+                i, svg {
+                    color: $green-400;
+                }
+                color: #fff;
+            }
+        }
+        .card-footer {
+            background-color: map-get($theme-colors, 'primary');
+        }
+        .card-title {
+            color: #fff;
+            font-size: 1.8rem;
+        }
+    }
 }

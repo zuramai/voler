@@ -27,10 +27,12 @@
   },
   "dependencies": {
     "chart.js": "^2.9.3",
+    "dragula": "^3.7.2",
     "feather-icons": "^4.28.0",
     "nunjucks": "^3.2.1",
     "perfect-scrollbar": "^1.5.0",
     "popper.js": "^1.16.1",
-    "quill": "^1.3.6"
+    "quill": "^1.3.6",
+    "toastify-js": "^1.8.0"
   }
 }

@@ -10,7 +10,7 @@ Voler is a Admin Dashboard Template that can help you develop faster. Made with 
 ![npm version](https://badge.fury.io/js/yarn.svg)
 </span>
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Voler logo](https://github.com/zuramai/voler/blob/master/dist/assets/images/screenshot.png?raw=true)
 
 <a href="#" target="_blank">You can see the demo here</a>
 

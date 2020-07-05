@@ -23,12 +23,12 @@
     left: -260px;
     transition: left .6s ease-out;
     .sidebar-header {
-        padding: 2rem 3rem;
+        padding: 2rem 2rem 1rem;
         font-size: 2rem;
         font-weight: bold;
 
         img {
-            height: 30px;
+            height: 3rem;
         }
     }
     .sidebar-toggler.x {

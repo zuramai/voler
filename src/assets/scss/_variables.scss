@@ -40,6 +40,16 @@ $theme-colors: (
   'light': #A3AFBD,
   'link': #2178d1
 );
+$theme-colors-light: (
+
+
+  'primary': #E2ECFF,
+  'secondary': #E6EAEE,
+  'success': #D2FFE8 ,
+  'danger': #FFDEDE,
+  'warning': #FFEED9,
+  'info': #CCF5F8,
+);
 
 $body-color:                #727E8C;
 
@@ -203,7 +213,7 @@ $alert-colors: (
     ),
     success: (
         text-color: #fff,
-        background-color: #4cb665
+        background-color: #39DA8A   
     ),
     warning: (
         text-color: #352901,

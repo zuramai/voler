@@ -78,6 +78,14 @@
             box-shadow: none;
         }
     }
+    @each $key, $value in $theme-colors {
+        &.form-check-#{$key} {
+            input:checked {
+                background-color: $value;
+                border-color: $value;
+            }
+        }
+    }
 }
 
 .dataTable-input {

@@ -33,9 +33,9 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <h6>Basic Select</h6>
-                                    <p>Use <code>.form-control</code> class for basic select control.</p>
+                                    <p>Use <code>.form-select</code> class for basic select control.</p>
                                     <fieldset class="form-group">
-                                        <select class="form-control" id="basicSelect">
+                                        <select class="form-select" id="basicSelect">
                                             <option>IT</option>
                                             <option>Blade Runner</option>
                                             <option>Thor Ragnarok</option>
@@ -46,7 +46,7 @@
                                     <h6>Disabled Select</h6>
                                     <p>Use <code>disabled</code> attribute for disabled select control.</p>
                                     <fieldset class="form-group">
-                                        <select class="form-control" disabled="disabled" id="disabledSelect">
+                                        <select class="form-select" disabled="disabled" id="disabledSelect">
                                             <option>Green</option>
                                             <option>Red</option>
                                             <option>Blue</option>
@@ -75,35 +75,27 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <h6>Basic Select with Input Group</h6>
-                                    <fieldset class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text" for="inputGroupSelect01">Options</label>
-                                            </div>
-                                            <select class="form-control" id="inputGroupSelect01">
-                                                <option selected>Choose...</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
-                                    </fieldset>
+                                    <div class="input-group mb-3">
+                                        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                                        <select class="form-select" id="inputGroupSelect01">
+                                            <option selected>Choose...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h6>Custom Select with Input group</h6>
-                                    <fieldset class="form-group">
-                                        <div class="input-group">
-                                            <select class="custom-select" id="inputGroupSelect02">
-                                                <option selected>Choose...</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                            <div class="input-group-append">
-                                                <label class="input-group-text" for="inputGroupSelect02">Options</label>
-                                            </div>
-                                        </div>
-                                    </fieldset>
+                                    <h6>Input group append</h6>
+                                    <div class="input-group mb-3">
+                                        <select class="form-select" id="inputGroupSelect01">
+                                            <option selected>Choose...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -114,26 +106,27 @@
     </section>
     <!-- Bootstrap Select end -->
     
-    <!-- Basic Select2 start -->
-    <section class="basic-select2">
+    <!-- Basic choices start -->
+    <section class="basic-choices">
         <div class="row">
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Select2</h4>
+                        <h4 class="card-title">Choices</h4>
                     </div>
                     <div class="card-content">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-12 mb-2">
-                                    <a href="https://select2.org/getting-started/installation" target="_blank">For more
-                                        information </a>
+                                <div class="col-md-12">
+                                    <div class="alert alert-primary">
+                                        <a href="https://choices.org/getting-started/installation" target="_blank">Click here</a> for more information 
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h6>Basic Select2</h6>
-                                    <p>Use <code>.select2</code> class for basic select2 control.</p>
+                                    <h6>Basic Choices</h6>
+                                    <p>Use <code>.choices</code> class for basic choices control.</p>
                                     <div class="form-group">
-                                        <select class="select2 form-control">
+                                        <select class="choices form-select">
                                             <option value="square">Square</option>
                                             <option value="rectangle">Rectangle</option>
                                             <option value="rombo">Rombo</option>
@@ -146,9 +139,9 @@
                                 </div>
                                 <div class="col-md-6">
                                     <h6>Single Select with Label</h6>
-                                    <p>Use <code>optgroup</code> attribute for basic select2 with Label control.</p>
+                                    <p>Use <code>optgroup</code> attribute for basic choices with Label control.</p>
                                     <div class="form-group">
-                                        <select class="select2 form-control">
+                                        <select class="choices form-select">
                                             <optgroup label="Figures">
                                                 <option value="romboid">Romboid</option>
                                                 <option value="trapeze">Trapeze</option>
@@ -168,10 +161,10 @@
                                     <h6>Select With Icon</h6>
                                     <p>Use data attribute <code>data-icon</code> to add icon name for each options. And use
                                         class
-                                        <code>.select2-icons</code> to set icon with option.</p>
+                                        <code>.choices-icons</code> to set icon with option.</p>
                                     <div class="form-group">
-                                        <select data-placeholder="Select a state..." class="select2-icons form-control"
-                                            id="select2-icons">
+                                        <select data-placeholder="Select a state..." class="choices form-select"
+                                            id="choices-icons">
                                             <optgroup label="Services">
                                                 <option value="wordpress2" data-icon="bx bxl-wordpress" selected>WordPress
                                                 </option>
@@ -191,13 +184,13 @@
                                 </div>
                                 <div class="col-md-6">
                                     <h6>Template support</h6>
-                                    <p>Select2 supports custom themes using the theme option so you can style Select2 to
+                                    <p>choices supports custom themes using the theme option so you can style choices to
                                         match the rest of
                                         your application. These are using the <code>classic</code> theme, which matches the
                                         old look of
-                                        Select2.</p>
+                                        choices.</p>
                                     <div class="form-group">
-                                        <select class="select2-theme form-control" id="select2-theme">
+                                        <select class="choices-theme form-select" id="choices-theme">
                                             <optgroup label="Figures">
                                                 <option value="romboid">Romboid</option>
                                                 <option value="trapeze">Trapeze</option>
@@ -220,26 +213,26 @@
             </div>
         </div>
     </section>
-    <!-- Basic Select2 end -->
+    <!-- Basic choices end -->
     
-    <!-- Multiple Select2 start -->
-    <section class="multiple-select2">
+    <!-- Multiple choices start -->
+    <section class="multiple-choices">
         <div class="row">
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Multiple Select2</h4>
+                        <h4 class="card-title">Multiple choices</h4>
                     </div>
                     <div class="card-content">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h6>Basic Multiple Select2</h6>
-                                    <p>Use <code>.select2</code> class for basic select2 control. Use
+                                    <h6>Basic Multiple choices</h6>
+                                    <p>Use <code>.choices</code> class for basic choices control. Use
                                         <code>multiple="multiple"</code>
                                         attribute for multiple select box.</p>
                                     <div class="form-group">
-                                        <select class="select2 form-control" multiple="multiple">
+                                        <select class="choices form-select" multiple="multiple">
                                             <option value="square">Square</option>
                                             <option value="rectangle" selected>Rectangle</option>
                                             <option value="rombo">Rombo</option>
@@ -254,7 +247,7 @@
                                     <h6>Multiple Select with Label</h6>
                                     <p>Use <code>optgroup</code> attribute for multiple select box with Label control.</p>
                                     <div class="form-group">
-                                        <select class="select2 form-control" multiple="multiple">
+                                        <select class="choices form-select" multiple="multiple">
                                             <optgroup label="Figures">
                                                 <option value="romboid">Romboid</option>
                                                 <option value="trapeze" selected>Trapeze</option>
@@ -274,10 +267,10 @@
                                     <h6>Select With Icon</h6>
                                     <p>Use data attribute <code>data-icon</code> to add icon name for each options. And use
                                         class
-                                        <code>.select2-icons</code> to set icon with option.</p>
+                                        <code>.choices-icons</code> to set icon with option.</p>
                                     <div class="form-group">
-                                        <select data-placeholder="Select a state..." class="select2-icons form-control"
-                                            id="multiple-select2-icons" multiple="multiple">
+                                        <select data-placeholder="Select a state..." class="choices-icons form-select"
+                                            id="multiple-choices-icons" multiple="multiple">
                                             <optgroup label="Services">
                                                 <option value="wordpress2" data-icon="fa fa-wordpress" selected>WordPress
                                                 </option>
@@ -305,12 +298,12 @@
                                 </div>
                                 <div class="col-md-6">
                                     <h6>Maximum Select with Label</h6>
-                                    <p>Select2 multi-value select boxes can set restrictions regarding the maximum number of
+                                    <p>choices multi-value select boxes can set restrictions regarding the maximum number of
                                         options
                                         selected. The select below is declared with the <code>multiple</code> attribute with
-                                        <code>maximumSelectionLength</code> in the select2 options.</p>
+                                        <code>maximumSelectionLength</code> in the choices options.</p>
                                     <div class="form-group">
-                                        <select class="max-length form-control" multiple="multiple" id="max_length">
+                                        <select class="max-length form-select" multiple="multiple" id="max_length">
                                             <optgroup label="Figures">
                                                 <option value="romboid">Romboid</option>
                                                 <option value="trapeze" selected>Trapeze</option>
@@ -327,11 +320,11 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h6>Select2 with Light Background Options</h6>
+                                    <h6>choices with Light Background Options</h6>
                                     <p>Use <code>.select-light-{colorName}</code> class for light background to selected
                                         Options.</p>
                                     <div class="form-group">
-                                        <select class="select2 form-control select-light-danger" multiple="multiple">
+                                        <select class="choices form-select select-light-danger" multiple="multiple">
                                             <option value="square">Square</option>
                                             <option value="rectangle" selected>Rectangle</option>
                                             <option value="rombo">Rombo</option>
@@ -349,10 +342,10 @@
             </div>
         </div>
     </section>
-    <!-- Multiple Select2 end -->
+    <!-- Multiple choices end -->
     
-    <!-- Select2 Advance Options start -->
-    <section class="select2-advance">
+    <!-- choices Advance Options start -->
+    <section class="choices-advance">
         <div class="row">
             <div class="col-12">
                 <div class="card">
@@ -364,22 +357,22 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <h6>Loading Array Data</h6>
-                                    <p>Select2 provides a way to load the data from a local array. You can provide initial
+                                    <p>choices provides a way to load the data from a local array. You can provide initial
                                         selections with
                                         array data by providing the option tag for the selected values, similar to how it
                                         would be done for a
                                         standard select.</p>
                                     <div class="form-group">
-                                        <select class="select2-data-array form-control" id="select2-array"></select>
+                                        <select class="choices-data-array form-select" id="choices-array"></select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h6>Loading Remote Data</h6>
-                                    <p>Select2 comes with AJAX support built in, using jQuery's AJAX methods. In this
+                                    <p>choices comes with AJAX support built in, using jQuery's AJAX methods. In this
                                         example, we can search
                                         for repositories using GitHub's API.</p>
                                     <div class="form-group">
-                                        <select class="select2-data-ajax form-control" id="select2-ajax"></select>
+                                        <select class="choices-data-ajax form-select" id="choices-ajax"></select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -388,12 +381,12 @@
                                         appears in the
                                         beginning of the string as opposed to anywhere: This custom matcher uses a
                                         compatibility module that
-                                        is only bundled in the full version of Select2. You also have the option of using a
+                                        is only bundled in the full version of choices. You also have the option of using a
                                         more complex
                                         matcher.</p>
                                     <div class="form-group">
-                                        <select class="select2-customize-result form-control" multiple="multiple"
-                                            id="select2-customize-result">
+                                        <select class="choices-customize-result form-select" multiple="multiple"
+                                            id="choices-customize-result">
                                             <optgroup label="Figures">
                                                 <option value="romboid">Romboid</option>
                                                 <option value="trapeze">Trapeze</option>
@@ -411,9 +404,9 @@
                                 </div>
                                 <div class="col-md-6">
                                     <h6>Programmatic access</h6>
-                                    <p>Select2 supports methods that allow programmatic control of the component.</p>
+                                    <p>choices supports methods that allow programmatic control of the component.</p>
                                     <div class="form-group">
-                                        <select class="select2 js-example-programmatic form-control"
+                                        <select class="choices js-example-programmatic form-select"
                                             id="programmatic-single">
                                             <optgroup label="Alaskan/Hawaiian Time Zone">
                                                 <option value="AK">Alaska</option>
@@ -478,7 +471,7 @@
                                         </select>
                                     </div>
                                     <div class="btn-toolbar" role="toolbar" aria-label="Programmatic control">
-                                        <div class="btn-group-sm" aria-label="Set Select2 option">
+                                        <div class="btn-group-sm" aria-label="Set choices option">
                                             <button class="js-programmatic-set-val btn btn-outline-primary mr-1 mb-1">
                                                 Set "California"
                                             </button>
@@ -508,10 +501,10 @@
             </div>
         </div>
     </section>
-    <!-- Select2 Advance Options end -->
+    <!-- choices Advance Options end -->
     
-    <!-- Select2 Sizing start -->
-    <section class="select2-sizing">
+    <!-- choices Sizing start -->
+    <section class="choices-sizing">
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
@@ -522,14 +515,14 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-12">
-                                    <p>For different sizes of select2, Use classes like <code>.select2-size-sm</code> &amp;
-                                        <code>.select2-size-lg</code> for Large, small &amp; Extra Small Select
+                                    <p>For different sizes of choices, Use classes like <code>.choices-size-sm</code> &amp;
+                                        <code>.choices-size-lg</code> for Large, small &amp; Extra Small Select
                                         respectively.</p>
                                 </div>
                                 <div class="col-12">
                                     <h6>Large</h6>
                                     <div class="form-group">
-                                        <select class="select2-size-lg form-control" id="large-select">
+                                        <select class="choices-size-lg form-select" id="large-select">
                                             <option value="square">Square</option>
                                             <option value="rectangle">Rectangle</option>
                                             <option value="rombo">Rombo</option>
@@ -543,7 +536,7 @@
                                 <div class="col-12">
                                     <h6>Default</h6>
                                     <div class="form-group">
-                                        <select class="select2 form-control" id="default-select">
+                                        <select class="choices form-select" id="default-select">
                                             <option value="square">Square</option>
                                             <option value="rectangle">Rectangle</option>
                                             <option value="rombo">Rombo</option>
@@ -557,7 +550,7 @@
                                 <div class="col-12">
                                     <h6>Small</h6>
                                     <div class="form-group">
-                                        <select class="select2-size-sm form-control" id="small-select">
+                                        <select class="choices-size-sm form-select" id="small-select">
                                             <option value="square">Square</option>
                                             <option value="rectangle">Rectangle</option>
                                             <option value="rombo">Rombo</option>
@@ -582,14 +575,14 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-12">
-                                    <p>For different sizes of select2, Use classes like <code>.select2-size-sm</code> &amp;
-                                        <code>.select2-size-lg</code> for Large, small &amp; Extra Small Select
+                                    <p>For different sizes of choices, Use classes like <code>.choices-size-sm</code> &amp;
+                                        <code>.choices-size-lg</code> for Large, small &amp; Extra Small Select
                                         respectively.</p>
                                 </div>
                                 <div class="col-12">
                                     <h6>Large</h6>
                                     <div class="form-group">
-                                        <select class="select2-size-lg form-control" multiple="multiple"
+                                        <select class="choices-size-lg form-select" multiple="multiple"
                                             id="large-select-multi">
                                             <option value="square" selected>Square</option>
                                             <option value="rectangle">Rectangle</option>
@@ -604,7 +597,7 @@
                                 <div class="col-12">
                                     <h6>Default</h6>
                                     <div class="form-group">
-                                        <select class="select2 form-control" multiple="multiple" id="default-select-multi">
+                                        <select class="choices form-select" multiple="multiple" id="default-select-multi">
                                             <option value="square">Square</option>
                                             <option value="rectangle">Rectangle</option>
                                             <option value="rombo">Rombo</option>
@@ -618,7 +611,7 @@
                                 <div class="col-12">
                                     <h6>Small</h6>
                                     <div class="form-group">
-                                        <select class="select2-size-sm form-control" multiple="multiple"
+                                        <select class="choices-size-sm form-select" multiple="multiple"
                                             id="small-select-multi">
                                             <option value="square">Square</option>
                                             <option value="rectangle">Rectangle</option>
@@ -637,6 +630,16 @@
             </div>
         </div>
     </section>
-    <!-- Select2 Sizing end -->
+    <!-- choices Sizing end -->
 </div>
+{% endblock %}
+{% block stylesfirst %}
+<!-- Include base CSS (optional) -->
+<link rel="stylesheet" href="assets/vendors/choices.js/base.min.css" />
+<!-- Include Choices CSS -->
+<link rel="stylesheet" href="assets/vendors/choices.js/choices.min.css" />
+{% endblock %}
+{% block js %}
+<!-- Include Choices JavaScript -->
+<script src="assets/vendors/choices.js/choices.min.js"></script>
 {% endblock %}

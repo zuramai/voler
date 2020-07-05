@@ -213,12 +213,7 @@ footer {
 }
 
 .alert {
-  font-size: 0.85rem;
   border: none;
-}
-
-.alert .alert-heading {
-  font-size: 1.1rem;
 }
 
 .alert p {
@@ -228,6 +223,14 @@ footer {
 .alert button.close {
   padding: 0.75rem;
   line-height: 0.75;
+}
+
+.alert .alert-heading {
+  margin-left: 0.4rem;
+}
+
+.alert .alert-heading + p {
+  margin-left: 0.4rem;
 }
 
 .alert-primary {
@@ -243,9 +246,9 @@ footer {
 }
 
 .alert-success {
-  background-color: #4cb665;
+  background-color: #39DA8A;
   color: #fff;
-  box-shadow: 1px 2px 9px rgba(76, 182, 101, 0.3);
+  box-shadow: 1px 2px 9px rgba(57, 218, 138, 0.3);
 }
 
 .alert-warning {
@@ -276,6 +279,30 @@ footer {
   background-color: #56b6f7;
   color: #fff;
   box-shadow: 1px 2px 9px rgba(86, 182, 247, 0.3);
+}
+
+.alert-light-primary {
+  background-color: #E2ECFF;
+}
+
+.alert-light-secondary {
+  background-color: #E6EAEE;
+}
+
+.alert-light-success {
+  background-color: #D2FFE8;
+}
+
+.alert-light-danger {
+  background-color: #FFDEDE;
+}
+
+.alert-light-warning {
+  background-color: #FFEED9;
+}
+
+.alert-light-info {
+  background-color: #CCF5F8;
 }
 
 .avatar {
@@ -496,6 +523,51 @@ footer {
   box-shadow: none;
 }
 
+.form-check.form-check-primary input:checked {
+  background-color: #5A8DEE;
+  border-color: #5A8DEE;
+}
+
+.form-check.form-check-secondary input:checked {
+  background-color: #475F7B;
+  border-color: #475F7B;
+}
+
+.form-check.form-check-success input:checked {
+  background-color: #39DA8A;
+  border-color: #39DA8A;
+}
+
+.form-check.form-check-danger input:checked {
+  background-color: #FF5B5C;
+  border-color: #FF5B5C;
+}
+
+.form-check.form-check-warning input:checked {
+  background-color: #FDB75A;
+  border-color: #FDB75A;
+}
+
+.form-check.form-check-info input:checked {
+  background-color: #00CFDD;
+  border-color: #00CFDD;
+}
+
+.form-check.form-check-dark input:checked {
+  background-color: #222f3e;
+  border-color: #222f3e;
+}
+
+.form-check.form-check-light input:checked {
+  background-color: #A3AFBD;
+  border-color: #A3AFBD;
+}
+
+.form-check.form-check-link input:checked {
+  background-color: #2178d1;
+  border-color: #2178d1;
+}
+
 .dataTable-input {
   min-height: calc(1.5em + 0.934rem + 2px);
   padding: 0.467rem 0.6rem;
@@ -595,13 +667,13 @@ footer {
 }
 
 .sidebar-wrapper .sidebar-header {
-  padding: 2rem 3rem;
+  padding: 2rem 2rem 1rem;
   font-size: 2rem;
   font-weight: bold;
 }
 
 .sidebar-wrapper .sidebar-header img {
-  height: 30px;
+  height: 3rem;
 }
 
 .sidebar-wrapper .sidebar-toggler.x {

@@ -1,9 +1,7 @@
 
 .alert {
-    font-size: $alert-font-size;
     border:none;
     .alert-heading {
-        font-size: 1.1rem;
     }
     p {
         margin-bottom: 0;
@@ -12,11 +10,23 @@
         padding: .75rem;
         line-height: .75;
     }
+    .alert-heading {
+        margin-left: .4rem;
+        & + p {
+            margin-left: .4rem;
+        }
+    }
 }
 @each $key, $value in $alert-colors {
     .alert-#{$key} {
         background-color: map-get($value, 'background-color');
         color: map-get($value, 'text-color');
         box-shadow: 1px 2px 9px rgba(map-get($value, 'background-color'), .3);
+
+    }
+}
+@each $key, $value in $theme-colors-light {
+    .alert-light-#{$key} {
+        background-color: $value;
     }
 }

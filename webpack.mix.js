@@ -27,5 +27,8 @@ mix
    .js("src/assets/js/main.js", "dist/assets/js")
    .js("src/assets/js/feather-icons.js", "dist/assets/js")
    .sass("src/assets/scss/app.scss", "dist/assets/css")
+   .options({
+      processCssUrls: false
+   })
    .sass("src/assets/scss/bootstrap.scss", "dist/assets/css")
    .setPublicPath("dist");

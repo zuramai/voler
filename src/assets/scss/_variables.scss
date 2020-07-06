@@ -56,7 +56,7 @@ $body-color:                #727E8C;
 $spacer: 1rem;
 $border-radius:               .25rem;
 
-$font-size-base:              .95rem; // Assumes the browser default, typically `16px`
+$font-size-base:              .9rem; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875;
 $font-size-lg:                $font-size-base * 1.25;
 
@@ -389,7 +389,7 @@ $input-focus-border-color:              map-get($theme-colors,'primary');
 $input-focus-color:                     $input-color;
 $input-focus-box-shadow:                0 3px 8px 0 rgba(0,0,0,.1);
 
-$input-placeholder-color:               rgb(196, 192, 201);
+$input-placeholder-color:               #828D99;
 $input-plaintext-color:                 rgb(162, 162, 173);
 
 $input-height-border:                   $input-border-width * 2;

@@ -1,7 +1,8 @@
 #auth {
-    background:linear-gradient(to bottom, #25a6f1, #54b9ff);
+    background:$gray-600;
     min-height: 100vh;
     padding-top: 100px;
+    background-image: url(../images/background/auth.jpg);
 
     .card {
         box-shadow: 0 5px 15px rgba(#246892, .6);

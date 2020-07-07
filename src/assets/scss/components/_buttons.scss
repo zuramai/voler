@@ -32,6 +32,12 @@
             background-color: #fff;
         }
     }
+    
+    @each $key, $value in $theme-colors {
+        &.btn-#{$key} {
+            color: #fff;
+        }
+    }
 }
 .btn-group {
     &:not(.dropdown) .btn:not([class*="btn-"]) {

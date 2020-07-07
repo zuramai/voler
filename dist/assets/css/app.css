@@ -100,7 +100,7 @@
 }
 
 .color-warning {
-  color: #FDB75A;
+  color: #FDAC41;
 }
 
 .color-info {
@@ -211,11 +211,17 @@ footer {
   color: #fff;
   box-shadow: 1px 2px 9px rgba(2, 158, 255, 0.3);
 }
+.alert-primary a {
+  color: #fff;
+}
 
 .alert-secondary {
   background-color: #ebeef3;
   color: #383d41;
   box-shadow: 1px 2px 9px rgba(235, 238, 243, 0.3);
+}
+.alert-secondary a {
+  color: #fff;
 }
 
 .alert-success {
@@ -223,11 +229,17 @@ footer {
   color: #fff;
   box-shadow: 1px 2px 9px rgba(57, 218, 138, 0.3);
 }
+.alert-success a {
+  color: #fff;
+}
 
 .alert-warning {
   background-color: #fdd347;
-  color: #352901;
+  color: #fff;
   box-shadow: 1px 2px 9px rgba(253, 211, 71, 0.3);
+}
+.alert-warning a {
+  color: #fff;
 }
 
 .alert-danger {
@@ -235,11 +247,17 @@ footer {
   color: #fff;
   box-shadow: 1px 2px 9px rgba(245, 82, 96, 0.3);
 }
+.alert-danger a {
+  color: #fff;
+}
 
 .alert-dark {
   background-color: #454546;
   color: #fff;
   box-shadow: 1px 2px 9px rgba(69, 69, 70, 0.3);
+}
+.alert-dark a {
+  color: #fff;
 }
 
 .alert-light {
@@ -247,11 +265,17 @@ footer {
   color: #818182;
   box-shadow: 1px 2px 9px rgba(254, 254, 254, 0.3);
 }
+.alert-light a {
+  color: #fff;
+}
 
 .alert-info {
   background-color: #56b6f7;
   color: #fff;
   box-shadow: 1px 2px 9px rgba(86, 182, 247, 0.3);
+}
+.alert-info a {
+  color: #fff;
 }
 
 .alert-light-primary {
@@ -363,6 +387,33 @@ footer {
   color: #333;
   background-color: #fff;
 }
+.btn.btn-primary {
+  color: #fff;
+}
+.btn.btn-secondary {
+  color: #fff;
+}
+.btn.btn-success {
+  color: #fff;
+}
+.btn.btn-danger {
+  color: #fff;
+}
+.btn.btn-warning {
+  color: #fff;
+}
+.btn.btn-info {
+  color: #fff;
+}
+.btn.btn-dark {
+  color: #fff;
+}
+.btn.btn-light {
+  color: #fff;
+}
+.btn.btn-link {
+  color: #fff;
+}
 
 .btn-group:not(.dropdown) .btn:not([class*=btn-]) {
   border: 1px solid #DFE3E7;
@@ -374,8 +425,12 @@ footer {
   margin: 0 10px 10px 0;
 }
 
-.breadcrumb {
+.breadcrumb.breadcrumb-right {
   justify-content: flex-end;
+  margin-top: 1rem;
+}
+.breadcrumb.breadcrumb-center {
+  justify-content: center;
   margin-top: 1rem;
 }
 
@@ -431,6 +486,10 @@ footer {
 
 .dropdown-toggle:after {
   color: #fff;
+}
+
+.dropdown-menu-large {
+  min-width: 16rem;
 }
 
 .form-group {
@@ -497,41 +556,139 @@ footer {
 .form-check .form-check-input:focus {
   box-shadow: none;
 }
-.form-check.form-check-primary input:checked {
+.form-check .form-check-input.form-check-primary {
   background-color: #5A8DEE;
   border-color: #5A8DEE;
 }
-.form-check.form-check-secondary input:checked {
+.form-check .form-check-input.form-check-primary:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+.form-check .form-check-input.form-check-primary.form-check-glow {
+  box-shadow: 0 0 5px #88adf3;
+}
+.form-check .form-check-input.form-check-primary.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+.form-check .form-check-input.form-check-secondary {
   background-color: #475F7B;
   border-color: #475F7B;
 }
-.form-check.form-check-success input:checked {
+.form-check .form-check-input.form-check-secondary:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+.form-check .form-check-input.form-check-secondary.form-check-glow {
+  box-shadow: 0 0 5px #5a789b;
+}
+.form-check .form-check-input.form-check-secondary.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+.form-check .form-check-input.form-check-success {
   background-color: #39DA8A;
   border-color: #39DA8A;
 }
-.form-check.form-check-danger input:checked {
+.form-check .form-check-input.form-check-success:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+.form-check .form-check-input.form-check-success.form-check-glow {
+  box-shadow: 0 0 5px #64e2a3;
+}
+.form-check .form-check-input.form-check-success.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+.form-check .form-check-input.form-check-danger {
   background-color: #FF5B5C;
   border-color: #FF5B5C;
 }
-.form-check.form-check-warning input:checked {
-  background-color: #FDB75A;
-  border-color: #FDB75A;
+.form-check .form-check-input.form-check-danger:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
 }
-.form-check.form-check-info input:checked {
+.form-check .form-check-input.form-check-danger.form-check-glow {
+  box-shadow: 0 0 5px #ff8e8f;
+}
+.form-check .form-check-input.form-check-danger.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+.form-check .form-check-input.form-check-warning {
+  background-color: #FDAC41;
+  border-color: #FDAC41;
+}
+.form-check .form-check-input.form-check-warning:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+.form-check .form-check-input.form-check-warning.form-check-glow {
+  box-shadow: 0 0 5px #fec273;
+}
+.form-check .form-check-input.form-check-warning.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+.form-check .form-check-input.form-check-info {
   background-color: #00CFDD;
   border-color: #00CFDD;
 }
-.form-check.form-check-dark input:checked {
+.form-check .form-check-input.form-check-info:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+.form-check .form-check-input.form-check-info.form-check-glow {
+  box-shadow: 0 0 5px #11f0ff;
+}
+.form-check .form-check-input.form-check-info.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+.form-check .form-check-input.form-check-dark {
   background-color: #222f3e;
   border-color: #222f3e;
 }
-.form-check.form-check-light input:checked {
+.form-check .form-check-input.form-check-dark:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+.form-check .form-check-input.form-check-dark.form-check-glow {
+  box-shadow: 0 0 5px #34485f;
+}
+.form-check .form-check-input.form-check-dark.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+.form-check .form-check-input.form-check-light {
   background-color: #A3AFBD;
   border-color: #A3AFBD;
 }
-.form-check.form-check-link input:checked {
+.form-check .form-check-input.form-check-light:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+.form-check .form-check-input.form-check-light.form-check-glow {
+  box-shadow: 0 0 5px #c1c9d2;
+}
+.form-check .form-check-input.form-check-light.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+.form-check .form-check-input.form-check-link {
   background-color: #2178d1;
   border-color: #2178d1;
+}
+.form-check .form-check-input.form-check-link:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+.form-check .form-check-input.form-check-link.form-check-glow {
+  box-shadow: 0 0 5px #4492e1;
+}
+.form-check .form-check-input.form-check-link.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+.form-check.form-check-sm .form-check-input {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-top: 0.3em;
+}
+.form-check.form-check-sm label {
+  font-size: 0.7rem;
 }
 
 .dataTable-input {
@@ -832,6 +989,36 @@ footer {
   font-size: 1.8rem;
 }
 
+.nav-pills .nav-link.active {
+  box-shadow: 0 2px 10px rgba(90, 141, 238, 0.5);
+}
+
+.nav-tabs {
+  border: none;
+}
+.nav-tabs .nav-link {
+  border: none;
+}
+.nav-tabs .nav-link:hover {
+  border: none;
+  text-shadow: 0 0 2px rgba(90, 141, 238, 0.3);
+}
+.nav-tabs .nav-link.active {
+  border: none;
+  position: relative;
+  color: #5A8DEE;
+}
+.nav-tabs .nav-link.active:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #5A8DEE;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(90, 141, 238, 0.5);
+}
+
 .navbar {
   height: 70px;
   padding: 1.5rem;
@@ -887,9 +1074,9 @@ footer {
   box-shadow: 0 2px 5px rgba(255, 91, 92, 0.3);
 }
 .pagination.pagination-warning .page-item.active .page-link {
-  background-color: #FDB75A;
-  border-color: #FDB75A;
-  box-shadow: 0 2px 5px rgba(253, 183, 90, 0.3);
+  background-color: #FDAC41;
+  border-color: #FDAC41;
+  box-shadow: 0 2px 5px rgba(253, 172, 65, 0.3);
 }
 .pagination.pagination-info .page-item.active .page-link {
   background-color: #00CFDD;
@@ -977,9 +1164,9 @@ footer {
   overflow: visible;
 }
 .progress.progress-warning .progress-bar {
-  background-color: #FDB75A;
+  background-color: #FDAC41;
   border-radius: 1rem;
-  box-shadow: 0px 2px 3px rgba(253, 183, 90, 0.8);
+  box-shadow: 0px 2px 3px rgba(253, 172, 65, 0.8);
 }
 .progress.progress-info {
   overflow: visible;
@@ -1157,6 +1344,10 @@ footer {
 
 .h-10 {
   height: 2.25rem;
+}
+
+.rounded-none {
+  border-radius: 0;
 }
 
 .round {

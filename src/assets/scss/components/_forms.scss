@@ -77,13 +77,35 @@
         &:focus {
             box-shadow: none;
         }
-    }
-    @each $key, $value in $theme-colors {
-        &.form-check-#{$key} {
-            input:checked {
+        @each $key, $value in $theme-colors {
+            &.form-check-#{$key} {
                 background-color: $value;
                 border-color: $value;
+
+                &:not(:checked) {
+                    background-color: transparent;
+                    border: 1px solid $gray-400;
+                }
+
+                &.form-check-glow {
+                    box-shadow: 0 0 5px lighten($value,10%);
+                    &:not(:checked) {
+                        box-shadow: none;
+                    }
+                }
             }
+        }
+    }
+
+    &.form-check-sm {
+        .form-check-input {
+            width: .9rem;
+            height: .9rem;
+            margin-top: .3em;
+        }
+        label {
+            font-size: .7rem;
+            
         }
     }
 }

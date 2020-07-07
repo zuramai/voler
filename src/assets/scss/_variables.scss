@@ -34,7 +34,7 @@ $theme-colors: (
   'secondary': #475F7B,
   'success': #39DA8A,
   'danger': #FF5B5C,
-  'warning': #FDB75A,
+  'warning': #FDAC41,
   'info': #00CFDD,
   'dark': #222f3e,
   'light': #A3AFBD,
@@ -216,7 +216,7 @@ $alert-colors: (
         background-color: #39DA8A   
     ),
     warning: (
-        text-color: #352901,
+        text-color: #fff,
         background-color: #fdd347,
     ),
     danger: (
@@ -471,6 +471,21 @@ $modal-show-transform:              none !default;
 $modal-transition:                  transform .3s ease-out !default;
 $modal-scale-transform:             scale(1.02) !default;
 
+// Navs
+
+$nav-link-padding-y:                .5rem !default;
+$nav-link-padding-x:                1rem !default;
+$nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
+$nav-link-disabled-color:           $gray-600 !default;
+
+$nav-tabs-border-color:             $gray-300 !default;
+$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
+$nav-tabs-link-active-color:        $gray-700 !default;
+$nav-tabs-link-active-bg:           #fff !default;
+$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+
+$nav-pills-border-radius:           $border-radius !default;
+$nav-pills-link-active-bg:          map-get($theme-colors,'primary');
 // Navbar
 $navbar-light-color:                rgba($black, .7) !default;
 

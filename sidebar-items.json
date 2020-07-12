@@ -137,11 +137,6 @@
     "icon": "grid"
   },
   {
-    "name": "Table Advanced",
-    "url": "table-advanced.html",
-    "icon": "layers"
-  },
-  {
     "name": "Datatable",
     "url": "table-datatable.html",
     "icon": "file-plus"
@@ -166,10 +161,6 @@
       {
         "name": "To-do List",
         "url": "ui-todolist.html"
-      },
-      {
-        "name": "Timeline",
-        "url": "ui-timeline.html"
       }
     ]
   },
@@ -207,7 +198,7 @@
       },
       {
         "name": "Forgot Password",
-        "url": "forgot-password.html"
+        "url": "auth-forgot-password.html"
       }
     ]
   },

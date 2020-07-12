@@ -108,6 +108,15 @@
             
         }
     }
+
+    @each $key, $value in $theme-colors {
+        &.form-check-#{$key} {
+            .form-check-input {
+                background-color: $value;
+                border-color: $value
+            }
+        }
+    }
 }
 
 .dataTable-input {

@@ -690,6 +690,42 @@ footer {
 .form-check.form-check-sm label {
   font-size: 0.7rem;
 }
+.form-check.form-check-primary .form-check-input {
+  background-color: #5A8DEE;
+  border-color: #5A8DEE;
+}
+.form-check.form-check-secondary .form-check-input {
+  background-color: #475F7B;
+  border-color: #475F7B;
+}
+.form-check.form-check-success .form-check-input {
+  background-color: #39DA8A;
+  border-color: #39DA8A;
+}
+.form-check.form-check-danger .form-check-input {
+  background-color: #FF5B5C;
+  border-color: #FF5B5C;
+}
+.form-check.form-check-warning .form-check-input {
+  background-color: #FDAC41;
+  border-color: #FDAC41;
+}
+.form-check.form-check-info .form-check-input {
+  background-color: #00CFDD;
+  border-color: #00CFDD;
+}
+.form-check.form-check-dark .form-check-input {
+  background-color: #222f3e;
+  border-color: #222f3e;
+}
+.form-check.form-check-light .form-check-input {
+  background-color: #A3AFBD;
+  border-color: #A3AFBD;
+}
+.form-check.form-check-link .form-check-input {
+  background-color: #2178d1;
+  border-color: #2178d1;
+}
 
 .dataTable-input {
   min-height: calc(1.5em + 0.934rem + 2px);
@@ -781,7 +817,7 @@ footer {
   font-weight: bold;
 }
 .sidebar-wrapper .sidebar-header img {
-  height: 3rem;
+  height: 2.5rem;
 }
 .sidebar-wrapper .sidebar-toggler.x {
   position: absolute;

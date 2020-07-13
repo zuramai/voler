@@ -28,7 +28,7 @@ git clone https://github.com/zuramai/voler
 2. Open ```dist/index.html``` in browser.
 
 ## Demo
-You can open the demo <a href="zuramai.github.io/voler/dist" target="_blank">here</a>
+You can open the demo <a href="http://zuramai.github.io/voler/dist" target="_blank">here</a>
 
 ## Contributing
 

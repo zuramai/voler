@@ -29,6 +29,15 @@ if(typeof PerfectScrollbar == 'function') {
     const ps = new PerfectScrollbar(container);
 }
 
+window.onload = function() {
+
+    var w = window.innerWidth;
+    if(w < 768) {
+        console.log('widthnya ', w)
+        document.getElementById('sidebar').classList.remove('active');
+    }
+}
+
 feather.replace();
 
 

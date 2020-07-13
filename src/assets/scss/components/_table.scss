@@ -9,3 +9,7 @@
 .dataTable-table {
     @extend .table
 }
+
+.dataTable-container {
+    overflow-x:auto
+}

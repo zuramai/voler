@@ -1166,6 +1166,10 @@ footer {
   border-bottom: 2px solid #475F7B;
 }
 
+.dataTable-container {
+  overflow-x: auto;
+}
+
 /** 2.17 Progress **/
 .progress.progress-primary {
   overflow: visible;

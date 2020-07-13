@@ -7,51 +7,37 @@
  * @package	Voler
  * @version	0.1
  * @author 	Ahmad Saugi
- * @url 	https://voler.id
+ * @url 	https://github.com/zuramai/voler
  * 
  */
 /**
  * TABLE OF CONTENTS
  *
- * 1. Variable
- * 2. Layout
- *    2.1 Sidebar
- *    2.2 Header
- *    2.3 Content
- *    2.4 Misc
- * 3. Bootstrap Override
- * 	  3.1 Card
- * 	  3.2 Form
- * 	  3.3 List
- * 	  3.4 Alert
- * 	  3.5 Progress
- * 	  3.6 Table
- * 	  3.7 Tooltip
- * 	  3.8 Modal
- * 	  3.9 Nav
- * 	  3.10 Pagination
- * 	  3.11 Badge
- * 	  3.12 Button
- * 	  3.13 Media
- * 	  3.14 Breadcrumb
- * 	  3.15 Accordion
- * 	  3.16 Popover
- * 	  3.17 Grid
- * 	  3.18 Navbar
- * 	  3.19 Dropdown
- * 	  3.20 Tab
- * 	  3.21 Progressbar
- * 	  3.22 Jumbotron
- * 	  3.23 Carousel
- * 4. Theme Style
- * 	  4.1 Misc
- * 	  4.2 Section
- * 	  4.3 Page
- * 	  4.4 Layout
- * 	  4.5 Animation
+ * 1. Variables
+ * 2. Bootstrap Override
+ * 	  2.1 Alert
+ * 	  2.2 Avatar
+ * 	  2.3 Badge
+ * 	  2.4 Buttons
+ * 	  2.5 Breadcrumb
+ * 	  2.6 Carousel
+ * 	  2.7 Divider
+ * 	  2.8 Dropdowns
+ * 	  2.9 Forms
+ * 	  2.10 Modal
+ * 	  2.11 Sidebar
+ * 	  2.12 Card
+ * 	  2.13 Navs
+ * 	  2.14 Navbar
+ * 	  2.15 Pagination
+ * 	  2.16 Table
+ * 	  2.17 Progress
+ * 4. Pages
+ * 	  4.1 Auth
+ * 	  4.2 Error
  * 5. Utilities
- * 6. Responsive
  */
+/** 1. Variables  **/
 /**
  * VARIABLE - TABLE OF CONTENTS
  * 
@@ -189,6 +175,7 @@ footer {
     font-size: 0.8rem;
   }
 }
+/** 2.1 Alert  **/
 .alert {
   border: none;
 }
@@ -302,6 +289,7 @@ footer {
   background-color: #CCF5F8;
 }
 
+/** 2.2 Avatar **/
 .avatar {
   display: inline-flex;
   border-radius: 50%;
@@ -353,6 +341,7 @@ footer {
   font-size: 1.4rem;
 }
 
+/** 2.3 Badge **/
 .btn .badge {
   border-radius: 50%;
   margin-left: 5px;
@@ -362,6 +351,7 @@ footer {
   color: #fff;
 }
 
+/** 2.4 Buttons **/
 .btn i, .btn svg {
   width: 16px;
   height: 16px;
@@ -425,6 +415,7 @@ footer {
   margin: 0 10px 10px 0;
 }
 
+/** 2.5 Breadcrumb **/
 .breadcrumb.breadcrumb-right {
   justify-content: flex-end;
   margin-top: 1rem;
@@ -434,6 +425,7 @@ footer {
   margin-top: 1rem;
 }
 
+/** 2.6 Carousel **/
 .carousel-inner {
   border-radius: 0.7rem;
   box-shadow: 0 5px 10px #adb5bd;
@@ -443,6 +435,7 @@ footer {
   color: #fff;
 }
 
+/** 2.7 Divider **/
 .divider {
   display: block;
   text-align: center;
@@ -484,6 +477,7 @@ footer {
   padding-right: 0;
 }
 
+/** 2.8 Dropdowns **/
 .dropdown-toggle:after {
   color: #fff;
 }
@@ -492,6 +486,7 @@ footer {
   min-width: 16rem;
 }
 
+/** 2.9 Forms **/
 .form-group {
   margin-bottom: 0.7rem;
 }
@@ -751,6 +746,7 @@ footer {
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
+/** 2.10 Modal **/
 .modal .modal-content {
   box-shadow: -8px 12px 18px 0 rgba(25, 42, 70, 0.13);
   border: none;
@@ -791,6 +787,7 @@ footer {
   border-top: 0;
 }
 
+/** 2.11 Sidebar **/
 #sidebar.active .sidebar-wrapper {
   left: 0;
 }
@@ -909,6 +906,7 @@ footer {
     display: block;
   }
 }
+/** 2.12 Card **/
 .card {
   box-shadow: -8px 12px 18px 0 rgba(25, 42, 70, 0.13);
   margin-bottom: 2.2rem;
@@ -1025,6 +1023,7 @@ footer {
   font-size: 1.8rem;
 }
 
+/** 2.13 Navs **/
 .nav-pills .nav-link.active {
   box-shadow: 0 2px 10px rgba(90, 141, 238, 0.5);
 }
@@ -1055,6 +1054,7 @@ footer {
   box-shadow: 0 2px 5px rgba(90, 141, 238, 0.5);
 }
 
+/** 2.14 Navbar **/
 .navbar {
   height: 70px;
   padding: 1.5rem;
@@ -1089,6 +1089,7 @@ footer {
   display: none;
 }
 
+/** 2.15 Pagination **/
 .pagination.pagination-primary .page-item.active .page-link {
   background-color: #5A8DEE;
   border-color: #5A8DEE;
@@ -1156,6 +1157,7 @@ footer {
   margin-left: 0.4rem;
 }
 
+/** 2.16 Table **/
 .table td, .dataTable-table td, .table thead th, .dataTable-table thead th {
   vertical-align: middle;
 }
@@ -1164,6 +1166,11 @@ footer {
   border-bottom: 2px solid #475F7B;
 }
 
+.dataTable-container {
+  overflow-x: auto;
+}
+
+/** 2.17 Progress **/
 .progress.progress-primary {
   overflow: visible;
 }
@@ -1255,6 +1262,7 @@ footer {
   font-size: 0.8rem;
 }
 
+/** 3.1 Chat **/
 .chat {
   border-radius: 5px;
 }
@@ -1278,6 +1286,7 @@ footer {
   border-radius: 0.267rem !important;
 }
 
+/** 3.1 Todo **/
 .widget-todo-list-wrapper {
   padding: 0;
   margin: 0;
@@ -1298,6 +1307,29 @@ footer {
   height: 1rem;
 }
 
+/** 4.1 Auth Pages **/
+#auth {
+  background: #6c757d;
+  min-height: 100vh;
+  padding-top: 100px;
+  background-image: url(../images/background/auth.jpg);
+}
+#auth .card {
+  box-shadow: 0 5px 15px rgba(36, 104, 146, 0.6);
+  border: none;
+}
+
+/** 4.1 Error Pages **/
+#error {
+  height: 100vh;
+  width: 100%;
+  background-color: #e9ecef;
+}
+#error .error-title {
+  font-size: 10rem;
+}
+
+/** 5. Utilities **/
 .text-xxs {
   font-size: 0.65rem;
 }
@@ -1468,24 +1500,4 @@ footer {
 
 .bg-gray-700 {
   background-color: #4a5568 !important;
-}
-
-#auth {
-  background: #6c757d;
-  min-height: 100vh;
-  padding-top: 100px;
-  background-image: url(../images/background/auth.jpg);
-}
-#auth .card {
-  box-shadow: 0 5px 15px rgba(36, 104, 146, 0.6);
-  border: none;
-}
-
-#error {
-  height: 100vh;
-  width: 100%;
-  background-color: #e9ecef;
-}
-#error .error-title {
-  font-size: 10rem;
 }

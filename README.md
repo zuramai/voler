@@ -9,7 +9,7 @@
 <div align="center">
   Voler is a Admin Dashboard Template that can help you develop faster. Made with Bootstrap 5 Alpha. No jQuery dependency.
 </div>
-<span align="center">
+<span>
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-green.svg?style=flat-square)](#contributors-)
 ![GitHub last commit](https://img.shields.io/github/last-commit/zuramai/voler.svg)

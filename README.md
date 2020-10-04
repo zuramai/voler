@@ -9,7 +9,7 @@
 <div align="center">
   Voler is a Admin Dashboard Template that can help you develop faster. Made with Bootstrap 5 Alpha. No jQuery dependency.
 </div>
-<span align="center">
+<span>
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-green.svg?style=flat-square)](#contributors-)
 ![GitHub last commit](https://img.shields.io/github/last-commit/zuramai/voler.svg)
@@ -27,6 +27,21 @@ git clone https://github.com/zuramai/voler
 ```
 2. Open ```dist/index.html``` in browser.
 
+
+### 🤔 What is a voler?
+the voler template is an admin dashboard template that has an attractive beauty and a lot of features in it
+
+### 🎉 Why was it made Open Source?
+I want this template to be used by many people and useful for people And hopefully this template is useful and can make learning for us all
+
+### 🤨 What features are available at voler?
+- This template is responsive
+- This template is made with bootstrap 5 alpha2, css and so on
+- This template has many features in it
+- This template is perfect for your website projects
+- And there are many other features and we don't mention them one by one
+
+
 ## Demo
 You can open the demo <a href="http://zuramai.github.io/voler/dist" target="_blank">here</a>
 
@@ -42,10 +57,20 @@ You can open the demo <a href="http://zuramai.github.io/voler/dist" target="_bla
 - If you want to make some changes in the CSS style. Don't edit the `.css` file, use the SCSS file instead.
 - Since we use Nunjucks, if you want to make changes to the HTML structure, make sure you change the source file (Nunjucks) located in `src`.
 
-## License
-Voler is under MIT License
 
-## About the Author
-Voler is created by <a href="http://ahmadsaugi.com">Ahmad Saugi</a>. You can donate me at <a href="https://trakteer.id/ahmad-saugi">Trakteer</a>
+## 🧑 Author
+
+👤 <a href="http://ahmadsaugi.com">Ahmad Saugi</a>.
+- Github : <a href="https://github.com/zuramai"> @zuramai</a>
+
+## 🧑 Support me at : 
+
+- Trakteer : <a href="https://trakteer.id/ahmad-saugi"> @ahmad-saugi</a>
+
+## 📝 License
+- Copyright © 2020 Voler
+- **Voler is open-sourced software licensed under the MIT license**
 
 
+------------
+**Made with ❤️ by Voler**

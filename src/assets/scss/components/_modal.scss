@@ -19,6 +19,8 @@
         .close {
             padding: 7px 10px;
             border-radius: 50%;
+            background:none;
+            border: none;
             &:hover {
                 background: $gray-300
             }

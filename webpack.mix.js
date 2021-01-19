@@ -1,10 +1,10 @@
 const mix = require('laravel-mix');
 const sidebarItems = require('./sidebar-items.json');
 
+require('laravel-mix-purgecss');
 require('laravel-mix-nunjucks')
 
 mix.njk('src/', 'dist/', {
-   watch: true,
    data: {
       web_title: "Voler Admin Dashboard",
       sidebarItems
@@ -12,9 +12,8 @@ mix.njk('src/', 'dist/', {
    block: 'content',
    // marked: null,
    envOptions: {
-      watch: true,
       noCache: true
-   },
+   }, 
    manageEnv: (nunjucks) => {
       nunjucks.addFilter('containString', function(str, containStr) {
          if(str == undefined) return false;
@@ -27,6 +26,12 @@ mix
    .js("src/assets/js/main.js", "dist/assets/js")
    .js("src/assets/js/feather-icons.js", "dist/assets/js")
    .sass("src/assets/scss/app.scss", "dist/assets/css")
+   // .purgeCss({
+   //    content: [
+   //       "src/**/*.html",
+   //    ],
+   //    enabled: true,
+   // })
    .options({
       processCssUrls: false
    })

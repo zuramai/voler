@@ -26,12 +26,19 @@ mix
    .js("src/assets/js/main.js", "dist/assets/js")
    .js("src/assets/js/feather-icons.js", "dist/assets/js")
    .sass("src/assets/scss/app.scss", "dist/assets/css")
-   // .purgeCss({
-   //    content: [
-   //       "src/**/*.html",
-   //    ],
-   //    enabled: true,
-   // })
+   .purgeCss({
+      content: [
+         "src/**/*.html",
+      ],
+      safelist: [
+         /^dropdown-/,
+         /^modal/,
+         /^feather/,
+         'i',
+         'svg',
+      ],
+      enabled: true,
+   })
    .options({
       processCssUrls: false
    })

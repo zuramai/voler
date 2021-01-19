@@ -39,6 +39,9 @@
         }
     }
 }
+.btn-block {
+    width: 100%;
+}
 .btn-group {
     &:not(.dropdown) .btn:not([class*="btn-"]) {
         border: 1px solid #DFE3E7;

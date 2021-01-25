@@ -27,6 +27,8 @@ git clone https://github.com/zuramai/voler
 ```
 2. Open ```dist/index.html``` in browser.
 
+## New Bootstrap 5 Template
+I have created another Bootstrap 5 dashboard template, Mazer Dashboard Template. [Click here](https://github.com/zuramai/mazer) to take a look to the repository.
 
 ### 🤔 What is a voler?
 the voler template is an admin dashboard template that has an attractive beauty and a lot of features in it
@@ -36,7 +38,7 @@ I want this template to be used by many people and useful for people And hopeful
 
 ### 🤨 What features are available at voler?
 - This template is responsive
-- This template is made with bootstrap 5 alpha2, css and so on
+- This template is made with bootstrap 5 beta, css and so on
 - This template has many features in it
 - This template is perfect for your website projects
 - And there are many other features and we don't mention them one by one

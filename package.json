@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.6.0",
-    "apexcharts": "^3.19.3",
+    "apexcharts": "^3.24.0",
     "chart.js": "^2.9.3",
     "choices.js": "^9.0.1",
     "cross-env": "^7.0.3",

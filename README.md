@@ -7,7 +7,7 @@
 
 <h1 align="center">Voler</h1>
 <div align="center">
-  Voler is a Admin Dashboard Template that can help you develop faster. Made with Bootstrap 5 Alpha. No jQuery dependency.
+  Voler is a Admin Dashboard Template that can help you develop faster. Made with Bootstrap 5 Beta 1. No jQuery dependency.
 </div>
 <span>
 

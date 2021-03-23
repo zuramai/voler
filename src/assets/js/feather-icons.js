@@ -1,0 +1,1 @@
+require('feather-icons/dist/feather.min.js')

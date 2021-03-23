@@ -1,0 +1,577 @@
+/**
+ * VARIABLE - TABLE OF CONTENTS
+ * 
+ * 1. Theme Colors
+ * 2. Bootstrap Override
+ * 	  2.4 Alert
+ * 	  2.11 Badge
+ * 	  2.12 Button
+ * 	  2.14 Breadcrumb
+ * 	  2.1 Card
+ * 	  2.2 Form
+ * 	  2.3 List
+ * 	  2.5 Progress
+ * 	  2.6 Table
+ * 	  2.7 Tooltip
+ * 	  2.8 Modal
+ * 	  2.9 Nav
+ * 	  2.10 Pagination
+ * 	  2.13 Media
+ * 	  2.15 Accordion
+ * 	  2.16 Popover
+ * 	  2.17 Grid
+ * 	  2.18 Navbar
+ * 	  2.19 Dropdown
+ * 	  2.20 Tab
+ * 	  2.21 Progressbar
+ * 	  2.22 Jumbotron
+ * 	  2.23 Carousel
+ * 5. Utilities
+ * 6. Responsive
+ */
+$theme-colors: (
+  'primary': #5A8DEE,
+  'secondary': #475F7B,
+  'success': #39DA8A,
+  'danger': #FF5B5C,
+  'warning': #FDAC41,
+  'info': #00CFDD,
+  'dark': #222f3e,
+  'light': #A3AFBD,
+  'link': #2178d1
+);
+$theme-colors-light: (
+
+
+  'primary': #E2ECFF,
+  'secondary': #E6EAEE,
+  'success': #D2FFE8 ,
+  'danger': #FFDEDE,
+  'warning': #FFEED9,
+  'info': #CCF5F8,
+);
+
+$body-color:                #727E8C;
+
+$spacer: 1rem;
+$border-radius:               .25rem;
+
+$font-size-base:              .9rem; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.25;
+
+$line-height-base:            1.5;
+$line-height-sm:              1.25;
+$line-height-lg:              2;
+
+
+$headings-margin-bottom:      $spacer / 2;
+$headings-font-family:        null;
+$headings-font-style:         null;
+$headings-font-weight:        500;
+$headings-line-height:        1.2;
+$headings-color:              #475F7B;
+
+
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// fusv-disable
+$blue-100: tint-color($blue, 8);
+$blue-200: tint-color($blue, 6);
+$blue-300: tint-color($blue, 4);
+$blue-400: tint-color($blue, 2);
+$blue-500: $blue;
+$blue-600: shade-color($blue, 2);
+$blue-700: shade-color($blue, 4);
+$blue-800: shade-color($blue, 6);
+$blue-900: shade-color($blue, 8);
+
+$indigo-100: tint-color($indigo, 8);
+$indigo-200: tint-color($indigo, 6);
+$indigo-300: tint-color($indigo, 4);
+$indigo-400: tint-color($indigo, 2);
+$indigo-500: $indigo;
+$indigo-600: shade-color($indigo, 2);
+$indigo-700: shade-color($indigo, 4);
+$indigo-800: shade-color($indigo, 6);
+$indigo-900: shade-color($indigo, 8);
+
+$purple-100: tint-color($purple, 8);
+$purple-200: tint-color($purple, 6);
+$purple-300: tint-color($purple, 4);
+$purple-400: tint-color($purple, 2);
+$purple-500: $purple;
+$purple-600: shade-color($purple, 2);
+$purple-700: shade-color($purple, 4);
+$purple-800: shade-color($purple, 6);
+$purple-900: shade-color($purple, 8);
+
+$pink-100: tint-color($pink, 8);
+$pink-200: tint-color($pink, 6);
+$pink-300: tint-color($pink, 4);
+$pink-400: tint-color($pink, 2);
+$pink-500: $pink;
+$pink-600: shade-color($pink, 2);
+$pink-700: shade-color($pink, 4);
+$pink-800: shade-color($pink, 6);
+$pink-900: shade-color($pink, 8);
+
+$red-100: tint-color($red, 8);
+$red-200: tint-color($red, 6);
+$red-300: tint-color($red, 4);
+$red-400: tint-color($red, 2);
+$red-500: $red;
+$red-600: shade-color($red, 2);
+$red-700: shade-color($red, 4);
+$red-800: shade-color($red, 6);
+$red-900: shade-color($red, 8);
+
+$orange-100: tint-color($orange, 8);
+$orange-200: tint-color($orange, 6);
+$orange-300: tint-color($orange, 4);
+$orange-400: tint-color($orange, 2);
+$orange-500: $orange;
+$orange-600: shade-color($orange, 2);
+$orange-700: shade-color($orange, 4);
+$orange-800: shade-color($orange, 6);
+$orange-900: shade-color($orange, 8);
+
+$yellow-100: tint-color($yellow, 8);
+$yellow-200: tint-color($yellow, 6);
+$yellow-300: tint-color($yellow, 4);
+$yellow-400: tint-color($yellow, 2);
+$yellow-500: $yellow;
+$yellow-600: shade-color($yellow, 2);
+$yellow-700: shade-color($yellow, 4);
+$yellow-800: shade-color($yellow, 6);
+$yellow-900: shade-color($yellow, 8);
+
+$green-100: tint-color($green, 8);
+$green-200: tint-color($green, 6);
+$green-300: tint-color($green, 4);
+$green-400: tint-color($green, 2);
+$green-500: $green;
+$green-600: shade-color($green, 2);
+$green-700: shade-color($green, 4);
+$green-800: shade-color($green, 6);
+$green-900: shade-color($green, 8);
+
+$teal-100: tint-color($teal, 8);
+$teal-200: tint-color($teal, 6);
+$teal-300: tint-color($teal, 4);
+$teal-400: tint-color($teal, 2);
+$teal-500: $teal;
+$teal-600: shade-color($teal, 2);
+$teal-700: shade-color($teal, 4);
+$teal-800: shade-color($teal, 6);
+$teal-900: shade-color($teal, 8);
+
+$cyan-100: tint-color($cyan, 8);
+$cyan-200: tint-color($cyan, 6);
+$cyan-300: tint-color($cyan, 4);
+$cyan-400: tint-color($cyan, 2);
+$cyan-500: $cyan;
+$cyan-600: shade-color($cyan, 2);
+$cyan-700: shade-color($cyan, 4);
+$cyan-800: shade-color($cyan, 6);
+$cyan-900: shade-color($cyan, 8);
+
+$alert-padding-y:                   0.75rem;
+$alert-padding-x:                   0.75rem;
+$alert-border-width:                none;
+$alert-font-size:                   .85rem;
+$alert-font-size-heading:           1.1rem;
+$alert-colors: (
+    primary: (
+        text-color: #fff,
+        background-color: #029eff
+    ),
+    secondary: (
+        text-color: #383d41,
+        background-color: #ebeef3
+    ),
+    success: (
+        text-color: #fff,
+        background-color: #39DA8A   
+    ),
+    warning: (
+        text-color: #fff,
+        background-color: #fdd347,
+    ),
+    danger: (
+        text-color: #fff,
+        background-color: #f55260,
+    ),
+    dark: (
+        text-color: #fff,
+        background-color: #454546,
+    ),
+    light: (
+        text-color: #818182,
+        background-color: #fefefe,
+    ),
+    info: (
+        text-color: #fff,
+        background-color: #56b6f7,
+    ),
+);
+
+$badge-font-size:                   .75rem;
+$badge-font-weight:                 500;
+$badge-color:                       #fff;
+$badge-padding-y:                   .4rem;
+$badge-padding-x:                   .55rem;
+$badge-border-radius:               1rem;
+
+$breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='#777'/%3E%3C/svg%3E");
+$breadcrumb-font-size:              null;
+$breadcrumb-padding-y:              0;
+$breadcrumb-padding-x:              $spacer;
+$breadcrumb-item-padding-x:         .5rem;
+$breadcrumb-margin-bottom:          0;
+$breadcrumb-margin-top:             1rem;
+$breadcrumb-bg:                     transparent;
+$breadcrumb-divider-color:          #ddd;
+$breadcrumb-active-color:           #555;
+
+
+// Carousel
+
+$carousel-control-color:             $white !default;
+$carousel-control-width:             15% !default;
+$carousel-control-opacity:           .5 !default;
+$carousel-control-hover-opacity:     .9 !default;
+$carousel-control-transition:        opacity .15s ease !default;
+
+$carousel-indicator-width:           30px !default;
+$carousel-indicator-height:          3px !default;
+$carousel-indicator-hit-area-height: 10px !default;
+$carousel-indicator-spacer:          3px !default;
+$carousel-indicator-opacity:         .5 !default;
+$carousel-indicator-active-bg:       $white !default;
+$carousel-indicator-active-opacity:  1 !default;
+$carousel-indicator-transition:      opacity .6s ease !default;
+
+$carousel-caption-width:             70% !default;
+$carousel-caption-color:             #fff;
+$carousel-caption-padding-y:         1.25rem !default;
+$carousel-caption-spacer:            1.25rem !default;
+
+$carousel-control-icon-width:        20px !default;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'><path d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/></svg>") !default;
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'><path d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/></svg>") !default;
+
+$carousel-transition-duration:       .6s !default;
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-min-width:                10rem !default;
+$dropdown-padding-y:                .5rem !default;
+$dropdown-spacer:                   .125rem !default;
+$dropdown-font-size:                $font-size-base !default;
+$dropdown-color:                    $body-color !default;
+$dropdown-bg:                       $white !default;
+$dropdown-border-color:             rgba($black, .15) !default;
+$dropdown-border-radius:            $border-radius !default;
+$dropdown-divider-bg:               $gray-200 !default;
+$dropdown-divider-margin-y:         $spacer / 2 !default;
+
+$dropdown-link-color:               $gray-900 !default;
+$dropdown-link-hover-color:         darken($gray-900, 5%) !default;
+$dropdown-link-hover-bg:            $gray-100 !default;
+
+$dropdown-link-active-color:        #fff !default;
+$dropdown-link-active-bg:           map-get($theme-colors,'primary') !default;
+
+$dropdown-link-disabled-color:      $gray-600 !default;
+
+$dropdown-item-padding-y:           $spacer / 4 !default;
+$dropdown-item-padding-x:           $spacer !default;
+
+$dropdown-header-color:             $gray-600 !default;
+$dropdown-header-padding:           $dropdown-padding-y $dropdown-item-padding-x !default;
+
+
+
+$input-btn-padding-y:         .467rem;
+$input-btn-padding-x:         1.5rem;
+$input-btn-font-family:       null;
+$input-btn-font-size:         $font-size-base * .95;
+$input-btn-line-height:       $line-height-base;
+
+
+$input-btn-focus-width:         .2rem;
+$input-btn-focus-color-opacity: .25;
+// $input-btn-focus-color:         rgba($component-active-bg, $input-btn-focus-color-opacity);
+// $input-btn-focus-box-shadow:    0 0 0 $input-btn-focus-width $input-btn-focus-color;
+
+$input-btn-padding-y-sm:      .467rem;
+$input-btn-padding-x-sm:      1.2rem;
+$input-btn-font-size-sm:      .8rem;
+
+$input-btn-padding-y-lg:      .6rem;
+$input-btn-padding-x-lg:      1.8rem;
+$input-btn-font-size-lg:      $font-size-lg;
+
+$btn-border-radius:             .267rem;
+$btn-border-radius-sm:          .267rem;
+$btn-border-radius-lg:          .267rem;
+$btn-color:                    #fff;
+
+
+
+$card-border-width:                 0;
+$card-border-radius:                .267rem;
+$card-border-color:                 #DFE3E7;
+$card-box-shadow:                   -8px 12px 18px 0 rgba(25,42,70,.13);
+$card-cap-padding-y:                1.4rem;
+$card-cap-padding-x:                1.7rem;
+$card-cap-bg:                       #fff;
+
+$card-title-font-size:              1.2rem;
+
+
+$input-padding-y:                       $input-btn-padding-y;
+$input-padding-x:                       .6rem;
+$input-font-family:                     $input-btn-font-family;
+$input-font-size:                       $input-btn-font-size;
+$input-font-weight:                     400;
+$input-line-height:                     $input-btn-line-height;
+
+$input-padding-y-sm:                    $input-btn-padding-y-sm;
+$input-padding-x-sm:                    $input-padding-x + .2rem;
+$input-font-size-sm:                    $input-btn-font-size-sm;
+
+$input-padding-y-lg:                    $input-btn-padding-y-lg;
+$input-padding-x-lg:                    $input-padding-x;
+$input-font-size-lg:                    $input-btn-font-size-lg;
+
+$input-bg:                              white;
+$input-disabled-bg:                     #F2F4F4;
+$input-disabled-border-color:           null;
+
+$input-color:                           rgb(85, 82, 82);
+$input-border-color:                    #DFE3E7;
+$input-border-width:                    1px;
+$input-box-shadow:                      0;
+
+$input-border-radius:                   $border-radius;
+$input-border-radius-sm:                $border-radius;
+$input-border-radius-lg:                $border-radius;
+
+$input-focus-bg:                        $input-bg;
+$input-focus-border-color:              map-get($theme-colors,'primary');
+$input-focus-color:                     $input-color;
+$input-focus-box-shadow:                0 3px 8px 0 rgba(0,0,0,.1);
+
+$input-placeholder-color:               #828D99;
+$input-plaintext-color:                 rgb(162, 162, 173);
+
+$input-height-border:                   $input-border-width * 2;
+$input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+
+$input-group-addon-color:               #475F7B;
+$input-group-addon-bg:                  #F0F4F7;
+$input-group-addon-border-color:        #DFE3E7;
+
+$form-check-input-border:                 1px solid rgba(0, 0, 0, .25);
+$form-check-input-border-radius:          .25em;
+$form-check-radio-border-radius:          50%;
+$form-check-input-focus-border:           $input-focus-border-color;
+
+$form-check-label-color:                  rgb(0, 0, 0);
+$form-check-label-cursor:                 null;
+
+
+// List group
+
+$list-group-color:                  null !default;
+$list-group-bg:                     $white !default;
+$list-group-border-color:           rgba($black, .125) !default;
+$list-group-border-radius:          .4rem !default;
+
+$list-group-item-padding-y:         $spacer / 2 !default;
+$list-group-item-padding-x:         $spacer !default;
+$list-group-item-bg-level:          -9 !default;
+$list-group-item-color-level:       6 !default;
+
+$list-group-hover-bg:               $gray-100 !default;
+$list-group-active-color:           $white !default;
+$list-group-active-bg:              map-get($theme-colors,'primary') !default;
+
+$list-group-disabled-color:         $gray-600 !default;
+$list-group-disabled-bg:            $list-group-bg !default;
+
+$list-group-action-color:           $gray-700 !default;
+$list-group-action-hover-color:     $list-group-action-color !default;
+
+$list-group-action-active-color:    $body-color !default;
+$list-group-action-active-bg:       $gray-200 !default;
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding:               1rem 2rem !default;
+
+// Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
+$modal-footer-margin-between:       .5rem !default;
+
+$modal-dialog-margin:               .5rem !default;
+$modal-dialog-margin-y-sm-up:       1.75rem !default;
+
+$modal-title-line-height:           $line-height-base !default;
+
+$modal-content-color:               null !default;
+$modal-content-bg:                  $white !default;
+$modal-content-border-color:        $gray-200 !default;
+$modal-content-border-width:        1px !default;
+$modal-content-border-radius:       .2rem !default;
+$modal-content-box-shadow-xs:       -8px 12px 18px 0 rgba(25,42,70,.13) !default;
+$modal-content-box-shadow-sm-up:    -8px 12px 18px 0 rgba(25,42,70,.13) !default;
+
+$modal-backdrop-bg:                 $black !default;
+$modal-backdrop-opacity:            .5 !default;
+$modal-header-padding-y:            $modal-inner-padding !default;
+$modal-header-padding-x:            $modal-inner-padding !default;
+$modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
+$modal-header-font-size:            1.1rem;
+
+$modal-sm:                          300px !default;
+$modal-md:                          540px !default;
+$modal-lg:                          800px !default;
+$modal-xl:                          1140px !default;
+
+$modal-fade-transform:              translate(0, -50px) !default;
+$modal-show-transform:              none !default;
+$modal-transition:                  transform .3s ease-out !default;
+$modal-scale-transform:             scale(1.02) !default;
+
+// Navs
+
+$nav-link-padding-y:                .5rem !default;
+$nav-link-padding-x:                1rem !default;
+$nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
+$nav-link-disabled-color:           $gray-600 !default;
+
+$nav-tabs-border-color:             $gray-300 !default;
+$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
+$nav-tabs-link-active-color:        $gray-700 !default;
+$nav-tabs-link-active-bg:           #fff !default;
+$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+
+$nav-pills-border-radius:           $border-radius !default;
+$nav-pills-link-active-bg:          map-get($theme-colors,'primary');
+// Navbar
+$navbar-light-color:                rgba($black, .7) !default;
+
+// Pagination
+
+$pagination-padding-y:              .375rem !default;
+$pagination-padding-x:              .75rem !default;
+$pagination-padding-y-sm:           .5rem !default;
+$pagination-padding-x-sm:           .5rem !default;
+$pagination-padding-y-lg:           .75rem !default;
+$pagination-padding-x-lg:           1.5rem !default;
+
+$pagination-color:                  $gray-600 !default;
+$pagination-bg:                     $white !default;
+$pagination-border-width:           1px !default;
+$pagination-border-radius:          $border-radius !default;
+$pagination-margin-left:            -$pagination-border-width !default;
+$pagination-border-color:           $gray-300 !default;
+
+$pagination-focus-outline:          0 !default;
+
+$pagination-hover-bg:               $gray-200 !default;
+$pagination-hover-border-color:     $gray-300 !default;
+
+
+$pagination-disabled-color:         $gray-600 !default;
+$pagination-disabled-bg:            $white !default;
+$pagination-disabled-border-color:  $gray-300 !default;
+
+
+// Progress bars
+
+$progress-height:                   .6rem !default;
+$progress-font-size:                .75rem !default;
+$progress-bg:                       $gray-200 !default;
+$progress-border-radius:            1rem !default;
+$progress-bar-color:                $white !default;
+$progress-bar-animation-timing:     1s linear infinite !default;
+$progress-bar-transition:           width .6s ease !default;
+
+
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+// scss-docs-start table-variables
+$table-cell-padding-y:        1.15rem !default;
+$table-cell-padding-x:         2rem !default;
+$table-cell-padding-y-sm:     .25rem !default;
+$table-cell-padding-x-sm:     .25rem !default;
+
+$table-cell-vertical-align:   top !default;
+
+$table-color:                 $body-color !default;
+$table-bg:                    transparent !default;
+
+$table-striped-color:         $table-color !default;
+$table-striped-bg-factor:     .05 !default;
+$table-striped-bg:            rgba($black, $table-striped-bg-factor) !default;
+
+$table-active-color:          $table-color !default;
+$table-active-bg-factor:      .1 !default;
+$table-active-bg:             rgba($black, $table-active-bg-factor) !default;
+
+$table-hover-color:           $table-color !default;
+$table-hover-bg-factor:       .075 !default;
+$table-hover-bg:              rgba($black, $table-hover-bg-factor) !default;
+
+$table-border-factor:         .1 !default;
+$table-border-width:          1px !default;
+$table-border-color:          #DFE3E7 !default;
+
+$table-striped-order:         odd !default;
+
+$table-group-seperator-color: #DFE3E7 !default;
+
+$table-caption-color:         $gray-400 !default;
+
+$table-bg-level:              -9 !default;
+
+// scss-docs-end table-variables
+
+
+@each $key, $value in $theme-colors {
+    .color-#{$key} {
+        color: $value;
+    }
+}

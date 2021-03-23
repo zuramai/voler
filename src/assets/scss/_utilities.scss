@@ -1,0 +1,52 @@
+.text-xxs { font-size: .65rem }
+.text-xs { font-size: .75rem }
+.text-sm { font-size: .85rem }
+
+.font-bold { font-weight: 800; }
+.font-semibold { font-weight: 600; }
+
+.pt-32 { padding-top: 6rem }
+
+.ml-50 { margin-left: .50rem; }
+
+.w-0 { width: 0 }
+.w-1 { width: .25rem }
+.w-2 { width: .5rem }
+.w-3 { width: .75rem }
+.w-4 { width: 1rem }
+.w-5 { width: 1.25rem }
+.w-10 { width: 2.25rem }
+
+.h-0 { height: 0 }
+.h-1 { height: .25rem }
+.h-2 { height: .5rem }
+.h-3 { height: .75rem }
+.h-4 { height: 1rem }
+.h-5 { height: 1.25rem }
+.h-10 { height: 2.25rem }
+
+.rounded-none { border-radius: 0; }
+.round { border-radius: 1.5rem }
+.rounded-full { border-radius: 50% }
+.square { border-radius: 0; }
+
+$chartColors: (
+  red: rgb(255, 99, 132),
+  orange: rgb(255, 159, 64),
+  yellow: rgb(255, 205, 86),
+  green: rgb(75, 192, 192),
+  info: #41B1F9,
+  blue: #3245D1,
+  purple: rgb(153, 102, 255),
+  grey: #EBEFF6,
+  gray-700: #4a5568
+);
+
+@each $key, $value in $chartColors {
+    .text-#{$key} {
+        color: $value;
+    }
+    .bg-#{$key} {
+        background-color: $value !important;
+    }
+}

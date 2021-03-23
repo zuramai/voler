@@ -1,0 +1,224 @@
+[
+  {
+    "name": "Main Menu",
+    "isTitle": true
+  },
+  {
+    "name": "Dashboard",
+    "url": "index.html",
+    "icon": "home"
+  },
+  {
+    "name": "Components",
+    "key": "component",
+    "icon": "triangle",
+    "submenu": [
+      {
+        "name": "Alert",
+        "url": "component-alert.html"
+      },
+      {
+        "name": "Badge",
+        "url": "component-badge.html"
+      },
+      {
+        "name": "Breadcrumb",
+        "url": "component-breadcrumb.html"
+      },
+      {
+        "name": "Buttons",
+        "url": "component-buttons.html"
+      },
+      {
+        "name": "Card",
+        "url": "component-card.html"
+      },
+      {
+        "name": "Carousel",
+        "url": "component-carousel.html"
+      },
+      {
+        "name": "Dropdowns",
+        "url": "component-dropdowns.html"
+      },
+      {
+        "name": "List Group",
+        "url": "component-list-group.html"
+      },
+      {
+        "name": "Modal",
+        "url": "component-modal.html"
+      },
+      {
+        "name": "Navs",
+        "url": "component-navs.html"
+      },
+      {
+        "name": "Pagination",
+        "url": "component-pagination.html"
+      },
+      {
+        "name": "Progress",
+        "url": "component-progress.html"
+      },
+      {
+        "name": "Spinners",
+        "url": "component-spinners.html"
+      },
+      {
+        "name": "Tooltips",
+        "url": "component-tooltips.html"
+      }
+    ]
+  },
+  {
+    "name": "Extra Components",
+    "key": "component-extra",
+    "icon": "briefcase",
+    "submenu": [
+      {
+        "name": "Avatar",
+        "url": "component-extra-avatar.html"
+      },
+      {
+        "name": "Divider",
+        "url": "component-extra-divider.html"
+      }
+    ]
+  },
+  {
+    "name": "Forms & Tables",
+    "isTitle": true
+  },
+  {
+    "name": "Form Elements",
+    "key": "form-element",
+    "icon": "file-text",
+    "submenu": [
+      {
+        "name": "Input",
+        "url": "form-element-input.html"
+      },
+      {
+        "name": "Input Group",
+        "url": "form-element-input-group.html"
+      },
+      {
+        "name": "Select",
+        "url": "form-element-select.html"
+      },
+      {
+        "name": "Radio",
+        "url": "form-element-radio.html"
+      },
+      {
+        "name": "Checkbox",
+        "url": "form-element-checkbox.html"
+      },
+      {
+        "name": "Textarea",
+        "url": "form-element-textarea.html"
+      }
+    ]
+  },
+  {
+    "name": "Form Layout",
+    "url": "form-layout.html",
+    "icon": "layout"
+  },
+  {
+    "name": "Form Editor",
+    "url": "form-editor.html",
+    "icon": "layers"
+  },
+  {
+    "name": "Table",
+    "url": "table.html",
+    "icon": "grid"
+  },
+  {
+    "name": "Datatable",
+    "url": "table-datatable.html",
+    "icon": "file-plus"
+  },
+  {
+    "name": "Extra UI",
+    "isTitle": true
+  },
+  {
+    "name": "Widgets",
+    "key": "ui",
+    "icon": "user",
+    "submenu": [
+      {
+        "name": "Chatbox",
+        "url": "ui-chatbox.html"
+      },
+      {
+        "name": "Pricing",
+        "url": "ui-pricing.html"
+      },
+      {
+        "name": "To-do List",
+        "url": "ui-todolist.html"
+      }
+    ]
+  },
+  {
+    "name": "Charts",
+    "key": "ui-chart",
+    "icon": "trending-up",
+    "submenu": [
+      {
+        "name": "ChartJS",
+        "url": "ui-chart-chartjs.html"
+      },
+      {
+        "name": "Apexchart",
+        "url": "ui-chart-apexchart.html"
+      }
+    ]
+  },
+  {
+    "name": "Pages",
+    "isTitle": true
+  },
+  {
+    "name": "Authentication",
+    "key": "auth",
+    "icon": "user",
+    "submenu": [
+      {
+        "name": "Login",
+        "url": "auth-login.html"
+      },
+      {
+        "name": "Register",
+        "url": "auth-register.html"
+      },
+      {
+        "name": "Forgot Password",
+        "url": "auth-forgot-password.html"
+      }
+    ]
+  },
+  {
+    "name": "Errors",
+    "key": "error",
+    "icon": "alert-circle",
+    "submenu": [
+      {
+        "name": "403",
+        "url": "error-403.html"
+      },
+      {
+        "name": "404",
+        "url": "error-404.html"
+      },
+      {
+        "name": "500",
+        "url": "error-500.html"
+      }
+    ]
+  }
+]

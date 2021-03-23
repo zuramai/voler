@@ -18,7 +18,7 @@
 ![npm version](https://badge.fury.io/js/yarn.svg)
 </span>
 
-![Voler dashboard](https://github.com/zuramai/voler/blob/master/screenshot.png?raw=true)
+![Voler dashboard](https://github.com/zuramai/voler/blob/main/screenshot.png?raw=true)
 
 ## Installation
 1. Clone this repository.

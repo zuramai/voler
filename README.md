@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="#">
-    <img src="https://github.com/zuramai/voler/blob/master/dist/assets/images/favicon.svg?raw=true" alt="Stisla logo" width="75" height="75">
+    <img src="https://github.com/zuramai/voler/blob/main/dist/assets/images/favicon.svg?raw=true" alt="Voler logo" width="75" height="75">
   </a>
 </p>
 

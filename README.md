@@ -45,7 +45,7 @@ I want this template to be used by many people and useful for people And hopeful
 
 
 ## Demo
-You can open the demo <a href="http://zuramai.github.io/voler/dist" target="_blank">here</a>
+You can open the demo <a href="https://zuramai.github.io/voler/" target="_blank">here</a>
 
 ## Contributing
 

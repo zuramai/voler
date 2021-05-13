@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap": "^5.0.0-beta1",
+    "bootstrap": "^5.0.0",
     "laravel-mix": "^5.0.4",
     "laravel-mix-nunjucks": "^0.3.0",
     "laravel-mix-purgecss": "^6.0.0",

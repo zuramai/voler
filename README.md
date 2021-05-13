@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <p align="center">
   <a href="#">
@@ -76,3 +77,9 @@ You can open the demo <a href="http://zuramai.github.io/voler/dist" target="_bla
 
 ------------
 **Made with ❤️ by Voler**
+=======
+This repository is currently unavailable
+
+Check out my new template:
+[https://github.com/zuramai/mazer](https://github.com/zuramai/mazer)
+>>>>>>> a2c3264b0abf55b170df9a8ce11fd0232bb8a614

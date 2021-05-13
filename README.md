@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="#">
-    <img src="https://github.com/zuramai/voler/blob/master/dist/assets/images/favicon.svg?raw=true" alt="Stisla logo" width="75" height="75">
+    <img src="https://github.com/zuramai/voler/blob/main/dist/assets/images/favicon.svg?raw=true" alt="Voler logo" width="75" height="75">
   </a>
 </p>
 
@@ -19,7 +19,7 @@
 ![npm version](https://badge.fury.io/js/yarn.svg)
 </span>
 
-![Voler dashboard](https://github.com/zuramai/voler/blob/master/screenshot.png?raw=true)
+![Voler dashboard](https://github.com/zuramai/voler/blob/main/screenshot.png?raw=true)
 
 ## Installation
 1. Clone this repository.
@@ -46,7 +46,7 @@ I want this template to be used by many people and useful for people And hopeful
 
 
 ## Demo
-You can open the demo <a href="http://zuramai.github.io/voler/dist" target="_blank">here</a>
+You can open the demo <a href="https://zuramai.github.io/voler/" target="_blank">here</a>
 
 ## Contributing
 

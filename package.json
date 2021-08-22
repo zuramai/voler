@@ -10,7 +10,9 @@
     "watch": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js  --progress --hide-modules --watch ",
     "hot": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "rtl": "rtlcss -d dist/assets/css -e .rtl.css && find . -type f -name '*.rtl.rtl.css' -delete",
+    "prod-rtl": "run prod && rtl"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +24,7 @@
     "laravel-mix-purgecss": "^6.0.0",
     "resolve-url-loader": "^3.1.0",
     "sass": "^1.26.9",
+    "rtlcss": "^3.2.1",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11",
     "webpack-cli": "^3.3.12"

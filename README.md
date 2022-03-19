@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 <p align="center">
   <a href="#">

@@ -67,10 +67,10 @@ You can open the demo <a href="https://zuramai.github.io/voler/" target="_blank"
 
 ## 🧑 Support me at : 
 
-- Trakteer : <a href="https://trakteer.id/ahmad-saugi"> @ahmad-saugi</a>
+- Trakteer : <a href="https://trakteer.id/saugi"> @saugi</a>
 
 ## 📝 License
-- Copyright © 2020 Voler
+- Copyright © 2022 Voler
 - **Voler is open-sourced software licensed under the MIT license**
 
 
@@ -81,4 +81,3 @@ This repository is currently unavailable
 
 Check out my new template:
 [https://github.com/zuramai/mazer](https://github.com/zuramai/mazer)
->>>>>>> a2c3264b0abf55b170df9a8ce11fd0232bb8a614

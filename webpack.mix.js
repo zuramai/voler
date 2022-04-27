@@ -4,7 +4,7 @@ const sidebarItems = require('./sidebar-items.json');
 require('laravel-mix-purgecss');
 require('laravel-mix-nunjucks')
 
-mix.njk('src/', 'dist/', {
+mix.njk('src/*', 'dist/', {
    data: {
       web_title: "Voler Admin Dashboard",
       sidebarItems

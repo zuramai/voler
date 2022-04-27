@@ -31,15 +31,15 @@
 .square { border-radius: 0; }
 
 $chartColors: (
-  red: rgb(255, 99, 132),
-  orange: rgb(255, 159, 64),
-  yellow: rgb(255, 205, 86),
-  green: rgb(75, 192, 192),
-  info: #41B1F9,
-  blue: #3245D1,
-  purple: rgb(153, 102, 255),
-  grey: #EBEFF6,
-  gray-700: #4a5568
+  "red": rgb(255, 99, 132),
+  "orange": rgb(255, 159, 64),
+  "yellow": rgb(255, 205, 86),
+  "green": rgb(75, 192, 192),
+  "info": #41B1F9,
+  "blue": #3245D1,
+  "purple": rgb(153, 102, 255),
+  "grey": #EBEFF6,
+  "gray-700": #4a5568
 );
 
 @each $key, $value in $chartColors {

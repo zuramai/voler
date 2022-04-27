@@ -1,3 +1,4 @@
+@use 'sass:math';
 /**
  * VARIABLE - TABLE OF CONTENTS
  * 
@@ -41,8 +42,6 @@ $theme-colors: (
   'link': #2178d1
 );
 $theme-colors-light: (
-
-
   'primary': #E2ECFF,
   'secondary': #E6EAEE,
   'success': #D2FFE8 ,
@@ -51,10 +50,38 @@ $theme-colors-light: (
   'info': #CCF5F8,
 );
 
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
 $body-color:                #727E8C;
 
 $spacer: 1rem;
 $border-radius:               .25rem;
+$border-width:                1px !default;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+) !default;
+
+$border-color:                $gray-300 !default;
+// scss-docs-start border-radius-variables
+$border-radius:               .25rem !default;
+$border-radius-sm:            .2rem !default;
+$border-radius-lg:            .3rem !default;
+$border-radius-pill:          50rem !default;
+// scss-docs-end border-radius-variables
 
 $font-size-base:              .9rem; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875;
@@ -65,7 +92,7 @@ $line-height-sm:              1.25;
 $line-height-lg:              2;
 
 
-$headings-margin-bottom:      $spacer / 2;
+$headings-margin-bottom:      math.div($spacer, 2);
 $headings-font-family:        null;
 $headings-font-style:         null;
 $headings-font-weight:        500;
@@ -299,7 +326,7 @@ $dropdown-bg:                       $white !default;
 $dropdown-border-color:             rgba($black, .15) !default;
 $dropdown-border-radius:            $border-radius !default;
 $dropdown-divider-bg:               $gray-200 !default;
-$dropdown-divider-margin-y:         $spacer / 2 !default;
+$dropdown-divider-margin-y:         math.div($spacer, 2) !default;
 
 $dropdown-link-color:               $gray-900 !default;
 $dropdown-link-hover-color:         darken($gray-900, 5%) !default;
@@ -310,7 +337,7 @@ $dropdown-link-active-bg:           map-get($theme-colors,'primary') !default;
 
 $dropdown-link-disabled-color:      $gray-600 !default;
 
-$dropdown-item-padding-y:           $spacer / 4 !default;
+$dropdown-item-padding-y:           math.div($spacer, 4) !default;
 $dropdown-item-padding-x:           $spacer !default;
 
 $dropdown-header-color:             $gray-600 !default;
@@ -416,7 +443,7 @@ $list-group-bg:                     $white !default;
 $list-group-border-color:           rgba($black, .125) !default;
 $list-group-border-radius:          .4rem !default;
 
-$list-group-item-padding-y:         $spacer / 2 !default;
+$list-group-item-padding-y:         math.div($spacer, 2) !default;
 $list-group-item-padding-x:         $spacer !default;
 $list-group-item-bg-level:          -9 !default;
 $list-group-item-color-level:       6 !default;
@@ -456,10 +483,14 @@ $modal-content-box-shadow-sm-up:    -8px 12px 18px 0 rgba(25,42,70,.13) !default
 
 $modal-backdrop-bg:                 $black !default;
 $modal-backdrop-opacity:            .5 !default;
+$modal-header-font-size:                   1.1rem !default;
+$modal-header-border-color:         $border-color !default;
+$modal-footer-border-color:         $modal-header-border-color !default;
+$modal-header-border-width:         $modal-content-border-width !default;
+$modal-footer-border-width:         $modal-header-border-width !default;
 $modal-header-padding-y:            $modal-inner-padding !default;
 $modal-header-padding-x:            $modal-inner-padding !default;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
-$modal-header-font-size:            1.1rem;
 
 $modal-sm:                          300px !default;
 $modal-md:                          540px !default;

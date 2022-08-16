@@ -1,4 +1,5 @@
 @use 'sass:math';
+@import "~bootstrap/scss/functions";
 /**
  * VARIABLE - TABLE OF CONTENTS
  * 
@@ -597,6 +598,7 @@ $table-group-seperator-color: #DFE3E7 !default;
 $table-caption-color:         $gray-400 !default;
 
 $table-bg-level:              -9 !default;
+
 
 // scss-docs-end table-variables
 

@@ -44,3 +44,9 @@ mix
    })
    .sass("src/assets/scss/bootstrap.scss", "dist/assets/css")
    .setPublicPath("dist");
+// Browsersync
+mix.browserSync({
+   files: ["src/scss/*.scss", "src/**/*.html", "src/assets/js/**/*.js"],
+   server: "dist",
+   port: 3003,
+})

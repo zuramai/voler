@@ -68,7 +68,7 @@ Anda bisa membuka Demonya <a href="https://zuramai.github.io/voler/" target="_bl
 - Jika kamu mau melakukan beberapa perubahan pada file CSS. Jangan edit file berekstensi `.css`, lebih baik gunakan file SCSS.
 - Sejak kami menggunakan Nunjucks, jika kamu mau membuat perubahan pada struktur HTML, pastikan perubahanmu pada sumber file (Nunjucks) berkolasi di `src`.
 
-## 🧑 Pengarang/Pembuat
+## 🧑 Yang Membuat
 
 👤 <a href="http://ahmadsaugi.com">Ahmad Saugi</a>.
 

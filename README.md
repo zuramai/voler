@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="#">
     <img src="https://github.com/zuramai/voler/blob/main/dist/assets/images/favicon.svg?raw=true" alt="Voler logo" width="75" height="75">
@@ -20,7 +19,6 @@
 
 ![Voler dashboard](https://github.com/zuramai/voler/blob/main/screenshot.png?raw=true)
 
-
 <table>
 	<tr>
 		<th>Sponsored by</th>
@@ -37,30 +35,37 @@
 </table>
 
 ## Installation
+
 1. Clone this repository.
+
 ```bash
 git clone https://github.com/zuramai/voler
 ```
-2. Open ```dist/index.html``` in browser.
+
+2. Open `dist/index.html` in browser.
 
 ## New Bootstrap 5 Template
+
 I have created another Bootstrap 5 dashboard template, Mazer Dashboard Template. [Click here](https://github.com/zuramai/mazer) to take a look to the repository.
 
 ### 🤔 What is a voler?
+
 the voler template is an admin dashboard template that has an attractive beauty and a lot of features in it
 
 ### 🎉 Why was it made Open Source?
+
 I want this template to be used by many people and useful for people And hopefully this template is useful and can make learning for us all
 
 ### 🤨 What features are available at voler?
+
 - This template is responsive
 - This template is made with bootstrap 5 beta, css and so on
 - This template has many features in it
 - This template is perfect for your website projects
 - And there are many other features and we don't mention them one by one
 
-
 ## Demo
+
 You can open the demo <a href="https://zuramai.github.io/voler/" target="_blank">here</a>
 
 ## Contributing
@@ -72,27 +77,29 @@ You can open the demo <a href="https://zuramai.github.io/voler/" target="_blank"
 - Create a new Pull Request
 
 ### Note
+
 - If you want to make some changes in the CSS style. Don't edit the `.css` file, use the SCSS file instead.
 - Since we use Nunjucks, if you want to make changes to the HTML structure, make sure you change the source file (Nunjucks) located in `src`.
 
-
 ## 🧑 Author
 
-👤 <a href="http://ahmadsaugi.com">Ahmad Saugi</a>.
+👤 <a href="http://saugi.me">Ahmad Saugi</a>.
+
 - Github : <a href="https://github.com/zuramai"> @zuramai</a>
 
-## 🧑 Support me at : 
+## 🧑 Support me at :
 
 - Trakteer : <a href="https://trakteer.id/saugi"> @saugi</a>
 
 ## 📝 License
+
 - Copyright © 2022 Voler
 - **Voler is open-sourced software licensed under the MIT license**
 
+---
 
-------------
-**Made with ❤️ by Voler**
-=======
+# **Made with ❤️ by Voler**
+
 This repository is currently unavailable
 
 Check out my new template:
